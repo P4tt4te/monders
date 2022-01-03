@@ -1,0 +1,23 @@
+{
+  "name": "monders",
+  "version": "1.0.0",
+  "description": "Interactive website for present the new 7 wonders of the world. (school project)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/P4tt4te/monders.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/P4tt4te/monders/issues"
+  },
+  "homepage": "https://github.com/P4tt4te/monders#readme",
+  "dependencies": {
+    "locomotive-scroll": "^4.1.3",
+    "swiper": "^7.4.1"
+  }
+}
