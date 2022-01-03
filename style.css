@@ -1,0 +1,16 @@
+:root {
+    --background : #202124;
+    --red : #E64456;
+    --blue : #3E4AF6;
+    --purple : #451D73;
+    --yellow : #F48E6B;
+}
+
+.background {
+    background-color : var(--background);
+    color : white;
+}
+
+.red {
+    color : var(--red);
+}
