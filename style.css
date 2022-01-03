@@ -88,3 +88,12 @@ html {
 .italic {
     font-style: italic;
 }
+
+@media (min-width: 576px) { 
+    
+ }
+
+@media (min-width: 768px) {  }
+
+
+@media (min-width: 993px) {  }
