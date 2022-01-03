@@ -1,19 +1,22 @@
 
 var renderer = new THREE.WebGLRenderer( { alpha: true } );
-renderer.setSize(300,300);
+renderer.setPixelRatio( window.devicePixelRatio );
+renderer.setSize(1065,600);
 renderer.setClearColor( 0x000000, 0);
 document.querySelector('.earthdiv').appendChild(renderer.domElement);
 
 var scene = new THREE.Scene();
 
-var camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 1000);
+var camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 1, 100);
 
 var controls = new THREE.OrbitControls( camera, renderer.domElement );
-
+controls.target.set( 0, 0, 0 );
+controls.update();
+controls.enablePan = false;
+controls.enableDamping = true;
 
 
 camera.position.set(0, 0, 10);
-controls.update();
 window.addEventListener('resize',function(){
   renderer.setSize(window.innerWidth,window.innerHeight);
   camera.aspect=window.innerWidth/window.innerHeight
@@ -24,7 +27,10 @@ window.addEventListener('resize',function(){
 var loader = new THREE.GLTFLoader();
 
 loader.load('/public/landing-page/model/scene.glb', function( gltf ){
-  scene.add( gltf.scene );
+    
+
+    gltf.scene.position.set( 0, 0, 0);
+    scene.add( gltf.scene );
 
 }, undefined, function ( error ) {
   console.error( error );
