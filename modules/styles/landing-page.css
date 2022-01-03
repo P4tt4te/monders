@@ -24,11 +24,14 @@ body {
 
 .bouton {
     text-decoration : none;
+    letter-spacing: 0.07rem;
+    margin-left: 185px;
 }
 
 a {
     color: inherit; /* blue colors for links too */
     text-decoration: inherit;
+    font-size: 1.5rem;
 }
 
 h2 {
@@ -41,6 +44,7 @@ h2 {
 
 .desc>p {
     text-align: center;
+    color: #FFFFFF80;
 }
 
 .earthdiv {
@@ -49,5 +53,5 @@ h2 {
 }
 
 .circlelines {
-    width: 80%;
+    width: 90%;
 }
