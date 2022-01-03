@@ -1,4 +1,21 @@
+
 main {
-    display : flex;
-    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.earthdiv {
+    display: flex;
+    justify-content: center;
+}
+
+.circlelines {
+    width: 80%;
 }
