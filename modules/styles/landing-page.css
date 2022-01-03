@@ -3,12 +3,23 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 80vh;
+}
+
+body {
+    margin: 0;
 }
 
 .desc {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 1.2rem;
+    height: 20vh;
+}
+
+.desc>p {
+    text-align: center;
 }
 
 .earthdiv {
