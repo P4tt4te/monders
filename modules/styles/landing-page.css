@@ -22,10 +22,19 @@ body {
     font-size: 1.5rem;
 }
 
+.titles {
+    margin-top: -1rem;
+}
+
+.shadow {
+    text-shadow: 3px 3px #E6445640;
+}
+
 .bouton {
     text-decoration : none;
     letter-spacing: 0.07rem;
     margin-left: 185px;
+    margin-top: 40px;
 }
 
 a {
@@ -54,4 +63,5 @@ h2 {
 
 .circlelines {
     width: 90%;
+    
 }
