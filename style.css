@@ -6,11 +6,85 @@
     --yellow : #F48E6B;
 }
 
+@font-face {
+    font-family: "Brown Sunflower";
+    src:  url("/public/fonts/BROWN_SUNFLOWER.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "NeueMontreal";
+    src: url("/public/fonts/NeueMontreal-Bold.otf") format("opentype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NeueMontreal";
+    src: url("/public/fonts/NeueMontreal-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NeueMontreal";
+    src: url("/public/fonts/NeueMontreal-Medium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "NeueMontreal";
+    src: url("/public/fonts/NeueMontreal-MediumItalic.otf") format("opentype");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "NeueMontreal";
+    src: url("/public/fonts/NeueMontreal-Light.otf") format("opentype");
+    font-weight: lighter;
+    font-style: normal;
+}
+@font-face {
+    font-family: "NeueMontreal";
+    src: url("/public/fonts/NeueMontreal-Light.otf") format("opentype");
+    font-weight: lighter;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "NeueMontreal";
+    src: url("/public/fonts/NeueMontreal-BoldItalic.otf") format("opentype");
+    font-weight: bold;
+    font-style: italic;
+}
+
+html {
+    font-family : "NeueMontreal", arial;
+    font-weight: normal;
+    font-style: normal;
+}
+
 .background {
     background-color : var(--background);
     color : white;
 }
 
 .red {
-    color : var(--red);
+    color: var(--red);
+}
+
+.title {
+    font-family: "Brown Sunflower", arial;
+}
+
+.light {
+    font-weight: lighter;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
 }
