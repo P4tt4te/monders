@@ -61,6 +61,11 @@ h2 {
     justify-content: center;
 }
 
+canvas {
+    position: absolute;
+    opacity: 50;
+}
+
 .circlelines {
     width: 90%;
     
