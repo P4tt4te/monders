@@ -28,28 +28,38 @@
 
 <!-- MENU RESPONSIVE -->
 <div class="nav-container">
-    <div class="menu-close">CLOSE</div>
 
     <div class="grid">
-        <div class="grid-item">
-            <nav class="menu">
+        <div class="grid-item one"></div>
+        <div class="grid-item two">
+        <nav class="menu">
                 <div class="menu-item">
-                    <a href="index.html" class="menu-item-link">PORTFOLIO</a>
-                </div>
-                <div class="bar-menu"></div>
-                <div class="menu-item">
-                    <a href="projects.html" class="menu-item-link">PROJECTS</a>
+                    <a href="index.html" class="menu-item-link">HOME</a>
                 </div>
                 <div class="menu-item">
-                    <a href="about.html" class="menu-item-link">ABOUT</a>
+                    <a href="projects.html" class="menu-item-link">MERVEILLES</a>
                 </div>
                 <div class="menu-item">
-                    <a href="contact.html" class="menu-item-link">CONTACT</a>
+                    <a href="about.html" class="menu-item-link">PROFIL</a>
                 </div>
             </nav>
         </div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
+        <div class="grid-item three">
+        <nav class="menu">
+                <div class="menu-item">
+                    <a href="index.html" class="menu-item-link">CONCEPT</a>
+                </div>
+                <div class="menu-item">
+                    <a href="projects.html" class="menu-item-link">A PROPOS</a>
+                </div>
+                <div class="menu-item">
+                    <a href="about.html" class="menu-item-link">MODIFICATION</a>
+                </div>
+                <div class="menu-item">
+                    <a href="contact.html" class="menu-item-link">SE CONNECTER</a>
+                </div>
+            </nav>
+        </div>
     </div>
 </div>
 

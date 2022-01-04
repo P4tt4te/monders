@@ -10,6 +10,11 @@
     <title>Monders</title>
     <link rel="stylesheet" href="../css/style.css">
 
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="../script/script.js"></script>
+
+
 </head>
 
 <body>

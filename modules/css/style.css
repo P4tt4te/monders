@@ -6,7 +6,8 @@
 }
 
 body {
-    background: rgb(44, 44, 44);
+    background: rgb(30, 30, 30);
+    height: 200vh;
 }
 
 /* TODO ______________________________________GENERAL______________________________________ */
@@ -21,6 +22,7 @@ header {
     padding: 20px;
     padding-right: 40px;
     padding-left: 40px;
+    z-index: 3;
 }
 
 header .logo {
@@ -32,12 +34,12 @@ header .grid {
     gap: 30px;
 }
 
-.grid .grid-item {
+header .grid .grid-item {
     width: 40px;
     height: 40px;
 }
 
-.grid-item button {
+header .grid-item button {
     width: 100%;
     height: 100%;
     background: transparent;
@@ -50,7 +52,7 @@ header .grid {
     appearance: none;
 }
 
-.grid-item button img {
+header .grid-item button img {
     width: 100%;
     padding: 7px;
 }
@@ -68,11 +70,24 @@ header .grid {
 .burger span {
     width: 100%;
     height: 2px;
-    background: grey;
+    background: white;
+    transition-duration: 0.5s;
 }
 
-/* TODO _________MENU BURGER NAVIGATION_________ */
+.burger.close span:first-child {
+    transform: rotate(-45deg);
+    transform-origin: 29px 2px;
+  
+}
+.burger.close span:last-child {
+    transform: rotate(45deg);
+    transform-origin: 29px 2px;
 
+}
+
+
+
+/* TODO _________MENU BURGER NAVIGATION_________ */
 
 /*.nav-container {
 	visibility: hidden;
@@ -80,20 +95,29 @@ header .grid {
 */
 .nav-container {
     position: fixed;
-    top: 0;
+    left: -100%;
     width: 100%;
     height: 100vh;
-    background: wheat;
-    z-index: 50;
+    background: rgb(30, 30, 30);
+    z-index: 2;
     font-family: 'Helvetica';
     visibility: visible;
-    transition: all 0.3s ease-in-out;
+    transition: all 1s ease-in-out;
+}
 
+.nav-container .grid {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-container .grid-item {
+    width: 100%;
+    border-right: 1px white solid;
 }
 
 .menu-item {
-    position: relative;
-    padding: 1vh 6vw;
+    padding: 2.5vh 6vw;
 }
 
 .menu-item-link {
@@ -101,39 +125,24 @@ header .grid {
     cursor: pointer;
     position: relative;
     transition: opacity 0.4s;
+    text-decoration: none;
+    color: white;
 }
 
 .menu-item-link:hover {
     transition-duration: 0.1s;
-    color: white;
+    color: grey;
 }
 
 .menu {
-    padding: 25vh 0 25vh;
-    --offset: 20vw;
-    --move-initial: calc(-25% + var(--offset));
-    --move-final: calc(-50% + var(--offset));
-    font-size: 8vw;
+    padding: 15vh 0 15vh;
+    font-size: 30px;
 }
 
-.bar-menu {
-    position: relative;
-    height: 2px;
-    background: black;
-    margin:  6vw;
+.nav-container .grid-item.three {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
 }
 
 
-.menu-name {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 40px;
-    padding-left: 15px; 
-    font-family: 'GrandSlang'; 
-    font-size: 5vw;
-    font-weight: 100;
-}
-.menu-name li:first-child {
-    margin-left: -0.2vw;
-}
