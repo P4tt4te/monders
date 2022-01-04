@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    max-width: 100vw;
+}
+
+.big {
+    font-size: 10rem;
+    letter-spacing: 0.5rem;
+    padding-top: 4vh;
+    padding-right:40vw;
+    opacity: 0.8;
+}
+
+.nuage {
+    position: absolute;
+}
+
+.bloc1 {
+    display: flex;
+    width: calc(100% - 2vw);
+    height: 120vh;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom, transparent, transparent 75%, #202124 100%),url('/public/tajMahal/tajMahal3.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.more {
+    padding-top: 80vh;
+}
+
+.progress {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25vh;
+}
+
+.progress>img {
+    height: 300px;
+}
+
+.progress>span {
+    margin-top: 1vh;
+}
+
+.batiment {
+    width: 80%;
+    position: absolute;
+    right:0;
+}
