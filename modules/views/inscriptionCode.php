@@ -4,7 +4,6 @@ if (isset($_SESSION['user']) )
 	error("Veuillez vous déconnecter avant de vous réinscrire", "");
 
 
-
 $allParamsPresent = isset($_POST['pseudo']) && isset($_POST['mail']) && isset($_POST['motdepasse1']) && isset($_POST['motdepasse2']);
 
 var_dump($_POST['mail']);
@@ -41,5 +40,3 @@ catch (PDOException $e)
 }
 
 $db=null;
-
-

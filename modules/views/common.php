@@ -12,8 +12,8 @@ else
 
 
 define ('BASE', 'monders');
-define ('USERNAME', 'iut');
-define ('PASSWORD', 'iut');
+define ('USERNAME', '');
+define ('PASSWORD', '');
 
 
 
