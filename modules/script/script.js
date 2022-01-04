@@ -26,7 +26,7 @@
    });
 
 
-//__________ACTIVER SON__________
+//__________CHANGER LANGUE__________
 $(document).on("click", ".language", function () {
     $(".language span").text("EN");
     $(this).addClass("english");

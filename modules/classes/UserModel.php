@@ -12,6 +12,7 @@ class UserModel
 	protected $motdepasse;		public function getMotDePasse() { return $this->motdepasse;}
 
 
+
 	// constructeur classique
 	public function __construct($id, $pseudo, $mail, $motdepasse)
 	{
