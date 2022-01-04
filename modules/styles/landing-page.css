@@ -53,6 +53,8 @@ h2 {
 
 .desc>p {
     text-align: center;
+    font-size: 0.75rem;
+    letter-spacing: 0.07rem;
     color: #FFFFFF80;
 }
 
@@ -74,7 +76,11 @@ h2 {
 @media (min-width: 576px) {  }
 
 
-@media (min-width: 768px) {  }
+@media (min-width: 768px) { 
+    .desc>p {
+        font-size: 1rem;
+    }
+ }
 
 
 @media (min-width: 993px) {  }
