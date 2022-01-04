@@ -121,6 +121,9 @@ img:hover{
     align-items: center;
     justify-content: center;
     z-index: 2;
+    font-size: 2rem;
+    transition: all 0.7s ease;
+    overflow: hidden;
 }
 
 .overlay p{
@@ -134,4 +137,11 @@ img:hover{
     background: linear-gradient(90deg, rgba(58,73,247,1) 0%, rgba(166,74,151,1) 39%, rgba(233,86,94,1) 70%, rgba(244,173,119,1) 100%);
     color: white;
     height: 4vh;
+    width: 8vw;
+}
+.disapear{
+    /* display:none; */
+    transition: all 1.5s ease;
+    transform:translateY(-200%);
+    overflow: hidden;
 }

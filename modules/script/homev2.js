@@ -1,5 +1,7 @@
 'use strict';
-$(document).ready(function () {
+document.addEventListener("DOMContentLoaded",initialiser);
+function initialiser(e)
+{
 
     var bouton = document.querySelector(".commencer");
     
@@ -7,9 +9,10 @@ $(document).ready(function () {
 
     function fermerOverlay() {
         var overlay = document.querySelector(".overlay");
-        overlay.setAttribute.display = "none";
+        overlay.classList.add("disapear");
+        console.log(overlay);
 
     }
 
 
-});
+};
