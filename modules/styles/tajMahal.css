@@ -20,12 +20,15 @@ body {
     position: absolute;
 }
 
+.bloc {
+    padding-right: 2vw;
+    padding-left: 2vw;
+}
+
 .bloc1 {
     display: flex;
-    width: calc(100% - 2vw);
+    width: calc(100% - 4vw);
     height: 120vh;
-    padding-right: 1vw;
-    padding-left: 1vw;
     justify-content: space-between;
     background-image: linear-gradient(to bottom, transparent, transparent 75%, #202124 100%),url('/public/tajMahal/tajMahal3.png');
     background-size: 80%;
@@ -63,8 +66,7 @@ body {
 
 .bloc2 {
     display: flex;
-    padding-right: 2vw;
-    padding-left: 2vw;
+    
 }
 
 .bloc22 {
@@ -76,8 +78,24 @@ body {
 }
 
 .bloc3 {
-    padding-right: 2vw;
-    padding-left: 2vw;
+    
+}
+
+.bloc31 {
+    display: flex;
+}
+
+.bloc41 {
+    display: flex;
+    margin-left: 7vw;
+}
+
+.bloc411 {
+    width:100%;
+}
+
+.bloc411>img {
+    width:100%;
 }
 
 
