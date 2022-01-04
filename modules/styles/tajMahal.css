@@ -69,8 +69,13 @@ p {
     
 }
 
+.bloc2 h2 {
+    z-index: 5;
+}
+
 .bloc22 {
     width: 30%;
+    padding-top: 50vh;
 }
 
 .img211 {
