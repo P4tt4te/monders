@@ -8,7 +8,7 @@
     <div class="grid">
         <div class="grid-item">
             <button class="son">
-                <img src="../images/sonOff.svg" alt="">
+                <img src="../images/sonOn.svg" alt="">
             </button>
         </div>
         <div class="grid-item">
