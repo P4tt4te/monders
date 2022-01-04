@@ -4,11 +4,16 @@ body {
 }
 
 .big {
-    font-size: 10rem;
+    font-size: 8rem;
     letter-spacing: 0.5rem;
     padding-top: 4vh;
     padding-right:40vw;
     opacity: 0.8;
+}
+
+.gros {
+    font-size: 8rem;
+    letter-spacing: 0.5rem;
 }
 
 .nuage {
@@ -50,4 +55,18 @@ body {
     width: 80%;
     position: absolute;
     right:0;
+}
+
+.txt {
+    font-weight: 500;
+}
+
+.bloc2 {
+    display: flex;
+    padding-right: 2vw;
+    padding-left: 2vw;
+}
+
+.bloc22 {
+    width: 30%;
 }

@@ -72,6 +72,15 @@ html {
 .red {
     color: var(--red);
 }
+.blue {
+    color: var(--blue);
+}
+.purple {
+    color: var(--purple);
+}
+.yellow {
+    color: var(--yellow);
+}
 
 .title {
     font-family: "Brown Sunflower", arial;
