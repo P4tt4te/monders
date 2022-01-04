@@ -1,30 +1,30 @@
 <header>
+
     <div class="logo">
-        <img src="" alt="">
+        <img src="../images/Logo.svg" alt="">
     </div>
 
     <div class="grid">
 
-        <div>
+        <div class="grid-item">
             <button class="son">
-                <img src="../images/son.png" alt="">
+                <img src="../images/son.svg" alt="">
             </button>
-
         </div>
 
-        <div>
+        <div class="grid-item">
             <button class="language">
-                <img src="" alt="">
+                <span>FR</span>
             </button>
 
         </div>
 
-        <div>
+        <div class="grid-item">
             <button class="burger">
-                <img src="" alt="">
+                <span></span>
+                <span></span>
             </button>
-
-
         </div>
     </div>
+
 </header>
