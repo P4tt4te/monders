@@ -11,7 +11,6 @@ function initialiser(e)
         var overlay = document.querySelector(".overlay");
         overlay.classList.add("disapear");
         console.log(overlay);
-
     }
 
 
