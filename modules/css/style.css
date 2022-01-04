@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(30, 30, 30);
+    height: 200vh;
+}
+
+/* TODO ______________________________________GENERAL______________________________________ */
+
+
+/* TODO _________HEADER_________ */
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    z-index: 3;
+}
+
+header .logo {
+    width: 40px;
+}
+
+header .grid {
+    display: flex;
+    gap: 30px;
+}
+
+header .grid .grid-item {
+    width: 40px;
+    height: 40px;
+}
+
+header .grid-item button {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    cursor: pointer;
+    box-shadow: none;
+    border: 0 none;
+    outline: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+header .grid-item button img {
+    width: 100%;
+    padding: 7px;
+}
+.language {
+    font-size: 20px;
+    color: white;
+}
+.burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.burger span {
+    width: 100%;
+    height: 2px;
+    background: white;
+    transition-duration: 0.5s;
+}
+
+.burger.close span:first-child {
+    transform: rotate(-45deg);
+    transform-origin: 29px 2px;
+  
+}
+.burger.close span:last-child {
+    transform: rotate(45deg);
+    transform-origin: 29px 2px;
+
+}
+
+
+
+/* TODO _________MENU BURGER NAVIGATION_________ */
+
+/*.nav-container {
+	visibility: hidden;
+}
+*/
+.nav-container {
+    position: fixed;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background: rgb(30, 30, 30);
+    z-index: 2;
+    font-family: 'Helvetica';
+    visibility: visible;
+    transition: all 1s ease-in-out;
+}
+
+.nav-container .grid {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-container .grid-item {
+    width: 100%;
+    border-right: 1px white solid;
+}
+
+.menu-item {
+    padding: 2.5vh 6vw;
+}
+
+.menu-item-link {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    transition: opacity 0.4s;
+    text-decoration: none;
+    color: white;
+}
+
+.menu-item-link:hover {
+    transition-duration: 0.1s;
+    color: grey;
+}
+
+.menu {
+    padding: 15vh 0 15vh;
+    font-size: 30px;
+}
+
+.nav-container .grid-item.three {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+
