@@ -38,8 +38,6 @@ h2 {
     "a b c"
     "d e f"
     ". g .";
-    /* grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr); */
     gap: 5vw;
     margin:1vw;
 }
@@ -61,7 +59,6 @@ h2 {
 
 .merveille{
     position:relative;
-    /* border: solid red 5px; */
 }
 .img-merveille{
     display: flex;
