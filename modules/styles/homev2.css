@@ -1,0 +1,77 @@
+html {
+    background-color: var(--background);
+    color: white;
+    /* overflow: hidden; */
+
+}
+
+.map {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+body {
+    margin: 0;
+
+}
+
+.texte {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+
+}
+
+.MerveilleSelectionnee {}
+
+/* MERVEILLES */
+
+.unlocked {
+    display: none;
+}
+
+.tajmahal {
+    position: absolute;
+    top: 48vh;
+    left: 68vw;
+}
+
+.petra {
+    position: absolute;
+    top: 48vh;
+    left: 55vw;
+}
+
+.colisee {
+    position: absolute;
+    top: 35vh;
+    left: 46vw;
+}
+
+.chichenitza{
+    position: absolute;
+    top: 47%;
+    left: 12%;
+}
+
+.christredempteur{
+    position: absolute;
+    top: 70%;
+    left: 30%;
+}
+
+.macchupichu{
+    position: absolute;
+    top: 67%;
+    left: 17%;
+}
+.murailledechine{
+    position: absolute;
+    top: 38%;
+    left: 78%;
+}
