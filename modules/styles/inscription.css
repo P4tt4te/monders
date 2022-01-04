@@ -8,21 +8,42 @@ img{
     overflow: hidden;
 }
 
-.choix {
-    display: flex;
-}
 
 .choix a{
     margin: 2vw;
 }
 
+
 .choix .boutonchoixinsc{
     color: var(--yellow);
-    text-decoration-color:var(--yellow);
+    text-decoration:none;
+    
 }
 
 .choix .boutonchoixconn{
-    text-decoration-color:var(--blue);
+    text-decoration-color:var(--blue); 
+    text-decoration:none;
+}
+.texte {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.lesbarres{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.barreorange{
+    height: 0.2vh;
+    width: 15vw;
+    background-color: #F4AC76;
+}
+.barrebleue{
+    height: 0.2vh;
+    width: 15vw;
+    background-color: var(--blue);
 }
 
 .container{
