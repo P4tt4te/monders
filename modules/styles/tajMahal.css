@@ -60,7 +60,7 @@ body {
     right:0;
 }
 
-.txt {
+p {
     font-weight: 500;
 }
 
@@ -108,5 +108,13 @@ body {
 
 .bloc7 {
     background-color: #F48E6B;
+}
+
+.bloc8 {
+    background-color: #F48E6B;
+}
+
+.bloc81 {
+    display: flex;
 }
 
