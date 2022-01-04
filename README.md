@@ -1,2 +1,2 @@
 # monders
-Interactive website for present the new 7 wonders of the world. (school project)
+Interactive website to introduce the new 7 wonders of the world. (school project)
