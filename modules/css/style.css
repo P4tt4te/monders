@@ -19,6 +19,8 @@ header {
     justify-content: space-between;
     width: 100%;
     padding: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
 }
 
 header .logo {
@@ -27,7 +29,7 @@ header .logo {
 
 header .grid {
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 
 .grid .grid-item {
@@ -39,7 +41,7 @@ header .grid {
     width: 100%;
     height: 100%;
     background: transparent;
-
+    cursor: pointer;
     box-shadow: none;
     border: 0 none;
     outline: 0;
@@ -50,10 +52,10 @@ header .grid {
 
 .grid-item button img {
     width: 100%;
-    padding: 2px;
+    padding: 7px;
 }
 .language {
-    font-size: 17px;
+    font-size: 20px;
     color: white;
 }
 .burger {
@@ -66,5 +68,72 @@ header .grid {
 .burger span {
     width: 100%;
     height: 2px;
-    background: white;
+    background: grey;
+}
+
+/* TODO _________MENU BURGER NAVIGATION_________ */
+
+
+/*.nav-container {
+	visibility: hidden;
+}
+*/
+.nav-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: wheat;
+    z-index: 50;
+    font-family: 'Helvetica';
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.menu-item {
+    position: relative;
+    padding: 1vh 6vw;
+}
+
+.menu-item-link {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    transition: opacity 0.4s;
+}
+
+.menu-item-link:hover {
+    transition-duration: 0.1s;
+    color: white;
+}
+
+.menu {
+    padding: 25vh 0 25vh;
+    --offset: 20vw;
+    --move-initial: calc(-25% + var(--offset));
+    --move-final: calc(-50% + var(--offset));
+    font-size: 8vw;
+}
+
+.bar-menu {
+    position: relative;
+    height: 2px;
+    background: black;
+    margin:  6vw;
+}
+
+
+.menu-name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 40px;
+    padding-left: 15px; 
+    font-family: 'GrandSlang'; 
+    font-size: 5vw;
+    font-weight: 100;
+}
+.menu-name li:first-child {
+    margin-left: -0.2vw;
 }
