@@ -1,0 +1,81 @@
+html{
+    background-color: var(--background);
+    color: white;
+}
+
+img{
+    max-height: 15vh; 
+    overflow: hidden;
+}
+
+.choix {
+    display: flex;
+}
+
+.choix a{
+    margin: 2vw;
+}
+
+.choix .boutonchoixinsc{
+    color: var(--yellow);
+    text-decoration-color:var(--yellow);
+}
+
+.choix .boutonchoixconn{
+    text-decoration-color:var(--blue);
+}
+
+.container{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.descriptif{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.descriptif p{
+    margin: 0;
+    width: 60%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+
+label{
+    margin-top: 3vh;
+}
+
+.boutonsubmit{
+    margin-top: 5vh;
+    background: linear-gradient(90deg, rgba(58,73,247,1) 0%, rgba(166,74,151,1) 39%, rgba(233,86,94,1) 70%, rgba(244,173,119,1) 100%);
+    border: none;
+    padding: 0 ;
+}
+
+label{
+    margin-bottom: 1vh;
+}
+
+input{
+    padding: 2vh;
+    border: 2px solid #F4AC76;
+    border-radius: 18px;
+    background: none;
+    color: white;
+    height: 6vh;
+}
+
+
+
+a{
+    color: white;
+}
+
