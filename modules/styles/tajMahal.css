@@ -184,6 +184,16 @@ p {
     background-color: #F48E6B;
 }
 
+.bloc5name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bloc5name>h2 {
+    margin:0;
+}
+
 .bloc6 {
     background-color: #451D73;
 }
