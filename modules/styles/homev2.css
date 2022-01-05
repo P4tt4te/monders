@@ -37,12 +37,14 @@ a{
     cursor: pointer;
 }
 
-img{
+.vignettes img{
+    opacity: 0.5;
     transition: all 0.7s ease;
 }
 
-img:hover{
-    box-shadow: 10px 5px 15px black;
+.vignettes img:hover{
+    opacity: 1;
+    box-shadow: 0px 5px 15px black;
     transform: scale(1.5);
 }
 
@@ -58,6 +60,11 @@ img:hover{
     background-color: aliceblue;
     width: 30%;
     border-radius: 5px;
+}
+
+.pied h1{
+    font-size: 3rem;
+    text-align: center;
 }
 
 
@@ -109,6 +116,8 @@ img:hover{
     left: 78%;
 }
 
+
+
 /* OVERLAY */
 
 .overlay{
@@ -126,6 +135,10 @@ img:hover{
     overflow: hidden;
 }
 
+.overlay img{
+    max-height: 10vh;
+}
+
 .overlay p{
     width: 40%;
     text-align: justify;
@@ -137,7 +150,8 @@ img:hover{
     background: linear-gradient(90deg, rgba(58,73,247,1) 0%, rgba(166,74,151,1) 39%, rgba(233,86,94,1) 70%, rgba(244,173,119,1) 100%);
     color: white;
     height: 4vh;
-    width: 8vw;
+    width: 10vw;
+    min-width: 8vw;
 }
 .disapear{
     /* display:none; */
