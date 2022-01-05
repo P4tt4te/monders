@@ -182,16 +182,54 @@ p {
 
 .bloc5 {
     background-color: #F48E6B;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.bloc5img {
+    position: absolute;
+    width:20%;
+    margin-left: 34%;
+    margin-top: -40px;
+    transform: rotate(10deg);
+}
+
+.bloc5line::before {
+    position: absolute;
+    transform: translateY(-900px);
+    content: url('/public/tajMahal/brush4.png');
+    z-index: -1;
 }
 
 .bloc5name {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    font-size: 9rem;
+    letter-spacing: 0.5rem;
+}
+
+.bloc5name1 {
+    align-self: start;
+}
+.bloc5name2 {
+    align-self: end;
 }
 
 .bloc5name>h2 {
     margin:0;
+}
+
+.bloc5line {
+    display:flex;
+    justify-content: center;
+}
+
+.bloc5line>span {
+    font-size: 2rem;
+    margin-left: 3vw;
+    margin-right: 3vw;
 }
 
 .bloc6 {
