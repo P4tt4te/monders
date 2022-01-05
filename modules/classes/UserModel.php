@@ -12,6 +12,7 @@ class UserModel
 	protected $motdepasse;		public function getMotDePasse() { return $this->motdepasse;}
 
 
+
 	// constructeur classique
 	public function __construct($id, $pseudo, $mail, $motdepasse)
 	{
@@ -30,11 +31,11 @@ class UserModel
 	{
 		$cnx = new Base();
 		try {
-			$lignes = $cnx->query("select * from utilisateurs where mail=? and motdepasse=?", 
+			$lignes = $cnx->query("select * from Utilisateurs where mail=? and motdepasse=?", 
 				array($mail, sha1($motdepasse)));
 			if (count($lignes)==1) 
 			{
-				$user = new UserViewer($lignes[0]['id'], $lignes[0]['pseudo'], $lignes[0]['mail'], $lignes[0]['motdepasse']);
+				$user = new UserViewer($lignes[0]['idUtilisateur'], $lignes[0]['pseudo'], $lignes[0]['mail'], $lignes[0]['motdepasse']);
 				return $user;
 			}
 			else return null;
@@ -53,7 +54,7 @@ class UserModel
 	{
 		$cnx = new Base();
 		try {
-			$lignes = $cnx->query("select * from utilisateurs where id=? and motdepasse=?", 
+			$lignes = $cnx->query("select * from Utilisateurs where id=? and motdepasse=?", 
 				array($id, sha1($motdepasse)));
 			if (count($lignes)==1)
 			{
@@ -73,7 +74,7 @@ class UserModel
 	{
 		$cnx = new Base();
 		try {
-			$cnx->update("update utilisateurs set pseudo=?,".
+			$cnx->update("update Utilisateurs set pseudo=?,".
 				" mail=?, motdepasse=? where id=?", 
 				array($pseudo, $mail, $motdepasse, $id));
 			return true;
@@ -84,63 +85,7 @@ class UserModel
 		}
 	}
 	
-	// cette méthode statique met à jour le mot de passe d'un utilisateur
-	// elle renvoiie true si tout s'est bien passé, false sinon
-	public static function changeMdp($id, $newMdp)
-	{
-		$cnx = new Base();
-		try {
-			$cnx->update("update utilisateurs set motdepasse=? where id=?", 
-				array(sha1($newMdp), $id));
-			return true;
-		}
-		catch (PDOException $e)
-		{
-			return false;
-		}
-	}
 
-	// cette méthode statique supprime un utilisateur de la base de données
-	// ainsi que toutes ses photos (base de données ET fichiers)
-	// elle renvoiie true si tout s'est bien passé, false sinon
-	public static function delete($id)
-	{
-		if ($id==1) return false;
-		$cnx = new Base();
-		try {
-			$cnx->delete("delete from utilisateurs where id=?", array($id));
-			
-			return true;
-		}
-		catch (PDOException $e)
-		{
-			return false;
-		}
-	}
-	
-	// cette méthode statique renvoie l'utilisateur de la table concours_photos.users
-	// qui corresponde à l'id passé en paramètre.
-	// elle renvoie un objet de type UserViewer si tout s'est bien passé, ou null sinon
-	public static function loadFromId($id)
-	{
-		$cnx = new Base();
-		try {
-			$lignes = $cnx->query("select * from utilisateurs where id=?", 
-				array($id));
-			if (count($lignes)==1) 
-			{
-				$user = new UserViewer($lignes[0]['id'], $lignes[0]['pseudo'], $lignes[0]['mail'], 
-					$lignes[0]['motdepasse']);
-				return $user;
-			}
-			else return null;
-		}
-		catch (PDOException $e)
-		{
-			return null;
-		}
-		
-	}
 	
 }
 

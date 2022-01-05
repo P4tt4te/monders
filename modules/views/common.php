@@ -1,7 +1,7 @@
 <?php
 
 spl_autoload_register(function ($class) {
-    include 'classes/' . $class . '.php';
+    include '../classes/' . $class . '.php';
 });
 
 session_start();
@@ -11,9 +11,9 @@ else
 	$user=null;
 
 
-define ('BASE', 'monders');
-define ('USERNAME', 'iut');
-define ('PASSWORD', 'iut');
+define ('BASE', 'mmi2pj_05');
+define ('USERNAME', 'mmi2pj05');
+define ('PASSWORD', 'chohy7aeng');
 
 
 
@@ -46,6 +46,7 @@ function success ($message, $destination)
 	header("Location:".$destination);
 	exit();
 }
+
 
 
 
