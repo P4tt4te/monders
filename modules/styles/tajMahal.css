@@ -105,7 +105,8 @@ p {
 }
 
 .h3 {
-    font-size: 1.75rem;
+    font-size: 2.4rem;
+    font-weight: 500;
 }
 
 .bloc3 {
@@ -114,6 +115,33 @@ p {
 
 .bloc31 {
     display: flex;
+}
+
+.bloc31::before {
+    position: absolute;
+    transform: translateX(60%) translateY(-450px);
+    content: url('/public/tajMahal/brush2.png');
+}
+
+.bloc311 {
+    width: 50%;
+}
+
+.txt311,.trait {
+    margin-left: 30%;
+}
+
+.txt3 {
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 5%;
+}
+
+
+.amour1 {
+    width: 40%;
+    margin-left: 5%;
+    transform: rotate(5deg);
 }
 
 .bloc41 {
