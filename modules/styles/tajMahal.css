@@ -279,9 +279,28 @@ p {
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: #F48E6B;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    align-items:center; 
+}
+
+.bloc9>button {
+    width: 10%;
+    margin-top: 10px;
+    font-size: 1.25rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #F48E6B;
+    border: 1px solid #451D73;
+    border-radius: 5px; 
 }
 
 footer {
     background-color: #F48E6B;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    padding-bottom: 100px;
 }
 
