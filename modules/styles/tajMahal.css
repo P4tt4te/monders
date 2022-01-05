@@ -144,18 +144,36 @@ p {
     transform: rotate(5deg);
 }
 
+.bloc4 {
+    margin-bottom: 200px;
+}
+
 .bloc41 {
     display: flex;
-    margin-left: 7vw;
+    justify-content: center;
+    margin-left: 5vw;
 }
 
 .bloc411 {
+    width:30%;
+    margin-right:5%;
+}
+
+.bloc412 {
+    width:50%;
+    object-fit: contain;
+}
+
+
+.img412 {
+    position: absolute;
+    transform: translateX(-80%) translateY(-110px);
+}
+
+.img4121 {
     width:100%;
 }
 
-.bloc411>img {
-    width:100%;
-}
 
 .bloc5 {
     background-color: #F48E6B;
