@@ -1,0 +1,149 @@
+html{
+    background-color: var(--background);
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intitule{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8vh;
+}
+
+.descriptif{
+    position: absolute;
+    bottom: 5vh;
+    left: 5vw;
+    z-index: -1;
+}
+
+.question{
+    font-size: 40px;
+    margin-top: 0;
+    text-align: center;
+}
+
+span{
+    color:var(--red);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+h1{
+    letter-spacing: 8px;
+    font-size: 4rem;
+    margin: 0;
+}
+
+h2{
+    margin: 0;
+}
+
+.choix{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 20px 40px;
+}
+
+.boutonreponse{
+    min-width: 20vw;
+    height: 7vh;
+    border: none;
+    background-color: var(--yellow);
+    color: white;
+    position: relative;
+    background-image: url(/modules/public/assets/images/Whangaehu.png);
+    background-position: top;
+    cursor: pointer;
+    
+}
+
+.aucoin{
+position: absolute;
+margin-right: 2vw;
+top: -10px;
+color: var(--purple);
+}
+
+.text-focus-in {
+	animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+ @keyframes text-focus-in {
+    0% {
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+  .vibrate-2 {
+	animation: vibrate-2 4s ease-in-out infinite both;
+}
+
+
+ @keyframes vibrate-2 {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(2px, -2px);
+    }
+    40% {
+      transform: translate(2px, 2px);
+    }
+    60% {
+      transform: translate(-2px, 2px);
+    }
+    80% {
+      transform: translate(-2px, -2px);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
+
+  .jello-horizontal {
+	animation: jello-horizontal 0.9s both;
+}
+
+/* button:hover{
+    animation: jello-horizontal 0.9s both;
+} */
+  
+
+ @keyframes jello-horizontal {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  
+  
