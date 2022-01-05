@@ -164,10 +164,15 @@ p {
     object-fit: contain;
 }
 
+.bloc4122::before {
+    position: absolute;
+    transform: translateX(40%) translateY(-800px);
+    content: url('/public/tajMahal/brush5.png');
+}
 
 .img412 {
     position: absolute;
-    transform: translateX(-80%) translateY(-110px);
+    transform: translateX(90%) translateY(-700px);
 }
 
 .img4121 {
