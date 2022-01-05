@@ -1,7 +1,6 @@
 html {
     background-color: var(--background);
     color: white;
-    overflow: hidden;
 }
 
 .container {
@@ -86,3 +85,26 @@ h1::after{
     margin-top: 30vh;
 
 }
+
+.divretour{
+    display: flex;
+    position: absolute;
+    bottom: 5vh;
+    left: 5vw;
+    cursor: pointer;
+}
+
+.divretour button{
+    border: none;
+    background: none;
+}
+
+.retour::after{
+    content: ' \276E';
+    position: absolute;
+    color: white;
+    cursor: pointer;
+    transform: scale(2);
+}
+
+/* \276E */
