@@ -62,28 +62,46 @@ body {
 
 p {
     font-weight: 500;
+    font-size: 1.1rem;
 }
 
 .bloc2 {
     display: flex;
-    
+    height: 1200px;
 }
 
-.bloc2 h2 {
+
+
+.h2bloc2 {
+    position: relative;
     z-index: 5;
 }
 
 .bloc22 {
     width: 30%;
-    padding-top: 50vh;
+    padding-top: 300px;
+}
+
+.imgbloc2 {
+    position: relative;
+    z-index: 1;
 }
 
 .img211 {
-    
+    transform: translateY(-300px);
+    z-index: 1;
 }
 
 .img212 {
-    
+    z-index:1;
+    transform: translateY(-1000px) translateX(35vw);
+}
+
+.img212bloc::before {
+    position: absolute;
+    left: 30vw;
+    transform: translateY(-1000px);
+    content: url('/public/tajMahal/brush6.png');
 }
 
 .h3 {
