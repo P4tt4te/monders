@@ -234,17 +234,54 @@ p {
 
 .bloc6 {
     background-color: #451D73;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.titlebloc6 {
+    margin:0;
 }
 
 .bloc7 {
+    padding-bottom: 200px;
     background-color: #F48E6B;
+    display:flex;
+    
 }
 
 .bloc8 {
     background-color: #F48E6B;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.bloc8>h2 {
+    font-size: 11rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10%;
 }
 
 .bloc81 {
     display: flex;
+    margin-left: -2vw;
+}
+
+.bloc811 {
+    margin-left: 10%;
+}
+
+.bloc811>p {
+    font-size: 1.5rem;
+}
+
+.bloc9 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #F48E6B;
+}
+
+footer {
+    background-color: #F48E6B;
 }
 
