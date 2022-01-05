@@ -63,6 +63,7 @@ h2{
     background-image: url(/modules/public/assets/images/Whangaehu.png);
     background-position: top;
     cursor: pointer;
+    transition: all 0.5s;
     
 }
 
@@ -75,7 +76,7 @@ color: var(--purple);
 
 .barTimer{
     position: absolute;
-    width: 80vw;
+    width: 80%;
     height: 1vh;
     background: linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(230,68,86,1) 15%);
     bottom: 0;
@@ -129,11 +130,15 @@ color: var(--purple);
   .jello-horizontal {
 	animation: jello-horizontal 0.9s both;
 }
-
-/* button:hover{
+/* 
+ button:hover{
     animation: jello-horizontal 0.9s both;
-} */
-  
+} 
+   */
+
+   button:hover{
+       transform: scale(1.1);
+   }
 
  @keyframes jello-horizontal {
     0% {
