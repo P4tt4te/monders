@@ -31,20 +31,23 @@ function creerquiz(tab) {
     quiz = new Quiz(tab);
     var fin = false;
     quiz.monterquestion(quiz.getnum());
-    var next = setInterval(prochaine, 201);
 
-    function prochaine() {
-        console.log(quiz.getfinq());
-        if (quiz.getfinq() == true) {
-            clearInterval(next);
-            if (quiz.getnum() == 10) {
-                fin = true;
-                console.log('finquiz');
-            } else {
-                console.log('prochaine q');
-                quiz.monterquestion(this.numero);
-                next = setInterval(t, 200);
-            }
+    
+}
+
+function updatescore(nbr) {
+    quiz.setscore(nbr);
+}
+
+function prochaine(val) {
+    console.log('prochaine');
+    if (val == true) {
+        if (quiz.getnum() == 9) {
+            console.log('finquiz score final : '+quiz.getscore());
+        } else {
+            console.log('prochaine q');
+            quiz.setnum(1);
+            quiz.monterquestion(quiz.getnum());
         }
     }
 }
@@ -65,6 +68,19 @@ class Quiz {
     getnum() {
         return this.numero;
     }
+
+    setnum(nbr) {
+        this.numero = this.numero + nbr;
+    }
+
+    getscore() {
+        return this.score;
+    }
+
+    setscore(nbr) {
+        this.score = this.score + nbr;
+    }
+    
 
     monterquestion(num) {
         // monter la question
@@ -98,13 +114,9 @@ class Quiz {
             console.log(this.dataset.lettre);
             if (this.dataset.lettre == reponse) {
                 console.log('oui');
-                this.score++;
-                this.numero++;
-
-            } else {
-                console.log('non');
-                this.numero++;
+                updatescore(1);
             }
+            
             for (let i = 0; i < bouton.length; i++) {
                 bouton[i].removeEventListener('click', test);
             }
@@ -130,11 +142,10 @@ class Quiz {
 
         //tester si la question est fini temps ou bouton
 
-        var fini = setInterval(finito, 200,this.finquestion);
+        var fini = setInterval(finito, 200);
 
-        function finito(stp) {
-            console.log('finito');
-            console.log(stp);
+        function finito() {
+            var stp = false;
             if (fintime == true) {
                 for (let i = 0; i < bouton.length; i++) {
                     bouton[i].removeEventListener('click', test);
@@ -149,7 +160,7 @@ class Quiz {
                 console.log('fini');
                 clearInterval(fini);
                 stp = true;
-                console.log(stp);
+                prochaine(stp);
             }
         }
     }
