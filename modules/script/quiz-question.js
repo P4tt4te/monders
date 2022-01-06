@@ -14,7 +14,22 @@ function recupjson() {
         cache: 'default'
     };
 
-    fetch('../../public/quiz/tajMahal.json', config)
+    var dataquiz = document.querySelector('.container').dataset.quiz;
+    var fichier;
+
+    switch (dataquiz) {
+        case 1:
+            fichier = "tajMahal";
+            break;
+        case 2:
+            fichier = "";
+            break;
+        default:
+            fichier = "tajMahal";
+            break; 
+    }
+
+    fetch('../../public/quiz/'+fichier+'.json', config)
         .then(function (response) {
             return response.json();
         })
@@ -57,8 +72,12 @@ function prochaine() {
 //recharge les animations css du quiz
 function reloadanimation() {
     var barre = document.querySelector('.barTimer');
+    var container = document.querySelector('.container');
+    container.classList.remove('text-focus-in');
     barre.classList.remove('barani');
     barre.offsetWidth;
+    container.offsetWidth;
+    container.classList.add('text-focus-in');
     barre.classList.add('barani');
     
 }
