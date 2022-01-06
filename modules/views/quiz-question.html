@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,52 +9,53 @@
     <link rel="stylesheet" href="/modules/styles/quiz-question.css">
     <title>Document</title>
 </head>
+
 <body>
-    
-<main>
-    <div class="container text-focus-in">
-    
-    <div class="intitule">
-        <p class="numeroquestion">Question <span>1</span> sur 10 </p>
-        <p class="question">Comment s'appelle l'architecte du Taj-Mahal ?</p>
-        <img class="imagequestion vibrate-2" src="/modules/public/assets/images/Ualimagedd.jpg" alt="">
-    </div>
-    <div class="timer">
-        <p>Temps restant <span>8</span></p>
-    </div>
-    <div class="choix">
-        <a href="phpmoment">
-        <button class="boutonreponse" type="button">
-            <p class="aucoin">A</p>
-            <p>Réponse 1</p>
-        </button>
-    </a>
-    <a href="phpmoment">
-        <button class="boutonreponse" type="button">
-            <p class="aucoin">B</p>
-            <p>Réponse 2</p>
-        </button>
-    </a>
-    <a href="phpmoment">
-        <button class="boutonreponse" type="button">
-            <p class="aucoin">C</p>
-            <p>Réponse 3</p>
-        </button>
-    </a>
-    <a href="phpmoment">
-        <button class="boutonreponse" type="button">
-            <p class="aucoin">D</p>
-            <p>Réponse 4</p>
-        </button>
-    </a>
-    </div>
-    <div class="descriptif">
-        <h1 class="title">QUIZ</h1>
-        <h2 class="light">Taj-Mahal</h2>
-    </div>
-</div>
-    <div class="barTimer"></div>
-    <script src="../script/quiz-question.js"></script>
-</main>
+
+    <main>
+        <div class="container text-focus-in">
+
+            <div class="intitule">
+                <p class="numeroquestion">Question <span class="num">1</span> sur 10 </p>
+                <p class="question">Comment s'appelle l'architecte du Taj-Mahal ?</p>
+                <img class="imagequestion vibrate-2" src="/modules/public/assets/images/Ualimagedd.jpg" alt="">
+            </div>
+            <div class="timer">
+                <p>Temps restant <span class="ntime">8</span></p>
+            </div>
+            <div class="choix">
+                <button class="boutonreponse" type="button" data-lettre="A">
+                    <p class="aucoin">A</p>
+                    <p class="reponse1">Réponse 1</p>
+                </button>
+
+
+                <button class="boutonreponse" type="button" data-lettre="B">
+                    <p class="aucoin">B</p>
+                    <p class="reponse2">Réponse 2</p>
+                </button>
+
+
+                <button class="boutonreponse" type="button" data-lettre="C">
+                    <p class="aucoin">C</p>
+                    <p class="reponse3">Réponse 3</p>
+                </button>
+
+
+                <button class="boutonreponse" type="button" data-lettre="D">
+                    <p class="aucoin">D</p>
+                    <p class="reponse4">Réponse 4</p>
+                </button>
+
+            </div>
+            <div class="descriptif">
+                <h1 class="title">QUIZ</h1>
+                <h2 class="light">Taj-Mahal</h2>
+            </div>
+        </div>
+        <div class="barTimer"></div>
+        <script src="../script/quiz-question.js"></script>
+    </main>
 </body>
+
 </html>
