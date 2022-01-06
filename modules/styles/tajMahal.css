@@ -285,15 +285,19 @@ p {
     align-items:center; 
 }
 
-.bloc9>button {
-    width: 10%;
+.bloc9 button {
+    padding: 10px;
     margin-top: 10px;
     font-size: 1.25rem;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    
     background-color: #F48E6B;
     border: 1px solid #451D73;
     border-radius: 5px; 
+}
+
+.bloc9 button:hover {
+    background-color: #451D73;
+    color: white;
 }
 
 footer {

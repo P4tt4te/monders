@@ -3,9 +3,6 @@ $(function () {
   $(".draggable").draggable({
     snap: ".droppable",
     snapMode: "inner",
-    stop: function() {
-      console.log('stopp');
-    },
     start: function() {
       console.log($(this).attr('data-name'));
       data = $(this).attr('data-name');
@@ -20,14 +17,15 @@ $(function () {
       if (data == "1") {
         $(this)
           .html("Dropped!");
+          console.log("bonne réponse, bloquage du module drag and drop")
         $(".droppable").droppable("disable");
         $(".draggable").draggable("disable");
       }else{
         $(this)
         .html("not Dropped!");
+        console.log("ville pas bonne");
       }
 
-      console.log("drop");
       $(this).attr("data-drop", "yes");
     },
     out: function (event, ui) {
