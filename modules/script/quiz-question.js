@@ -1,5 +1,5 @@
 'use strict';
-window.addEventListener("load",init);
+window.addEventListener("load", init);
 var quiz;
 
 function init() {
@@ -8,27 +8,45 @@ function init() {
 }
 
 function recupjson() {
-    var config = { method: 'GET',
-               mode: 'cors',
-               cache: 'default' };
+    var config = {
+        method: 'GET',
+        mode: 'cors',
+        cache: 'default'
+    };
 
     fetch('../../public/quiz/tajMahal.json', config)
-    .then(function(response) {
-        return response.json();
-    })
-    .then(function(tab) {
-        creerquiz(tab.question);
-        
-    })
-    .catch(function(error) {
-        console.log('Il y a eu un problème avec l\'opération fetch: ' + error.message);
-      })
-    ;
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (tab) {
+            creerquiz(tab.question);
+
+        })
+        .catch(function (error) {
+            console.log('Il y a eu un problème avec l\'opération fetch: ' + error.message);
+        });
 }
 
 function creerquiz(tab) {
     quiz = new Quiz(tab);
-    quiz.monterquestion(0);
+    var fin = false;
+    quiz.monterquestion(quiz.getnum());
+    var next = setInterval(prochaine, 201);
+
+    function prochaine() {
+        console.log(quiz.getfinq());
+        if (quiz.getfinq() == true) {
+            clearInterval(next);
+            if (quiz.getnum() == 10) {
+                fin = true;
+                console.log('finquiz');
+            } else {
+                console.log('prochaine q');
+                quiz.monterquestion(this.numero);
+                next = setInterval(t, 200);
+            }
+        }
+    }
 }
 
 class Quiz {
@@ -37,21 +55,20 @@ class Quiz {
         this.tab = tab;
         this.score = 0;
         this.numero = 0;
+        this.finquestion;
     }
 
     question(num) {
         return this.tab[num];
     }
 
-    game() {
-        var fin = false;
-        do {
-            this.monterquestion(this.numero);
-        } while (fin == false);
+    getnum() {
+        return this.numero;
     }
 
     monterquestion(num) {
         // monter la question
+        console.log('monter question');
         var blocq = document.querySelector('.question');
         var numero = document.querySelector('.num');
         var q1 = document.querySelector('.reponse1');
@@ -60,34 +77,36 @@ class Quiz {
         var q4 = document.querySelector('.reponse4');
         var finbouton = false;
         var fintime = false;
+        this.finquestion = false;
+    
 
         blocq.textContent = this.tab[num].nom;
-        numero.textContent = num+1;
-        q1.textContent = this.tab[num].A; 
-        q2.textContent = this.tab[num].B; 
-        q3.textContent = this.tab[num].C; 
+        numero.textContent = num + 1;
+        q1.textContent = this.tab[num].A;
+        q2.textContent = this.tab[num].B;
+        q3.textContent = this.tab[num].C;
         q4.textContent = this.tab[num].D;
-        
+
         //tester la réponse
         var bouton = document.querySelectorAll('.boutonreponse');
         var reponse = this.tab[num].reponse;
         for (let i = 0; i < bouton.length; i++) {
-            bouton[i].addEventListener('click',test);
+            bouton[i].addEventListener('click', test);
         }
-        
+
         function test(e) {
             console.log(this.dataset.lettre);
             if (this.dataset.lettre == reponse) {
                 console.log('oui');
                 this.score++;
                 this.numero++;
-                
+
             } else {
                 console.log('non');
                 this.numero++;
             }
             for (let i = 0; i < bouton.length; i++) {
-                bouton[i].removeEventListener('click',test);
+                bouton[i].removeEventListener('click', test);
             }
             finbouton = true;
         }
@@ -111,26 +130,32 @@ class Quiz {
 
         //tester si la question est fini temps ou bouton
 
-        var fini = setInterval(finito, 200);
+        var fini = setInterval(finito, 200,this.finquestion);
 
-        function finito() {
+        function finito(stp) {
             console.log('finito');
-            if(fintime == true) {
+            console.log(stp);
+            if (fintime == true) {
                 for (let i = 0; i < bouton.length; i++) {
-                    bouton[i].removeEventListener('click',test);
+                    bouton[i].removeEventListener('click', test);
                 }
                 finbouton = true;
-            }else if(finbouton == true) {
+            } else if (finbouton == true) {
                 clearInterval(x);
                 fintime = true;
             }
-            
-            if(fintime == true && finbouton == true) {
+
+            if (fintime == true && finbouton == true) {
                 console.log('fini');
                 clearInterval(fini);
-                
+                stp = true;
+                console.log(stp);
             }
         }
+    }
+
+    getfinq() {
+        return this.finquestion;
     }
 
     questionsuivante() {
@@ -141,28 +166,28 @@ class Quiz {
         var bouton = document.querySelectorAll('.boutonreponse');
         var reponse = this.tab[num].reponse;
         for (let i = 0; i < bouton.length; i++) {
-            bouton[i].addEventListener('click',test);
+            bouton[i].addEventListener('click', test);
         }
-        
+
         function test(e) {
             console.log(this.dataset.lettre);
             if (this.dataset.lettre == reponse) {
                 console.log('oui');
                 this.score++;
                 this.numero++;
-                
+
             } else {
                 console.log('non');
                 this.numero++;
             }
             for (let i = 0; i < bouton.length; i++) {
-                bouton[i].removeEventListener('click',test);
+                bouton[i].removeEventListener('click', test);
             }
 
         }
     }
 
-    
+
 
 
     timer() {
