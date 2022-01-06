@@ -26,10 +26,10 @@ function recupjson() {
             break;
         default:
             fichier = "tajMahal";
-            break; 
+            break;
     }
 
-    fetch('../../public/quiz/'+fichier+'.json', config)
+    fetch('../../public/quiz/' + fichier + '.json', config)
         .then(function (response) {
             return response.json();
         })
@@ -60,13 +60,24 @@ function prochaine() {
 
     if (quiz.getnum() == 9) {
         console.log('finquiz score final : ' + quiz.getscore());
+        openmodal(quiz.getscore());
     } else {
         console.log('prochaine q');
         quiz.setnum(1);
         quiz.monterquestion(quiz.getnum());
         reloadanimation();
-    }
 
+    }
+}
+
+function openmodal(score) {
+    var vraiscore = score * 10 + '%';
+    document.querySelector('.affichagescore').textContent = vraiscore;
+    var modal = document.getElementById("myModal");
+   
+
+    modal.style.display = "block";
+    
 }
 
 //recharge les animations css du quiz
@@ -79,7 +90,7 @@ function reloadanimation() {
     container.offsetWidth;
     container.classList.add('text-focus-in');
     barre.classList.add('barani');
-    
+
 }
 
 class Quiz {
