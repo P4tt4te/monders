@@ -32,24 +32,35 @@ function creerquiz(tab) {
     var fin = false;
     quiz.monterquestion(quiz.getnum());
 
-    
+
 }
 
 function updatescore(nbr) {
     quiz.setscore(nbr);
 }
 
-function prochaine(val) {
+//permet de passer à la prochaine question
+function prochaine() {
     console.log('prochaine');
-    if (val == true) {
-        if (quiz.getnum() == 9) {
-            console.log('finquiz score final : '+quiz.getscore());
-        } else {
-            console.log('prochaine q');
-            quiz.setnum(1);
-            quiz.monterquestion(quiz.getnum());
-        }
+
+    if (quiz.getnum() == 9) {
+        console.log('finquiz score final : ' + quiz.getscore());
+    } else {
+        console.log('prochaine q');
+        quiz.setnum(1);
+        quiz.monterquestion(quiz.getnum());
+        reloadanimation();
     }
+
+}
+
+//recharge les animations css du quiz
+function reloadanimation() {
+    var barre = document.querySelector('.barTimer');
+    barre.classList.remove('barani');
+    barre.offsetWidth;
+    barre.classList.add('barani');
+    
 }
 
 class Quiz {
@@ -80,7 +91,7 @@ class Quiz {
     setscore(nbr) {
         this.score = this.score + nbr;
     }
-    
+
 
     monterquestion(num) {
         // monter la question
@@ -94,7 +105,7 @@ class Quiz {
         var finbouton = false;
         var fintime = false;
         this.finquestion = false;
-    
+
 
         blocq.textContent = this.tab[num].nom;
         numero.textContent = num + 1;
@@ -116,7 +127,7 @@ class Quiz {
                 console.log('oui');
                 updatescore(1);
             }
-            
+
             for (let i = 0; i < bouton.length; i++) {
                 bouton[i].removeEventListener('click', test);
             }
@@ -126,8 +137,8 @@ class Quiz {
         //gerer le timer 
 
         var time = document.querySelector('.ntime');
-        time.textContent = 10;
-        var t = 10;
+        time.textContent = 20;
+        var t = 20;
         var x = setInterval(bip, 1000);
 
         function bip() {
@@ -145,7 +156,6 @@ class Quiz {
         var fini = setInterval(finito, 200);
 
         function finito() {
-            var stp = false;
             if (fintime == true) {
                 for (let i = 0; i < bouton.length; i++) {
                     bouton[i].removeEventListener('click', test);
@@ -159,8 +169,7 @@ class Quiz {
             if (fintime == true && finbouton == true) {
                 console.log('fini');
                 clearInterval(fini);
-                stp = true;
-                prochaine(stp);
+                prochaine();
             }
         }
     }
