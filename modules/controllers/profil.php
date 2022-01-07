@@ -26,7 +26,7 @@ echo $nbDebloque[0]['MAX(idMerveille)'];
 
 
 
-<img style="width: 200px; height: 150px;" src="../../public/assets/image/chichen.png" alt="">
+<img style="width: 200px; height: 150px;" src="../..../public/assets/images/assets/image/chichen.png" alt="">
 <img style="width: 200px; height: 150px;" src="../images/2.jpg" alt="">
 
 <?php 

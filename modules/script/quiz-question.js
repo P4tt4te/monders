@@ -29,7 +29,7 @@ function recupjson() {
             break;
     }
 
-    fetch('../../public/quiz/' + fichier + '.json', config)
+    fetch('../public/assets/images/quiz/' + fichier + '.json', config)
         .then(function (response) {
             return response.json();
         })

@@ -152,6 +152,7 @@ a{
     height: 4vh;
     width: 10vw;
     min-width: 8vw;
+    cursor: pointer;
 }
 .disapear{
     /* display:none; */

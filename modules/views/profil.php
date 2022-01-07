@@ -50,12 +50,12 @@ echo $nbDebloque[0]['MAX(idMerveille)'];
                 <div class="merveille">
                     <div class="img-merveille">
                         <?php if ($nbDebloque >= $i) { ?>
-                            <img src="../../public/assets/image/<?php echo $i; ?>.png" alt="">
+                            <img src="../..../public/assets/images/assets/image/<?php echo $i; ?>.png" alt="">
 
                         <?php
                         } else {
                         ?>
-                            <img src="../../public/assets/image/MerveillesLocked/<?php echo $i; ?>.png" alt="">
+                            <img src="../..../public/assets/images/assets/image/MerveillesLocked/<?php echo $i; ?>.png" alt="">
                         <?php } ?>
                     </div>
                     <div class="info-merveille">

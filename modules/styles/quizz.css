@@ -66,7 +66,7 @@ h1 {
 }
 
 h1::after{
-    content: url(/modules/public/assets/images/tag.png);
+    content: url(/modules../public/assets/images/assets/images/tag.png);
     position: absolute;
     left: 25vw;
     top: 10vh;

@@ -60,7 +60,7 @@ h2{
     background-color: var(--yellow);
     color: white;
     position: relative;
-    background-image: url(/modules/public/assets/images/Whangaehu.png);
+    background-image: url(../public/assets/images/Whangaehu.png);
     background-position: top;
     cursor: pointer;
     transition: all 0.5s;
