@@ -20,7 +20,7 @@
             "nom" : "Pour quelle raison a été bâti cet édifice ?",
             "A" : "Créer un lieu de culte",
             "B" : "Affirmer la puissance de l’empire mongole",
-            "C" : "Accueillir les sans-abris (Victor Colin)",
+            "C" : "Accueillir les sans-abris",
             "D" : "Rendre hommage à une épouse défunte",
             "reponse" : "D"
         },
@@ -29,7 +29,7 @@
             "A" : "Morte de la peste",
             "B" : "Noyée lors d’une baignade",
             "C" : "Morte en couche lors de l'accouchement de leur 14e enfant",
-            "D" : "Tuée par le petit robot de Alain (par Victor Colin)",
+            "D" : "Assassinée par l'empreur autrichien Leopold X",
             "reponse" : "C"
         },
         {

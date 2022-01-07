@@ -304,3 +304,7 @@ footer {
     padding-bottom: 100px;
 }
 
+.quiz{
+    cursor: pointer;
+}
+
