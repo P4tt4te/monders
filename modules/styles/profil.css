@@ -29,21 +29,18 @@ h2 {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: 30%;
+    
 
 }
 .all-merveilles{
     display: grid;
-    grid-template-areas: 
-    "a b c"
-    "d e f"
-    ". g .";
+    grid-template-columns: auto auto auto;
     gap: 5vw;
     margin:1vw;
 }
 .profil:before {
     content: "";
-    background: url(/public/assets/image/brush3.png);
+    background: url(../..//public/assets/image/brush3.png);
     background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
@@ -59,6 +56,8 @@ h2 {
 
 .merveille{
     position:relative;
+    overflow: hidden;
+
 }
 .img-merveille{
     display: flex;
@@ -75,7 +74,7 @@ h2 {
 .img-merveille:after{
     content:"";
     background-color: red;
-    opacity: 30%;
+    opacity: 20%;
     background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
@@ -85,33 +84,46 @@ h2 {
 }
 
 
+
 .info-merveille{
     position:absolute;
-    bottom:0;
-    left:35%;
+    display: flex;
+    flex-direction:row ;
+    bottom: -200px;
+    left:25%;
+    transition: cubic-bezier(.68,-0.55,.27,1.55)  1s;
+    
 }
 
-
-
-.taj-mahal{
-    grid-area:a;
-}
-.petra{
-    grid-area:b;
-}
-.chichen{
-    grid-area:c;
-}
-.christ{
-    grid-area:d;
-}
-.colisee{
-    grid-area:e;
-}
-.muraille{
-    grid-area:f;
-}
-.pichu{
-    grid-area:g;
+.merveille:hover .info-merveille{
+    bottom: 25%;
+    transition: ease 1s;
 }
 
+.pourcentage{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.quiz{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+.quiz>div span:nth-of-type(1){
+    position:absolute;
+    bottom: 50%;
+    left: 38%;
+
+}
+
+.pourcentage>div span:nth-of-type(1){
+    position:absolute;
+    bottom: 50%;
+    left: 38%;
+
+}
