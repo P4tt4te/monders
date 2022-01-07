@@ -1,17 +1,27 @@
 $(function () {
+  var data;
   $(".draggable").draggable({
     snap: ".droppable",
     snapMode: "inner",
+    stop: function() {
+      console.log('stopp');
+    },
+    start: function() {
+      console.log($(this).attr('data-name'));
+      data = $(this).attr('data-name');
+    }
   });
 
 
   $(".droppable").droppable({
     drop: function (event, ui) {
-      console.log($(".draggable").draggable("instance"));
+      console.log($(event.target).children());
       // console.log($(".draggable").attr("data-name"));
-      if ($(event.target).attr("data-name") == "1") {
+      if (data == "1") {
         $(this)
           .html("Dropped!");
+        $(".droppable").droppable("disable");
+        $(".draggable").draggable("disable");
       }else{
         $(this)
         .html("not Dropped!");

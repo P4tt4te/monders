@@ -3,19 +3,97 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 80vh;
+}
+
+body {
+    margin: 0;
 }
 
 .desc {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 1.2rem;
+    height: 20vh;
+}
+
+.title {
+    font-size: 1.5rem;
+}
+
+.titles {
+    margin-top: -1rem;
+}
+
+.shadow {
+    text-shadow: 3px 3px #E6445640;
+}
+
+.bouton {
+    text-decoration : none;
+    letter-spacing: 0.07rem;
+    margin-left: 185px;
+    margin-top: 40px;
+}
+
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit;
+    font-size: 1.5rem;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 185px;
+
+}
+
+.desc>p {
+    text-align: center;
+    font-size: 0.75rem;
+    letter-spacing: 0.07rem;
+    color: #FFFFFF80;
 }
 
 .earthdiv {
     display: flex;
     justify-content: center;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
 }
 
+
 .circlelines {
-    width: 80%;
+    width: 90%;
+    
 }
+
+
+@media (min-width: 576px) {  }
+
+
+@media (min-width: 768px) { 
+    .desc>p {
+        font-size: 1rem;
+    }
+ }
+
+
+@media (min-width: 993px) {  }
+
+
+@media (min-width: 1200px) { 
+    
+    .earthdiv {
+        position: initial;
+        z-index: 5;
+        opacity: 1;
+        
+    }
+
+ }
+

@@ -1,0 +1,306 @@
+body {
+    margin: 0;
+    max-width: 100vw;
+}
+
+.big {
+    font-size: 8rem;
+    letter-spacing: 0.5rem;
+    padding-top: 4vh;
+    padding-right:40vw;
+    opacity: 0.8;
+}
+
+.gros {
+    font-size: 8rem;
+    letter-spacing: 0.5rem;
+}
+
+.nuage {
+    position: absolute;
+}
+
+.bloc {
+    padding-right: 2vw;
+    padding-left: 2vw;
+}
+
+.bloc1 {
+    display: flex;
+    width: calc(100% - 4vw);
+    height: 120vh;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom, transparent, transparent 75%, #202124 100%),url('/public/tajMahal/tajMahal3.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.more {
+    padding-top: 80vh;
+}
+
+.progress {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25vh;
+}
+
+.progress>img {
+    height: 300px;
+}
+
+.progress>span {
+    margin-top: 1vh;
+}
+
+.batiment {
+    width: 80%;
+    position: absolute;
+    right:0;
+}
+
+p {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.bloc2 {
+    display: flex;
+    height: 1200px;
+}
+
+
+
+.h2bloc2 {
+    position: relative;
+    z-index: 5;
+}
+
+.bloc22 {
+    width: 30%;
+    padding-top: 300px;
+}
+
+.imgbloc2 {
+    position: relative;
+    z-index: 1;
+}
+
+.img211 {
+    transform: translateY(-300px);
+    z-index: 1;
+}
+
+.img212 {
+    z-index:1;
+    transform: translateY(-1000px) translateX(35vw);
+}
+
+.img212bloc::before {
+    position: absolute;
+    left: 30vw;
+    transform: translateY(-1000px);
+    content: url('/public/tajMahal/brush6.png');
+}
+
+.h3 {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.bloc3 {
+    
+}
+
+.bloc31 {
+    display: flex;
+}
+
+.bloc31::before {
+    position: absolute;
+    transform: translateX(60%) translateY(-450px);
+    content: url('/public/tajMahal/brush2.png');
+}
+
+.bloc311 {
+    width: 50%;
+}
+
+.txt311,.trait {
+    margin-left: 30%;
+}
+
+.txt3 {
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 5%;
+}
+
+
+.amour1 {
+    width: 40%;
+    margin-left: 5%;
+    transform: rotate(5deg);
+}
+
+.bloc4 {
+    margin-bottom: 200px;
+}
+
+.bloc41 {
+    display: flex;
+    justify-content: center;
+    margin-left: 5vw;
+}
+
+.bloc411 {
+    width:30%;
+    margin-right:5%;
+}
+
+.bloc412 {
+    width:50%;
+    object-fit: contain;
+}
+
+.bloc4122::before {
+    position: absolute;
+    transform: translateX(40%) translateY(-800px);
+    content: url('/public/tajMahal/brush5.png');
+}
+
+.img412 {
+    position: absolute;
+    transform: translateX(90%) translateY(-700px);
+}
+
+.img4121 {
+    width:100%;
+}
+
+
+.bloc5 {
+    background-color: #F48E6B;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.bloc5img {
+    position: absolute;
+    width:20%;
+    margin-left: 34%;
+    margin-top: -40px;
+    transform: rotate(10deg);
+}
+
+.bloc5line::before {
+    position: absolute;
+    transform: translateY(-900px);
+    content: url('/public/tajMahal/brush4.png');
+    z-index: -1;
+}
+
+.bloc5name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 9rem;
+    letter-spacing: 0.5rem;
+}
+
+.bloc5name1 {
+    align-self: start;
+}
+.bloc5name2 {
+    align-self: end;
+}
+
+.bloc5name>h2 {
+    margin:0;
+}
+
+.bloc5line {
+    display:flex;
+    justify-content: center;
+}
+
+.bloc5line>span {
+    font-size: 2rem;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.bloc6 {
+    background-color: #451D73;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.titlebloc6 {
+    margin:0;
+}
+
+.bloc7 {
+    padding-bottom: 200px;
+    background-color: #F48E6B;
+    display:flex;
+    
+}
+
+.bloc8 {
+    background-color: #F48E6B;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.bloc8>h2 {
+    font-size: 11rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10%;
+}
+
+.bloc81 {
+    display: flex;
+    margin-left: -2vw;
+}
+
+.bloc811 {
+    margin-left: 10%;
+}
+
+.bloc811>p {
+    font-size: 1.5rem;
+}
+
+.bloc9 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #F48E6B;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    align-items:center; 
+}
+
+.bloc9>button {
+    width: 10%;
+    margin-top: 10px;
+    font-size: 1.25rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #F48E6B;
+    border: 1px solid #451D73;
+    border-radius: 5px; 
+}
+
+footer {
+    background-color: #F48E6B;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    padding-bottom: 100px;
+}
+
