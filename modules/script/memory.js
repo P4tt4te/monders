@@ -1,5 +1,6 @@
 window.addEventListener('load',init);
 var compare = null;
+var win = 0;
 
 function init() {
     alea();
@@ -8,7 +9,7 @@ function init() {
 function alea() {
     var titres = document.querySelectorAll('.flip-card .title');
     var cartes = document.querySelectorAll('.flip-card');
-    var tab = [1,2,3,4,5,6];
+    var tab = [1,1,2,2,3,3];
     var newtab = tabrandom(tab);
     for (i in titres) {
         console.log(titres[i]);
@@ -18,6 +19,7 @@ function alea() {
     for (i in cartes) {
         console.log(cartes[i]);
         cartes[i].addEventListener('click',anim);
+        cartes[i].dataset.nbr = tab[i];
     }
 }
 
@@ -27,11 +29,25 @@ function anim(e) {
     this.classList.add('select');
     if (compare == null) {
         compare = this;
-        //mettre timing fin
-    } else {
-        this.classList.remove('select');
-        compare.classList.remove('select');
+    } else if (this.dataset.nbr == compare.dataset.nbr) {
+        console.log('c la win');
+        win++;
+        this.removeEventListener('click',anim);
+        compare.removeEventListener('click',anim);
         compare = null;
+        if (win > 2) {
+            findujeu();
+        }
+    } else {
+        let timer = window.setTimeout(fin, 1000, this, compare);
+        compare = null;
+    }
+
+    function fin(a,b) {
+        console.log('fin');
+        a.classList.remove('select');
+        b.classList.remove('select');
+        this.clearInterval();
     }
 
 }
@@ -49,4 +65,8 @@ function tabrandom(tab) {
         console.log(tab);
     }
     return tab;
+}
+
+function findujeu() {
+    console.log('FIN DU JEU');
 }
