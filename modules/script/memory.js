@@ -7,20 +7,57 @@ function init() {
 }
 
 function alea() {
-    var titres = document.querySelectorAll('.flip-card .title');
     var cartes = document.querySelectorAll('.flip-card');
-    var tab = [1,1,2,2,3,3];
-    var newtab = tabrandom(tab);
-    for (i in titres) {
-        console.log(titres[i]);
-        titres[i].textContent = tab[i];
-    }
+    var tab = [1,11,2,22,3,33];
+    tab = tabrandom(tab);
+    tab = graphic(tab);
+    
 
     for (i in cartes) {
         console.log(cartes[i]);
         cartes[i].addEventListener('click',anim);
         cartes[i].dataset.nbr = tab[i];
+        
     }
+}
+
+function graphic(tab) {
+    var zones = document.querySelectorAll('.flip-card-back>img');
+
+    for(i in zones) {
+        switch (tab[i]) {
+            case 1:
+                zones[i].src = '/public/memory/cleb.svg';
+                zones[i].classList.add('cle');
+                break;
+            case 2:
+                zones[i].src = '/public/memory/cler.svg';
+                zones[i].classList.add('cle');
+                break;
+            case 3:
+                zones[i].src = '/public/memory/clej.svg';
+                zones[i].classList.add('cle');
+                break;
+            case 11:
+                zones[i].src = '/public/memory/serb.svg';
+                zones[i].classList.add('serrure');
+                tab[i] = 1;
+                break;
+            case 22:
+                zones[i].src = '/public/memory/serr.svg';
+                zones[i].classList.add('serrure');
+                tab[i] = 2;
+                break;
+            case 33:
+                zones[i].src = '/public/memory/serj.svg';
+                zones[i].classList.add('serrure');
+                tab[i] = 3;
+                break;
+            default:
+                break;
+        }
+    }
+    return tab;
 }
 
 function anim(e) {

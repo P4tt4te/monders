@@ -44,7 +44,15 @@
   
   /* Style the back side */
   .flip-card-back {
-    background-color: dodgerblue;
+    box-sizing: border-box;
+    background-color: #451D73;
     color: white;
     transform: rotateY(180deg);
+  }
+
+  .flip-card-back>img.cle {
+    margin-top: 20%;
+  }
+  .flip-card-back>img.serrure {
+    margin-top: 30%;
   }
