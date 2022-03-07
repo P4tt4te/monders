@@ -1,22 +1,39 @@
 window.addEventListener('load',init);
+var compare = null;
 
 function init() {
     alea();
 }
 
 function alea() {
-    var cartes = document.querySelectorAll('.flip-card .title');
+    var titres = document.querySelectorAll('.flip-card .title');
+    var cartes = document.querySelectorAll('.flip-card');
     var tab = [1,2,3,4,5,6];
     var newtab = tabrandom(tab);
+    for (i in titres) {
+        console.log(titres[i]);
+        titres[i].textContent = tab[i];
+    }
+
     for (i in cartes) {
         console.log(cartes[i]);
-        cartes[i].textContent = tab[i];
-        cartes[i].addEventListener('click' , anim);
+        cartes[i].addEventListener('click',anim);
     }
 }
 
 function anim(e) {
-    console.log(e.target);
+    console.log(this);
+    console.log(compare);
+    this.classList.add('select');
+    if (compare == null) {
+        compare = this;
+        //mettre timing fin
+    } else {
+        this.classList.remove('select');
+        compare.classList.remove('select');
+        compare = null;
+    }
+
 }
 
 function tabrandom(tab) {
