@@ -1,11 +1,9 @@
 <?php 
 /****************************************************
-Cette classe représente un user tel que lu dans la
-table concours_photos.users
+Cette classe représente un user
 /****************************************************/
 class UserModel
 {
-	// les données membres représentent les colonnes de la table concours_photos.users
 	protected $id;		public function getId() { return $this->id;}
 	protected $pseudo;		public function getPseudo() { return $this->pseudo;}
 	protected $mail;	public function getMail() { return $this->mail;}
@@ -22,7 +20,7 @@ class UserModel
 		$this->motdepasse = $motdepasse;
 	}
 
-	// cette méthode statique (appel par PhotoViewe::auth ou PhotoMosel::auth)
+	// cette méthode statique (appel par UserViewer::auth ou UserModel::auth)
 	// prend en paramètres un couple email/mot de passe et vérifie si ce couple existe en
 	// base de données.
 	// si oui : l'objet de type UserViewer est renvoyé en valeur de retout
@@ -46,7 +44,7 @@ class UserModel
 		}
 	}
 	
-	// Cette fonction statique (appel par PhotoViewe::checkPwd ou PhotoMosel::checkPwd)
+	// Cette fonction statique (appel par UserViewer::checkPwd ou UserModel::checkPwd)
 	// attend en paramètres l'id d'un utilisateur et son supposé mot de passe.
 	// la méthode renvoie 1 si le mot de passe est correct, 0 sinon, ou -1 si une
 	// erreur SQL s'est produite
@@ -69,7 +67,7 @@ class UserModel
 	}
 	
 	// cette méthode statique met à jour les données personnelles d'un utilisateur
-	// elle renvoiie true si tout s'est bien passé, false sinon
+	// elle renvoie true si tout s'est bien passé, false sinon
 	public static function update($id, $pseudo, $mail, $motdepasse)
 	{
 		$cnx = new Base();

@@ -1,31 +1,44 @@
 <?php
-require_once('common.php');
 
-if (isset($_SESSION['user']) )
-    header("Location: ../views/home.php");
-    
-require_once('pageBegin.php');
-require_once('header.php');
-
+require_once('../controllers/connexionCode.php');
+require_once('../views/pageBegin.php');
+require_once('../views/header.php');
 
 ?>
-<!-- A SUPPRIMER --><br><br><br><br><br><br><br><br><br><!-- A SUPPRIMER -->
 
-<!-- div contenant le formulaire de connexion
-     Cette div est cachée par défaut, mais apparaît quand on clique sur le bouton "Connexion" -->
-     <div id='connexion'>
-<div id='titre'>Connexion</div>
-<form action="../controllers/connexionCode.php" method="POST">
-<table>
-<tr><td>e-mail</td><td><input name='mail' type='text' size='50'></td></tr>	
-<tr><td>mot de passe</td><td><input name='motdepasse' type='password' size='20'></td></tr>	
-</table>
-<input type="submit" name="connexion">
-</form>
-</div>
+<link rel="stylesheet" href="../styles/inscription.css">
+<link rel="stylesheet" href="../styles/style.css">
+<main>
+
+  <div class="container">
+    <img src="/modules../public/assets/images/assets/images/logo monders 1.png" alt="">
+    <div class="choix">
+<div class="texte">
+      <h1><a class="boutonchoixinsc light" href="url">Inscription</a></h1>
+      <h1><a class="boutonchoixconn light" href="url">Connexion</a></h1>
+    </div>
+  
+      <div class="lesbarres">
+        <div class="barreorange"></div>
+        <div class="barrebleue"></div>
+      </div>
+
+    </div>
 
 
-<?php
-require_once('../controllers/erreurCode.php');
-require_once('pageEnd.php');
-?>
+    <div class="descriptif">
+      <h2 class="light">CONNEXION</h2>
+      <p>Connectez vous à votre compte pour accèder à votre progression</p>
+    </div>
+    <div class="formcont">
+      <form method="post" action="../controllers/connexionCode.php">
+        <label for="email">Adresse Mail</label>
+        <input type="email" id="email" name="mail">
+        <label for="lname">Mot De Passe</label>
+        <input type="password" id="password" name="motdepasse">
+        <input class="boutonsubmit" type="submit" value="Se connecter" name="formConnexion">
+      </form>
+    </div>
+    <p>Pas encore inscrit? Inscrivez-vous ici: <a href="https://www.w3schools.com/">S'inscrire</a></p>
+  </div>
+</main>

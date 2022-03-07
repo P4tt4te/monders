@@ -8,8 +8,8 @@
     <div class="grid">
         <div class="grid-item">
             <button class="son close">
-                <img src="../images/sonOff.svg" alt="">
-                <audio  src="../sons/home.mp3"  id="player" style="display:none;" autoplay="true" loop="true"></audio>
+            <img src="../public/assets/images/sonOff.svg" alt="">
+                <audio  src="../public/assets/sons/home.mp3"  id="player" style="display:none;" autoplay="true" loop="true"></audio>
             </button>
            
         </div>
@@ -36,7 +36,7 @@
         <div class="grid-item two">
             <nav class="menu">
                 <div class="menu-item">
-                    <a href="home.php" class="menu-item-link">HOME</a>
+                    <a href="../views/home.php" class="menu-item-link">HOME</a>
                 </div>
                 <div class="menu-item">
                     <a href="merveilles.php" class="menu-item-link">MERVEILLES</a>
@@ -71,10 +71,10 @@
                     } else {
                     ?>
                     <div class="menu-item">
-                       <a href="inscription.php" class="menu-item-link">S'INSCRIRE</a>   
+                       <a href="../views/inscription.php" class="menu-item-link">S'INSCRIRE</a>   
                     </div> 
                     <div class="menu-item">
-                       <a href="connexion.php" class="menu-item-link">SE CONNECTER</a>   
+                       <a href="../views/connexion.php" class="menu-item-link">SE CONNECTER</a>   
                     </div> 
                     <?php
                     }

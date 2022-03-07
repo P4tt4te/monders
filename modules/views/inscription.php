@@ -1,32 +1,54 @@
-<?php
-require_once('common.php');
+<?php 
 
-if (isset($_SESSION['user']) )
-    header("Location: ../views/home.php");
-
-require_once('pageBegin.php');
-require_once('header.php');
-
+require_once("../controllers/inscriptionCode.php");
+require_once('../views/pageBegin.php');
+require_once('../views/header.php');
 ?>
 
-<!-- A SUPPRIMER --><br><br><br><br><br><br><br><br><br><!-- A SUPPRIMER -->
 
 
-<div id='inscription'>
-<div id='titre'>Inscription</div>
-<form action="../controllers/inscriptionCode.php" method="POST">
-<table>
-<tr><td>Pseudo</td><td><input name='pseudo' type='text' size='50'></td></tr>	
-<tr><td>mail</td><td><input name='mail' type='text' size='50'></td></tr>	
-<tr><td>mot de passe</td><td><input name='motdepasse1' type='password' size='20'></td></tr>	
-<tr><td>retaper</td><td><input name='motdepasse2' type='password' size='20'></td></tr>	
-</table>
-<input type="submit" name="inscription">
-</form>
-</div>
 
+<link rel="stylesheet" href="../styles/inscription.css">
+<link rel="stylesheet" href="../styles/style.css">
+<main>
+
+  <div class="container">
+    <div class="choix">
+<div class="texte">
+      <h1><a class="boutonchoixinsc light" href="url">Inscription</a></h1>
+      <h1><a class="boutonchoixconn light" href="url">Connexion</a></h1>
+    </div>
+  
+      <div class="lesbarres">
+        <div class="barreorange"></div>
+        <div class="barrebleue"></div>
+      </div>
+
+    </div>
+
+
+    <div class="descriptif">
+      <h2 class="light">INSCRIPTION</h2>
+      <p>Vous pouvez vous inscrire afin de disposer de toutes les fonctionnalités du site</p>
+    </div>
+    <div class="formcont">
+      <form method="post" action="../controllers/inscriptionCode.php">
+        <label for="fname">Pseudonyme</label>
+        <input type="text" id="fname" name="pseudo">
+        <label for="email">Adresse Mail</label>
+        <input type="email" id="email" name="mail">
+        <label for="lname">Mot De Passe</label>
+        <input type="password" id="password" name="motdepasse1">
+        <label for="lname">Vérification Mot de passe</label>
+        <input type="password" id="password2" name="motdepasse2">
+        <input class="boutonsubmit" type="submit" value="S'inscrire" name="formInscription">
+      </form>
+    </div>
+    <p>Déja inscrit ? Connectez vous ici: <a href="https://www.w3schools.com/">Se connecter</a></p>
+  </div>
 
 <?php
-require_once('../controllers/erreurCode.php');
-require_once('pageEnd.php');
+  require_once('../controllers/erreurCode.php');
+  require_once('../views/pageEnd.php');
 ?>
+</main>
