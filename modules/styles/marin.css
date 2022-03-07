@@ -28,15 +28,12 @@ a {
     color: #fff;
 }
 
-
-
-
 .marin {
     width: 100%;
     height: 100%;
     display: flex;
     position: fixed;
-
+    user-select: none;
 }
 
 .perso {
@@ -80,14 +77,14 @@ a {
 
 .texte-parole {
     animation: txt 0.5s forwards 2.5s ease-in-out;
-    user-select: none;
     opacity: 0;
     padding: 1rem;
     font-size: 1.5rem;
 }
 
 .bulle-parole.end .texte-parole {
-    animation: txtr 0.5s forwards 2.5s ease-in-out;
+    animation: txtr 0.5s forwards both  ease-in-out;
+    
 }
 
 .bulle-parole.end {
@@ -132,7 +129,6 @@ a {
     bottom: 10%;
     margin-left: 45%;
     opacity: 0;
-    user-select: none;
     animation: suiteapp 2s linear 5s infinite;
 }
 
@@ -141,10 +137,6 @@ a {
     
 }
 
-@keyframes suiteun {
-    0% { opacity: 1; }
-    100% { opacity: 0; }
-}
 
 @keyframes suiteapp {
     0% { opacity:0.5; }
@@ -183,7 +175,8 @@ a {
 
 @keyframes appBullesTexter{ 
     0% { background: white; } 
-    100% { background: transparent;  }  
+    100% { background: transparent;
+            color: transparent;  }  
 }
 
 @keyframes scale{ 
