@@ -1,0 +1,136 @@
+/* TODO ______________________________________GENERAL______________________________________ */
+
+::-moz-selection {
+    background: wheat;
+    color: black;
+}
+
+::selection {
+    background: wheat;
+    color: black;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    /*box-sizing: border-box;*/
+}
+
+body {
+    overflow: hidden;
+    background: #000;
+}
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+.marin {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: fixed;
+
+}
+
+.perso {
+    width: 30%;
+    position: relative;
+}
+
+.perso img {
+    width: 120%;
+    /* max-width: 500px; */
+    position: absolute;
+    bottom:-100%;
+    animation:  1s appMarin  1s forwards ease-in-out , scale 10s linear infinite;
+ 
+}
+.bulles {
+    display: flex;
+    align-items: flex-end;
+}
+
+.bulle-parole {
+    position: relative;
+    background: transparent;
+    border-radius: 50%;
+    max-width: 600px;
+    min-height: 150px;
+    display:flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 25vw;
+    padding: 25px;
+    animation:  appBullesTexte  0.5s forwards ease-in-out , scale2 3s linear infinite;
+    animation-delay: 2.2s;
+
+}
+
+
+.bulle-parole::before {
+    content: '';
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    bottom: 0;
+    animation:  appBulles  0.5s forwards ease-in-out;
+    animation-delay: 2s;
+    transform: scale(0);
+    background: white;
+}
+.bulle-parole::after {
+    content: '';
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    bottom: -20px;
+    left: -20px;
+    animation:  appBulles  0.5s forwards ease-in-out;
+    animation-delay: 1.8s;
+    transform: scale(0);
+    background: white;
+}
+
+@keyframes appMarin{ 
+    0% { bottom:-100%; } 
+    90% { bottom:0; }  
+    100% { bottom:-2%;  }  
+}
+   
+@keyframes appBulles{ 
+    0% { transform: scale(0); } 
+    80% { transform: scale(1.2); }  
+    100% { transform: scale(1);  }  
+}
+  
+@keyframes appBullesTexte{ 
+    0% { background: transparent; } 
+    100% { background: white  }  
+}
+
+@keyframes scale{ 
+    0% { transform: rotate(0) translateX(0);  } 
+    20% { transform: rotate(2deg) translate(5px, -5px);  } 
+    40% { transform: rotate(-2deg) translate(-5px, -5px);  } 
+    60% { transform: rotate(4deg) translate(-5px, 5px);  } 
+    80% { transform: rotate(-2deg) translate(5px, -5px);  } 
+    100% { transform: rotate(0) translateX(0);  }
+}
+
+@keyframes scale2{ 
+    0% { transform: rotate(0) scale(1);  } 
+    33% { transform: rotate(0) scale(1.01);  } 
+    66% { transform: rotate(0) scale(0.99);  } 
+    100% { transform: rotate(0) scale(1);  }
+}
