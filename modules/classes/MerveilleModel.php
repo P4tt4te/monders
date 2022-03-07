@@ -6,6 +6,24 @@ Cette classe représente une merveille
 class MerveilleModel
 {
 
+	public static function progression($idUser, $idMerveille){
+
+		$cnx = new Base();
+		$progression = $cnx->query('SELECT progression p FROM debloque WHERE idUtilisateur = ? AND idMerveille = ?',
+		array($idUser,$idMerveille));
+		return $progression;
+		
+	}
+	
+	public static function progressionQuiz($idUser, $idQuiz){
+
+		$cnx = new Base();
+		$progression = $cnx->query('SELECT progression p FROM participe WHERE idUtilisateur = ? AND idQuiz = ?',
+		array($idUser,$idQuiz));
+		return $progression;
+		
+	}
+
 	//debloque la merveille d'identifiant ? à l'utilisateur ?
 	public static function debloque($idMerveille, $idUser)
 	{

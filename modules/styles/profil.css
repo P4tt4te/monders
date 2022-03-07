@@ -73,8 +73,8 @@ h2 {
 }
 .img-merveille:after{
     content:"";
-    background-color: red;
-    opacity: 20%;
+    background-color: grey;
+    opacity: 50%;
     background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
@@ -83,14 +83,18 @@ h2 {
     border-radius: 20px;
 }
 
-
+.unlocked:after{
+    background-color: transparent;
+}
 
 .info-merveille{
     position:absolute;
     display: flex;
     flex-direction:row ;
     bottom: -200px;
-    left:25%;
+    width: 100%;
+    height:50%;
+    justify-content: space-around;
     transition: cubic-bezier(.68,-0.55,.27,1.55)  1s;
     
 }
@@ -105,6 +109,8 @@ h2 {
     display: flex;
     flex-direction: column;
     text-align: center;
+    height: 100%;
+    justify-content: space-between;
 }
 
 .quiz{

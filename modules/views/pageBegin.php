@@ -8,6 +8,7 @@
     <meta name="description" content="Monders est une web experience qui a pour but de vous présentez les 7 merveilles du monde actuel.">
     <meta name="keywords" content="Monders Merveilles expérience">
     <title>Monders</title>
+    <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../css/style.css">
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>

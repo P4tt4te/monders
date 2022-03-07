@@ -1,45 +1,19 @@
 <?php
-require_once('common.php');
 
-if (!isset($user))
-    error("Vous devez être connecté pour accéder à  votre compte", "home.php");
-
-require_once('pageBegin.php');
-require_once('header.php');
-
-$cnx = new Base();
-
-$id = $user->getId();
-$nbDebloque = $cnx->query(
-    "SELECT MAX(idMerveille) FROM debloque WHERE idUtilisateur=?",
-    array($id)
-);
-
-echo $nbDebloque[0]['MAX(idMerveille)'];
-
-
-
-// $debloque = $cnx ->query('SELECT Merveilles.idMerveille,
-// CASE
-//     WHEN debloque.idMerveille IS NULL THEN "false"
-//     ELSE "true"
-// END AS debloque
-// FROM Merveilles
-// LEFT JOIN debloque ON Merveilles.idMerveille = debloque.idMerveille AND debloque.idUtilisateur = ?
-// HAVING debloque = "true"', 
-// array($id))
-
+require_once('../controllers/profil.php');
+require_once('../views/pageBegin.php');
+require_once('../views/header.php');
 ?>
 
 <link rel="stylesheet" href="../styles/profil.css">
-<link rel="stylesheet" href="../../style.css">
+<link rel="stylesheet" href="../style/style.css">
 <html class="background">
 
-<body>
+<main>
     <div class="profil">
         <div class="titre">
-            <h2 class="light">Salut <span class="title">utilisateur</span>, vous avez débloqué
-                x merveilles et fait x quiz</h2>
+            <h2 class="light">Salut <span class="title"><?php echo($user->getFullName()); ?></span>, vous avez débloqué
+                <?php echo($nbDebloque[0]["nbDebloque"]);  ?> merveilles et fait x quiz</h2>
         </div>
         <div class="all-merveilles">
             <?php
@@ -48,33 +22,50 @@ echo $nbDebloque[0]['MAX(idMerveille)'];
 
             ?>
                 <div class="merveille">
-                    <div class="img-merveille">
-                        <?php if ($nbDebloque >= $i) { ?>
-                            <img src="../..../public/assets/images/assets/image/<?php echo $i; ?>.png" alt="">
+                    <div class="img-merveille unlocked">
+                        <?php if ($nbDebloque[0]["nbDebloque"] >= $i) { ?>
+                            <img src="../public/assets/images/MerveillesUnlocked/<?php echo $i; ?>.png" alt="">
 
                         <?php
                         } else {
                         ?>
-                            <img src="../..../public/assets/images/assets/image/MerveillesLocked/<?php echo $i; ?>.png" alt="">
+                            <img src="../public/assets/images/MerveillesLocked/<?php echo $i; ?>.png" alt="">
                         <?php } ?>
                     </div>
                     <div class="info-merveille">
                         <div class="pourcentage">
-                            <div>
-                                <svg class="progress-ring" width="120" height="120">
-                                    <circle class="progress-ring__circle" stroke="white" stroke-width="4" fill="transparent" r="52" cx="60" cy="60" />
-                                </svg>
-                                <span>100%</span>
-                            </div>
-                            <span>PROGRESSION</span>
+                            
+                                <span>PROGRESSION</span>
+                                <span><?php $progression = MerveilleModel::progression($id, $i); if(isset($progression[0]['p']))
+                                {
+                                    if($progression[0]['p'] >= 0 && $progression[0]['p'] <= 99){
+                                        echo("En cours");
+                                    }elseif($progression[0]['p'] = 100){
+                                        echo("Fini");
+                                    }else{
+                                        echo("Pas commencé");
+                                    }
+                                } else{
+                                    echo("Pas commencé");
+                                }  ?></span>
+                            
+                            
 
                         </div>
                         <div class="quiz">
                             <div>
-                                <svg class="progress-ring" width="120" height="120">
-                                    <circle class="progress-ring__circle" stroke="white" stroke-width="4" fill="transparent" r="52" cx="60" cy="60" />
-                                </svg>
-                                <span>100%</span>
+                            <span><?php $progression = MerveilleModel::progression($id, $i); if(isset($progression[0]['p']))
+                                {
+                                    if($progression[0]['p'] >= 0 && $progression[0]['p'] <= 99){
+                                        echo("En cours");
+                                    }elseif($progression[0]['p'] = 100){
+                                        echo("Fini");
+                                    }else{
+                                        echo("Pas commencé");
+                                    }
+                                } else{
+                                    echo("Pas commencé");
+                                }  ?></span>
                             </div>
                             <span>QUIZ</span>
 
@@ -87,6 +78,9 @@ echo $nbDebloque[0]['MAX(idMerveille)'];
             ?>
         </div>
     </div>
+    <?php 
+require_once('pageEnd.php');
+?>
 </body>
-
+</main>
 </html>

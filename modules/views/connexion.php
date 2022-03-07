@@ -6,7 +6,7 @@ require_once('../views/header.php');
 
 ?>
 
-<link rel="stylesheet" href="../styles/inscription.css">
+<link rel="stylesheet" href="../styles/connexion.css">
 <link rel="stylesheet" href="../styles/style.css">
 <main>
 
@@ -14,13 +14,13 @@ require_once('../views/header.php');
     <img src="/modules../public/assets/images/assets/images/logo monders 1.png" alt="">
     <div class="choix">
 <div class="texte">
-      <h1><a class="boutonchoixinsc light" href="url">Inscription</a></h1>
-      <h1><a class="boutonchoixconn light" href="url">Connexion</a></h1>
+      <h1><a class="boutonchoixconn light" href="../views/inscription.php">Inscription</a></h1>
+      <h1><a class="boutonchoixinsc light" href="../views/connexion.php">Connexion</a></h1>
     </div>
   
       <div class="lesbarres">
-        <div class="barreorange"></div>
         <div class="barrebleue"></div>
+        <div class="barreorange"></div>
       </div>
 
     </div>
@@ -41,4 +41,8 @@ require_once('../views/header.php');
     </div>
     <p>Pas encore inscrit? Inscrivez-vous ici: <a href="https://www.w3schools.com/">S'inscrire</a></p>
   </div>
+  <?php
+  require_once('../controllers/erreurCode.php');
+  require_once('../views/pageEnd.php');
+?>
 </main>

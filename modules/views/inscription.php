@@ -15,8 +15,8 @@ require_once('../views/header.php');
   <div class="container">
     <div class="choix">
 <div class="texte">
-      <h1><a class="boutonchoixinsc light" href="url">Inscription</a></h1>
-      <h1><a class="boutonchoixconn light" href="url">Connexion</a></h1>
+      <h1><a class="boutonchoixinsc light" href="../views/inscription.php">Inscription</a></h1>
+      <h1><a class="boutonchoixconn light" href="../views/connexion.php">Connexion</a></h1>
     </div>
   
       <div class="lesbarres">
