@@ -48,6 +48,7 @@
     background-color: #451D73;
     color: white;
     transform: rotateY(180deg);
+    user-select: none;
   }
 
   .flip-card-back>img.cle {

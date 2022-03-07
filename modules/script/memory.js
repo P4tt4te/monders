@@ -1,4 +1,4 @@
-window.addEventListener('load',init);
+window.addEventListener('load', init);
 var compare = null;
 var win = 0;
 
@@ -8,23 +8,23 @@ function init() {
 
 function alea() {
     var cartes = document.querySelectorAll('.flip-card');
-    var tab = [1,11,2,22,3,33];
+    var tab = [1, 11, 2, 22, 3, 33];
     tab = tabrandom(tab);
     tab = graphic(tab);
-    
+
 
     for (i in cartes) {
-        console.log(cartes[i]);
-        cartes[i].addEventListener('click',anim);
+
+        cartes[i].addEventListener('click', anim);
         cartes[i].dataset.nbr = tab[i];
-        
+
     }
 }
 
 function graphic(tab) {
     var zones = document.querySelectorAll('.flip-card-back>img');
 
-    for(i in zones) {
+    for (i in zones) {
         switch (tab[i]) {
             case 1:
                 zones[i].src = '/public/memory/cleb.svg';
@@ -61,16 +61,15 @@ function graphic(tab) {
 }
 
 function anim(e) {
-    console.log(this);
-    console.log(compare);
+
     this.classList.add('select');
     if (compare == null) {
         compare = this;
     } else if (this.dataset.nbr == compare.dataset.nbr) {
         console.log('c la win');
         win++;
-        this.removeEventListener('click',anim);
-        compare.removeEventListener('click',anim);
+        this.removeEventListener('click', anim);
+        compare.removeEventListener('click', anim);
         compare = null;
         if (win > 2) {
             findujeu();
@@ -80,8 +79,8 @@ function anim(e) {
         compare = null;
     }
 
-    function fin(a,b) {
-        console.log('fin');
+    function fin(a, b) {
+
         a.classList.remove('select');
         b.classList.remove('select');
         this.clearInterval();
@@ -90,16 +89,16 @@ function anim(e) {
 }
 
 function tabrandom(tab) {
-    console.log(tab);
+
     let nbr = Math.floor(Math.random() * 5);
     let choix = tab[nbr];
     for (let i = 0; i < tab.length; i++) {
         nbr = Math.floor(Math.random() * 5);
         choix = tab[nbr];
-        tab.splice(nbr,1);
-        console.log(tab);
+        tab.splice(nbr, 1);
+
         tab.push(choix);
-        console.log(tab);
+
     }
     return tab;
 }
