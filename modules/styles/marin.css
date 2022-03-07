@@ -127,6 +127,31 @@ a {
     background: white;
 }
 
+.suite {
+    position: fixed;
+    bottom: 10%;
+    margin-left: 45%;
+    opacity: 0;
+    user-select: none;
+    animation: suiteapp 2s linear 5s infinite;
+}
+
+.suite.end {
+    display: none;
+    
+}
+
+@keyframes suiteun {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes suiteapp {
+    0% { opacity:0.5; }
+    50% { opacity:1; }
+    100% { opacity:0.5; }
+}
+
 @keyframes appMarin{ 
     0% { bottom:-100%; } 
     90% { bottom:0; }  

@@ -41,7 +41,10 @@ function parler(tab) {
 
 function phrase(dialogue) {
     let zone = document.querySelector('.texte-parole').textContent = dialogue;
+
+    
 }
+
 
 function finphrase() {
     index++;
@@ -54,6 +57,8 @@ function finphrase() {
         perso.classList.add('end');
         let bulle = document.querySelector('.bulle-parole');
         bulle.classList.add('end');
+        let suite = document.querySelector('.suite');
+        suite.classList.add('end');
         console.log('fin de phrase');
     }
 }
