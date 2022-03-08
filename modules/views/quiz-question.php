@@ -11,18 +11,30 @@
 </head>
 
 <body>
+<?php 
 
+
+require_once('../controllers/quiz.php');
+
+
+?>
     <main>
         <!-- The Modal -->
         <div id="myModal" class="modal">
 
             <!-- Modal content -->
             <div class="modal-content">
-                <p class="purple">Quiz terminé avec un score de 
-                    <span class="affichagescore">0%</span>
+                <p class="purple"><?php 
+                        if(isset($_POST['nomQuiz'])){
+                        echo($_POST['nomQuiz']);
+                    }else{
+                        var_dump($test);
+                        } ?>Quiz terminé avec un score de 
+                    <span class="affichagescore">0% 
+                        </span>
                 </p>
                 <!-- Mettre une balise a -->
-                <button class="start" onclick="document.location='homev2.html'">retourner au menu -></button>
+                <button class="start" onclick="document.location='../views/homev2.php'">retourner au menu -></button>
             </div>
 
         </div>

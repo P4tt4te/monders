@@ -8,7 +8,7 @@
 <body>
     
 </body>
-</html>
+
 
 <link rel="stylesheet" href="../styles/style.css">
 <link rel="stylesheet" href="../styles/homev2.css">
@@ -28,44 +28,44 @@
     <div class="vignettes">
         <div class="tajmahal">
             <a href="tajMahal.html">
-                <img src="../public/assets/images/MerveillesLocked/bande1.png" class="unlocked" alt="">
-                <img src="../public/assets/images/MerveillesUnlocked/bande14.png" class="locked" alt="">
+                <img src="../public/assets/images/MerveillesLocked/1.png" class="unlocked" alt="">
+                <img src="../public/assets/images/MerveillesUnlocked/14.png" class="locked" alt="">
             </a>
         </div>
         <div class="petra">
             <a href="">
-                <img src="../public/assets/images/MerveillesLocked/bande2.png" class="locked" alt="">
-                <img src="../public/assets/images/MerveillesUnlocked/bande13.png" class="unlocked" alt="">
+                <img src="../public/assets/images/MerveillesLocked/2.png" class="locked" alt="">
+                <img src="../public/assets/images/MerveillesUnlocked/13.png" class="unlocked" alt="">
             </a>
         </div>
         <div class="colisee">
             <a href="">
-                <img src="../public/assets/images/MerveillesLocked/bande3.png" class="locked" alt="">
-                <img src="../public/assets/images/MerveillesUnlocked/bande12.png" class="unlocked" alt="">
+                <img src="../public/assets/images/MerveillesLocked/3.png" class="locked" alt="">
+                <img src="../public/assets/images/MerveillesUnlocked/12.png" class="unlocked" alt="">
             </a>
         </div>
         <div class="chichenitza">
             <a href="">
-                <img src="../public/assets/images/MerveillesLocked/bande4.png" class="locked" alt="">
-                <img src="../public/assets/images/MerveillesUnlocked/bande11.png" class="unlocked" alt="">
+                <img src="../public/assets/images/MerveillesLocked/4.png" class="locked" alt="">
+                <img src="../public/assets/images/MerveillesUnlocked/11.png" class="unlocked" alt="">
             </a>
         </div>
         <div class="christredempteur">
             <a href="">
-                <img src="../public/assets/images/MerveillesLocked/bande5.png" class="locked" alt="">
-                <img src="../public/assets/images/MerveillesUnlocked/bande10.png" class="unlocked" alt="">
+                <img src="../public/assets/images/MerveillesLocked/5.png" class="locked" alt="">
+                <img src="../public/assets/images/MerveillesUnlocked/10.png" class="unlocked" alt="">
             </a>
         </div>
         <div class="macchupichu">
             <a href="">
-                <img src="../public/assets/images/MerveillesLocked/bande6.png" class="locked" alt="">
-                <img src="../public/assets/images/MerveillesUnlocked/bande9.png" class="unlocked" alt="">
+                <img src="../public/assets/images/MerveillesLocked/6.png" class="locked" alt="">
+                <img src="../public/assets/images/MerveillesUnlocked/9.png" class="unlocked" alt="">
             </a>
         </div>
         <div class="murailledechine">
             <a href="">
-                <img src="../public/assets/images/MerveillesLocked/bande7.png" class="locked" alt="">
-                <img src="../public/assets/images/MerveillesUnlocked/bande8.png" class="unlocked" alt="">
+                <img src="../public/assets/images/MerveillesLocked/7.png" class="locked" alt="">
+                <img src="../public/assets/images/MerveillesUnlocked/8.png" class="unlocked" alt="">
             </a>
         </div>
     </div>
@@ -77,3 +77,4 @@
         <div class="barredroite"></div>
     </div>
 </main>
+</html>
