@@ -1,0 +1,214 @@
+/* TODO ______________________________________GENERAL______________________________________ */
+
+::-moz-selection {
+    background: wheat;
+    color: black;
+}
+
+::selection {
+    background: wheat;
+    color: black;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    /*box-sizing: border-box;*/
+}
+
+body {
+    overflow: hidden;
+    background:orange;
+}
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.marin {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: fixed;
+    user-select: none;
+}
+
+.perso {
+    width: 30%;
+    position: relative;
+}
+
+.perso img {
+    width: 120%;
+    /* max-width: 500px; */
+    position: absolute;
+    bottom:-100%;
+    animation:  1s appMarin  1s forwards ease-in-out , scale 10s linear infinite;
+ 
+}
+
+.perso.end img {
+    animation:  1s appMarinr ease-in-out;
+}   
+
+.bulles {
+    display: flex;
+    align-items: flex-end;
+}
+
+.bulle-parole {
+    position: relative;
+    background: transparent;
+    border-radius: 50%;
+    max-width: 600px;
+    min-height: 150px;
+    display:flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 25vw;
+    padding: 25px;
+    animation:  appBullesTexte  0.5s forwards ease-in-out , scale2 3s linear infinite;
+    animation-delay: 2.2s;
+
+}
+
+.texte-parole {
+    animation: txt 0.5s forwards 2.5s ease-in-out;
+    opacity: 0;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.bulle-parole.end .texte-parole {
+    animation: txtr 0.5s forwards both  ease-in-out;
+    
+}
+
+.bulle-parole.end {
+    animation:  appBullesTexter  0.5s forwards ease-in-out;
+}
+
+.bulle-parole.end::before,.bulle-parole.end::after {
+    animation:  appBullesr  0.5s forwards ease-in-out;
+}
+
+
+.bulle-parole::before {
+    content: '';
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    bottom: 0;
+    animation:  appBulles  0.5s forwards ease-in-out;
+    animation-delay: 2s;
+    transform: scale(0);
+    background: white;
+}
+.bulle-parole::after {
+    content: '';
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    bottom: -20px;
+    left: -20px;
+    animation:  appBulles  0.5s forwards ease-in-out;
+    animation-delay: 1.8s;
+    transform: scale(0);
+    background: white;
+}
+
+.suite {
+    position: fixed;
+    bottom: 10%;
+    margin-left: 45%;
+    opacity: 0;
+    animation: suiteapp 2s linear 5s infinite;
+}
+
+.suite.end {
+    display: none;
+    
+}
+
+
+@keyframes suiteapp {
+    0% { opacity:0.5; }
+    50% { opacity:1; }
+    100% { opacity:0.5; }
+}
+
+@keyframes appMarin{ 
+    0% { bottom:-100%; } 
+    90% { bottom:0; }  
+    100% { bottom:-2%;  }  
+}
+
+@keyframes appMarinr{ 
+    0% { bottom:-2%; } 
+    10% { bottom:0; }  
+    100% { bottom:-100%;  }  
+}
+   
+@keyframes appBulles{ 
+    0% { transform: scale(0); } 
+    80% { transform: scale(1.2); }  
+    100% { transform: scale(1);  }  
+}
+
+@keyframes appBullesr{ 
+    0% { transform: scale(1); } 
+    20% { transform: scale(1.2); }  
+    100% { transform: scale(0);  }  
+}
+  
+@keyframes appBullesTexte{ 
+    0% { background: transparent; } 
+    100% { background: white;  }  
+}
+
+@keyframes appBullesTexter{ 
+    0% { background: white; } 
+    100% { background: transparent;
+            color: transparent;  }  
+}
+
+@keyframes scale{ 
+    0% { transform: rotate(0) translateX(0);  } 
+    20% { transform: rotate(2deg) translate(5px, -5px);  } 
+    40% { transform: rotate(-2deg) translate(-5px, -5px);  } 
+    60% { transform: rotate(4deg) translate(-5px, 5px);  } 
+    80% { transform: rotate(-2deg) translate(5px, -5px);  } 
+    100% { transform: rotate(0) translateX(0);  }
+}
+
+@keyframes scale2{ 
+    0% { transform: rotate(0) scale(1);  } 
+    33% { transform: rotate(0) scale(1.01);  } 
+    66% { transform: rotate(0) scale(0.99);  } 
+    100% { transform: rotate(0) scale(1);  }
+}
+
+@keyframes txt {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes txtr {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

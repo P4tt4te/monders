@@ -15,7 +15,7 @@ function charger() {
         cache: 'default'
     };
     console.log(fichier);
-    fetch('../../public/dialogue/' + fichier + '.json', config)
+    fetch('../json/' + fichier + '.json', config)
         .then(function (response) {
             return response.json();
         })
