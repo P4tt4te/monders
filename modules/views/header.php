@@ -2,14 +2,14 @@
 <header>
     <div class="logo">
         <a href="home.php">
-            <img src="../images/Logo.svg" alt="">
+            <img src="../images/header/images/Logo.svg" alt="">
         </a>
     </div>
     <div class="grid">
         <div class="grid-item">
             <button class="son close">
-            <img src="../public/assets/images/sonOff.svg" alt="">
-                <audio  src="../public/assets/sons/home.mp3"  id="player" style="display:none;" autoplay="true" loop="true"></audio>
+            <img src="../images/header/images/sonOff.svg" alt="">
+                <audio  src="../sons/home.mp3"  id="player" style="display:none;" autoplay="true" loop="true"></audio>
             </button>
            
         </div>

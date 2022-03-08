@@ -1,6 +1,13 @@
 
+<?php 
+require_once('../views/common.php');
+require_once('../views/pageBegin.php');
+require_once('../views/header.php');
+
+
+?>
+
 <link rel="stylesheet" href="../styles/quizz.css">
-<link rel="stylesheet" href="../styles/style.css">
 
 <main>
     <div class="container">
@@ -12,7 +19,7 @@
                 <p class="difficulte"> niveau difficile </p>
             </div>
         </div>
-        <img class="imagemerveille" src="../public/assets/images/taj-mahal-skr 2.png" alt="image de la merveille">
+        <img class="imagemerveille" src="../images/quiz/images/taj-mahal-skr 2.png" alt="image de la merveille">
         <form action="../views/quiz-question.php" id="form1">
             <button class="start" type="submit" form="form1" value="Submit"><span>Commencer</span></button>
         </form>

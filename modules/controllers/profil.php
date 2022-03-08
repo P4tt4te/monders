@@ -13,6 +13,11 @@ $id = $user->getId();
 
 $nbDebloque = $cnx->query("SELECT MAX(idMerveille) nbDebloque FROM debloque WHERE idUtilisateur=?", 
 array($id));
+$nbDebloqueQuiz = $cnx->query("SELECT MAX(idQuiz) nbDebloqueQuiz FROM participe WHERE idUtilisateur=?", 
+array($id));
+		
+
+
 
 // echo $nbDebloque[0]['MAX(idMerveille)'];
 

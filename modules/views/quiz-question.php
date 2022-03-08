@@ -14,7 +14,7 @@
 <?php 
 
 
-require_once('../controllers/quiz.php');
+require_once('../views/quiz.php');
 
 
 ?>

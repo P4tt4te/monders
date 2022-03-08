@@ -13,14 +13,16 @@ class MerveilleModel
 		array($idUser,$idMerveille));
 		return $progression;
 		
+	
 	}
+
 	
 	public static function progressionQuiz($idUser, $idQuiz){
 
 		$cnx = new Base();
-		$progression = $cnx->query('SELECT progression p FROM participe WHERE idUtilisateur = ? AND idQuiz = ?',
+		$progressionQuiz = $cnx->query('SELECT progression p FROM participe WHERE idUtilisateur = ? AND idQuiz = ?',
 		array($idUser,$idQuiz));
-		return $progression;
+		return $progressionQuiz;
 		
 	}
 

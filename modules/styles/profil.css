@@ -40,7 +40,7 @@ h2 {
 }
 .profil:before {
     content: "";
-    background: url(../../../public/assets/images/assets/image/brush3.png);
+    background: url(..\images\Merveilles\tajMahal\brush3.png);
     background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
@@ -57,6 +57,7 @@ h2 {
 .merveille{
     position:relative;
     overflow: hidden;
+    border-radius: 20px;
 
 }
 .img-merveille{
@@ -93,15 +94,22 @@ h2 {
     flex-direction:row ;
     bottom: -200px;
     width: 100%;
-    height:50%;
+    height:100%;
     justify-content: space-around;
     transition: cubic-bezier(.68,-0.55,.27,1.55)  1s;
     
 }
 
-.merveille:hover .info-merveille{
-    bottom: 25%;
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.unlocked:hover .info-merveille{
+    bottom: 1%;
     transition: ease 1s;
+
 }
 
 .pourcentage{
@@ -110,7 +118,7 @@ h2 {
     flex-direction: column;
     text-align: center;
     height: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .quiz{
@@ -118,6 +126,8 @@ h2 {
     display: flex;
     flex-direction: column;
     text-align: center;
+    height: 100%;
+    justify-content: space-around;
 
 }
 .quiz>div span:nth-of-type(1){

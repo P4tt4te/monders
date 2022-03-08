@@ -2,8 +2,11 @@ html {
     background-color: var(--background);
     color: white;
 }
-
+main{
+    
+}
 .container {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,7 +69,7 @@ h1 {
 }
 
 h1::after{
-    content: url(/modules../public/assets/images/assets/images/tag.png);
+    content: url(../images/Merveilles/tajMahal/brush3.png);
     position: absolute;
     left: 25vw;
     top: 10vh;

@@ -9,7 +9,7 @@
     <meta name="keywords" content="Monders Merveilles expérience">
     <title>Monders</title>
     <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../css/style.css">
+    
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>

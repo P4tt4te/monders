@@ -1,0 +1,135 @@
+/* TODO ______________________________________GENERAL______________________________________ */
+
+::-moz-selection {
+    background: wheat;
+    color: black;
+}
+
+::selection {
+    background: wheat;
+    color: black;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    /*box-sizing: border-box;*/
+}
+
+body {
+    overflow: hidden;
+    background: #000;
+}
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+/* TODO ______________________________________HOME______________________________________ */
+
+
+.landing-page {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.map {
+    width: 80%;
+    position: relative;
+}
+
+.landing-page .carte {
+    width: 100%;
+    object-fit: contain;
+    position: absolute;
+}
+.landing-page .carte-trait {
+    width: 100%;
+    object-fit: contain;
+    position: absolute;
+}
+.landing-page .merveille {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.map .pin {
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    z-index: 2;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.map .photo{
+    display: none;
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    object-fit: cover;
+    transform: translateY(-60px);
+}
+
+.map .merveille.disabled  .photo::before{
+    content: '';
+    background: url(../images/home/icons/lock.png);
+      background-size: auto;
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    background-size: cover;
+}
+
+.map .merveille.disabled  .merveille-photo{
+opacity: 0.6;
+}
+.photo img{
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.map .merveille.disabled .pin{
+    transform: scale(0.7) translateY(5px);
+    opacity: 0.6;
+}
+.map .pin:hover{
+    transform: scale(0.7) translateY(5px);
+    opacity: 0.6;
+}
+
+
+.merveille.tajMahal *{
+    top: 23vw;
+    right: 24.3vw;
+}
+.merveille.murailleChine *{
+    top: 21vw;
+    right: 16vw;
+}
+.merveille.petra *{
+    top: 19.3vw;
+    right: 33.6vw;
+}
+.merveille.colisee *{
+    top: 17vw;
+    left: 37vw;
+}
+.merveille.christ *{
+    top: 31.3vw;
+    left: 22.6vw;
+}
+.merveille.machu *{
+    top: 29vw;
+    left: 18.5vw;
+}
+.merveille.chichen *{
+    top: 20vw;
+    left: 14.7vw;
+}
