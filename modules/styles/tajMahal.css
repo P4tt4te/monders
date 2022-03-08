@@ -30,7 +30,7 @@ body {
     width: calc(100% - 4vw);
     height: 120vh;
     justify-content: space-between;
-    background-image: linear-gradient(to bottom, transparent, transparent 75%, #202124 100%),url('/public/tajMahal/tajMahal3.png');
+    background-image: linear-gradient(to bottom, transparent, transparent 75%, #202124 100%),url('../public/assets/tajMahal/tajMahal3.png');
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: right;
@@ -101,7 +101,7 @@ p {
     position: absolute;
     left: 30vw;
     transform: translateY(-1000px);
-    content: url('/public/tajMahal/brush6.png');
+    content: url('../public/assets/tajMahal/brush6.png');
 }
 
 .h3 {
@@ -120,7 +120,7 @@ p {
 .bloc31::before {
     position: absolute;
     transform: translateX(60%) translateY(-450px);
-    content: url('/public/tajMahal/brush2.png');
+    content: url('../public/assets/tajMahal/brush2.png');
 }
 
 .bloc311 {
@@ -167,7 +167,7 @@ p {
 .bloc4122::before {
     position: absolute;
     transform: translateX(40%) translateY(-800px);
-    content: url('/public/tajMahal/brush5.png');
+    content: url('../public/assets/tajMahal/brush5.png');
 }
 
 .img412 {
@@ -197,7 +197,7 @@ p {
 .bloc5line::before {
     position: absolute;
     transform: translateY(-900px);
-    content: url('/public/tajMahal/brush4.png');
+    content: url('../public/assets/tajMahal/brush4.png');
     z-index: -1;
 }
 
@@ -272,7 +272,11 @@ p {
 .bloc7img::before {
     position: absolute;
     transform: translateX(-900px) translateY(-100px);
+<<<<<<< HEAD
     content: url('/public/tajMahal/brush3.png');
+=======
+    content: url('../public/assets/tajMahal/brush3.png');
+>>>>>>> nathan
     z-index: -1;
 }
 
@@ -359,6 +363,19 @@ p {
     font-size: 3rem;
 }
 
+<<<<<<< HEAD
+=======
+input[type=submit]{
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 1.25rem;
+    background-color: #F48E6B;
+    border: 1px solid #451D73;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+>>>>>>> nathan
 /* module drag and drop */
 
 .droppable {
@@ -389,4 +406,3 @@ footer {
     font-size: 2rem;
     padding-bottom: 100px;
 }
-

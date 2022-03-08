@@ -82,22 +82,6 @@ class UserModel
 			return false;
 		}
 	}
-
-
-	public static function insertQuiz($idQuiz, $idUtilisateur, $progression)
-	{
-		$cnx = new Base();
-		try {
-			$cnx->insert("INSERT participe set idQuiz=?,".
-				" idUtilisateur=?, progression=?", 
-				array($idQuiz, $idUtilisateur,$progression));
-			return true;
-		}
-		catch (PDOException $e)
-		{
-			return false;
-		}
-	}
 	
 
 	

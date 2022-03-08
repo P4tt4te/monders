@@ -28,8 +28,8 @@ function recupjson() {
             fichier = "tajMahal";
             break;
     }
-
-    fetch('../../public/quiz/' + fichier + '.json', config)
+  
+    fetch('../public/assets/quiz/' + fichier + '.json', config)
         .then(function (response) {
             return response.json();
         })
@@ -84,7 +84,12 @@ function openmodal(score) {
     fetch('../controllers/quiz.php', {
         method: 'POST',
         body: obj,
+<<<<<<< HEAD
     }).then(function(response) {   
+=======
+    }).then(function(response) {
+        // console.log(response);
+>>>>>>> nathan
         return response.json();
     }).catch(function (error) {
         console.log('Il y a eu un problème avec l\'opération fetch: ' + error.message);
