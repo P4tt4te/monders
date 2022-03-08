@@ -41,15 +41,18 @@ function parler(tab) {
 
 function phrase(dialogue) {
     let zone = document.querySelector('.texte-parole').textContent = dialogue;
-
     
 }
 
+function position(nom) {
+    let zone = document.querySelector('.perso>img').src = "../../public/images/marin/" + nom + ".png";
+}
 
 function finphrase() {
     index++;
     if (index < taille) {
         phrase(tabstock[index].phrase);
+        position(tabstock[index].position);
     } else {
         let zone = document.querySelector('.marin');
         zone.removeEventListener('click',finphrase);

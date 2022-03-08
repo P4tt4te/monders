@@ -2,11 +2,15 @@
     "dialogue": [
         {
             "phrase" : "Coucou moi c'est marin ravi de faire ta conaissance, je suis raciste et WOO WOO ceci est une descente de police bien joué joe.",
-            "position" : 1
+            "position" : "bonjour"
         },
         {
             "phrase" : "AHAHA ajdoajfoajfanjdomanfmioanhfimanhfamin",
-            "position" : 2
+            "position" : "stress"
+        },
+        {
+            "phrase" : "3eme et derniere phrase lollllllllllllll",
+            "position" : "cerveau"
         }
     ]
 }
