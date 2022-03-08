@@ -16,7 +16,5 @@
     "url": "https://github.com/P4tt4te/monders/issues"
   },
   "homepage": "https://github.com/P4tt4te/monders#readme",
-  "dependencies": {
-    "swiper": "^7.4.1"
-  }
+  "dependencies": {}
 }
