@@ -76,23 +76,19 @@ function openmodal(score) {
     var modal = document.getElementById("myModal");
     modal.style.display = "block";
 
-    var obj = new FormData();
+    let obj = new FormData();
     obj.append("nomQuiz",document.querySelector('.container').dataset.quiz);
     obj.append("Score",score * 10);
 
 
-    var config = {
+    fetch('../controllers/quiz.php', {
         method: 'POST',
         body: obj,
-    };
-
-    fetch('../controllers/quiz.php', config)
-        .then(function (response) {
-            return response.json();
-        })
-        .catch(function (error) {
-            console.log('Il y a eu un problème avec l\'opération fetch: ' + error.message);
-        });
+    }).then(function(response) {   
+        return response.json();
+    }).catch(function (error) {
+        console.log('Il y a eu un problème avec l\'opération fetch: ' + error.message);
+    });
     
 }
 
