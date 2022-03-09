@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="../styles/quiz-question.css">
     <title>Document</title>
 </head>
-<img src="../controllers/cookie.png" style="display:none;">
+<img src="../json/cookie.png" style="display:none;">
 <body>
 <?php 
 
 
-require_once('../views/common.php');
+require_once('../controllers/quiz.php');
 if (!isset($_SESSION['user']) )
 	error("Veuillez vous connecter pour accéder à la ressource",  "../views/inscription.php");
 

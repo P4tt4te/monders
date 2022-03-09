@@ -77,9 +77,15 @@ function openmodal(score) {
     var modal = document.getElementById("myModal");
     modal.style.display = "block";
 
+    // let obj = {
+    //     nomQuiz: parseInt(document.querySelector('.container').dataset.quiz),
+    //     Score: score * 10
+    //   };
+    //   let monJson = JSON.stringify(obj);
     let obj = new FormData();
     obj.append("nomQuiz",document.querySelector('.container').dataset.quiz);
     obj.append("Score",score * 10);
+    
 
 
     fetch('../controllers/quiz.php', {

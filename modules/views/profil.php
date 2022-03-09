@@ -38,25 +38,25 @@ require_once('../views/header.php');
 
                 switch ($i) {
                     case 1:
-                        $nomMerveille =  "tajMahal.php";
+                        $nomMerveille =  "murailleChine.php";
                         break;
                     case 2:
-                        $nomMerveille = "murailleChine.php";
+                        $nomMerveille = "tajMahal.php";
                         break;
                     case 3:
                         $nomMerveille = "petra.php";
                         break;
                     case 4:
-                        $nomMerveille = "machuPicchu.php";
-                        break;
-                    case 5:
-                        $nomMerveille = "chichenItza.php";
-                        break;
-                    case 6:
                         $nomMerveille = "coliseeRome.php";
                         break;
-                    case 7:
+                    case 5:
                         $nomMerveille = "christRedempteur.php";
+                        break;
+                    case 6:
+                        $nomMerveille = "machuPicchu.php";
+                        break;
+                    case 7:
+                        $nomMerveille = "chichenItza.php";
                         break;
                 }
 
