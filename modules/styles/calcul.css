@@ -1,0 +1,38 @@
+.calcul {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calcul>h3 {
+    font-size: 3rem;
+}
+
+.centrecalcul p {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.centrecalcul {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    font-size: 4rem;
+    font-size: 600;
+}
+
+.inputromain {
+    width:100px;
+}
+
+.centrecalcul>input {
+    font-size: 16rem;
+    height:50%;
+    width: 579px;
+}

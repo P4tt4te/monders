@@ -272,11 +272,7 @@ p {
 .bloc7img::before {
     position: absolute;
     transform: translateX(-900px) translateY(-100px);
-<<<<<<< HEAD
-    content: url('/public/tajMahal/brush3.png');
-=======
     content: url('../public/assets/tajMahal/brush3.png');
->>>>>>> nathan
     z-index: -1;
 }
 
@@ -363,8 +359,6 @@ p {
     font-size: 3rem;
 }
 
-<<<<<<< HEAD
-=======
 input[type=submit]{
     padding: 10px;
     margin-top: 10px;
@@ -375,7 +369,6 @@ input[type=submit]{
     cursor: pointer;
 }
 
->>>>>>> nathan
 /* module drag and drop */
 
 .droppable {
