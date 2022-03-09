@@ -1,0 +1,16 @@
+{
+    "dialogue": [
+        {
+            "phrase" : "Dans ce jeu, tu dois associer les cartes ensemble. Si c'est la même image qui apparaît sur les deux cartes tu gagnes les cartes et en retourne à nouveau deux.",
+            "position" : "bonjour"
+        },
+        {
+            "phrase" : "Si les deux cartes ne vont pas ensemble, elles sont remises face cachée à l'endroit exact où elles étaient.",
+            "position" : "stress"
+        },
+        {
+            "phrase" : "Si tu as une bonne mémoire, tu te souviendras de l'emplacement des cartes déjà retournées et pourra les utiliser lorsqu'il en aura besoin pour compléter une paire.",
+            "position" : "cerveau"
+        }
+    ]
+}

@@ -1,0 +1,178 @@
+/* TODO ______________________________________GENERAL______________________________________ */
+
+::-moz-selection {
+    background: wheat;
+    color: #202124;
+}
+
+::selection {
+    background: wheat;
+    color: #202124;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    /*box-sizing: border-box;*/
+}
+
+body {
+    overflow-x: hidden;
+    background: #202124;
+    
+}
+
+.texte {
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* TODO ______________________________________MERVEILLE______________________________________ */
+
+
+.bar {
+    position: fixed;
+    margin-right: 40px;
+    top: 20%;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    font-size: 15px;
+    color: white;
+}
+
+#_progress {
+    --scroll: 0%;
+    background: linear-gradient(to bottom, rgb(255, 255, 255) var(--scroll), transparent 0);
+    position: fixed;
+    width: 3px;
+    height: 60%;
+    z-index: 100;
+    margin-top: 25px;
+}
+
+.numero-merveille {
+    bottom: 25px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: white;
+}
+
+.numero-merveille img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.numero-merveille .grid {
+    text-align: center;
+    font-size: 15px;
+}
+
+
+
+
+.merveilles {
+    position: relative;
+    height: 100vh;
+    background: #202124;
+    background: linear-gradient(90deg, rgba(32, 33, 36, 1) 20%, rgba(32, 33, 36, 0.5) 54%, rgba(32, 33, 36, 0) 100%, rgba(0, 212, 255, 0) 100%);
+}
+
+.image-merveille {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    object-fit: cover;
+    width: 80%;
+    height: 100%;
+    z-index: -1;
+}
+
+.texte-merveille {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    width: 800px;
+    margin-left: 8vw;
+    padding-top: 30vh;
+    font-weight: 600;
+    text-shadow: 2px 2px 14px rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.5px;
+    overflow-wrap: anywhere;
+}
+
+.texte-merveille h1 {
+    font-family: "Brown Sunflower";
+    font-size: 120px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.texte-merveille h2 {
+    font-size: 30px;
+    padding-bottom: 5px;
+    font-family: "NeueMontreal";
+}
+
+
+
+.presentation-merveille .grid {
+    display: flex;
+    width: 100%;
+    padding: 8vw;
+}
+
+.presentation-merveille .grid .photo,
+.presentation-merveille .grid .texte {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+    margin: 20px;
+    height: 80vh;
+}
+
+.presentation-merveille .grid img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.quiz {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 8vw;
+    margin-bottom: 8vw;
+}
+.redirection {
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    background: transparent;
+    cursor: pointer;
+    color: #f48e6b;
+    border: 1px #f48e6b solid;
+
+}
+.redirection:hover {
+    border: none;
+    background: #f48e6b;
+    cursor: pointer;
+    color: black;
+    transition: background-color 1s;
+    border: 1px #f48e6b solid;
+}

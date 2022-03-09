@@ -116,6 +116,14 @@
     display: none;
 }
 
+.help {
+    background-color: orange;
+    padding: 6px;
+    font-size: 2rem;
+    user-select: none;
+    border-radius: 4px;
+}
+
 
 @keyframes suiteapp {
     0% { opacity:0.5; }

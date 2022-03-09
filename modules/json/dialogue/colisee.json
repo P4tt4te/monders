@@ -1,0 +1,12 @@
+{
+    "dialogue": [
+        {
+            "phrase" : "On a entre nos mains l’épée de Spartacus, elle l’a servi durant toute sa vie à vaincre ses ennemis dans l’arène du colisée où il a combattu bravement! C’était le meilleur gladiateur de sa génération.",
+            "position" : "doigt"
+        },
+        {
+            "phrase" : "Bon, elle a l’air un peu émoussée, aujourd’hui elle n'est pas mieux qu’un couteau à beurre… Peut être que si je l'aiguise je pourrai devenir gladiateur moi aussi …",
+            "position" : "stress"
+        }
+    ]
+}

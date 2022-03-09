@@ -1,0 +1,20 @@
+{
+    "dialogue": [
+        {
+            "phrase" : "Bravo! Tu as une excellente mémoire. On va enfin pouvoir ouvrir la porte.",
+            "position" : "content"
+        },
+        {
+            "phrase" : "*Ouvre la porte*",
+            "position" : "doigt"
+        },
+        {
+            "phrase" : "Oh un coffre, ouvrons-le...",
+            "position" : "souriant"
+        },
+        {
+            "phrase" : "Oui ! nous avons retrouvé la couronne de Tian Yingjie, le prince caché de l’empire de Chine. Bravo !",
+            "position" : "heureux"
+        }
+    ]
+}

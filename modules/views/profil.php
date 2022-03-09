@@ -50,13 +50,13 @@ require_once('../views/header.php');
                         $nomMerveille = "coliseeRome.php";
                         break;
                     case 5:
-                        $nomMerveille = "christRedempteur.php";
+                        $nomMerveille = "chichenItza.php";
                         break;
                     case 6:
                         $nomMerveille = "machuPicchu.php";
                         break;
                     case 7:
-                        $nomMerveille = "chichenItza.php";
+                        $nomMerveille = "christRedempteur.php";
                         break;
                 }
 

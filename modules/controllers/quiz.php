@@ -5,7 +5,7 @@ $test = "ne fait rien";
     $test = "dans le if";
     try {
         $user = $_SESSION['user'];
-        $idQuiz = 3;
+        $idQuiz = 7;
         $progression = 100;
         $idUti = $user->getId();
 
@@ -22,7 +22,7 @@ $test = "ne fait rien";
         if (count($lignes) == 1) {
            
             // $cnx->update('update participe set progression=? WHERE idUtilisateur = ? AND idQuiz = ?', array($progression,$idUti,$idQuiz));
-            if($progression== 100)
+            if($progression== 100  && $idQuiz<7)
             {
                 $test = "debloque prochaine merveille + update";
                 $cnx->query(
@@ -31,16 +31,23 @@ $test = "ne fait rien";
                     array($idQuiz + 1, $idUti,null, $progression, $idUti, $idQuiz)
                 );
             }
+            elseif($progression!= 100 && $idQuiz == 7)
+            {
+                $test = "insert quiz 7";
+                $cnx->update(
+                "update participe set progression=? WHERE idUtilisateur = ? AND idQuiz = ? ",
+                array($idQuiz + 1, $idUti,null, $progression, $idUti, $idQuiz));
+            }
             else
             {
-                $cnx->update(' update participe set progression=? WHERE idUtilisateur = ? AND idQuiz = ?',
-                array($progression,$idUti,$idQuiz));
-                $test= "update";
-            } 
+                $test = "insert quiz update";
+                $cnx->update(
+                "update participe set progression=? WHERE idUtilisateur = ? AND idQuiz = ? ",
+                array($idQuiz + 1, $idUti,null, $progression, $idUti, $idQuiz));
+            }
         }
         else{
-
-            if($progression== 100)
+            if($progression== 100 && $idQuiz<7)
             {
                 $test = "debloque prochaine merveille + insert";
                 $cnx->query(
@@ -48,16 +55,22 @@ $test = "ne fait rien";
                     insert into participe values (?,?,?) ",
                     array($idQuiz + 1, $idUti,null,$idQuiz,$idUti, $progression));
             }
-            else
+            elseif($progression== 100 && $idQuiz == 7)
             {
-                $test = "insert";
+                $test = "insert quiz 7";
                 $cnx->insert(
                 "insert into participe values (?,?,?) ",
                 array($idQuiz,$idUti,$progression));
-            } 
+            }
+            else
+            {
+                $test = "insert quiz insert";
+                $cnx->insert(
+                "insert into participe values (?,?,?) ",
+                array($idQuiz,$idUti,$progression));
+            }
             
             // success("", "../views/quiz.php");
-            $test = "insert";
     }    
     } catch (\Throwable $th) {
         // error("Problème lors de l'insertion du quiz", "../views/quiz.php");

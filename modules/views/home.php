@@ -38,7 +38,7 @@
         
         
         <div class="merveille petra <?php if($nbDebloque[0]["nbDebloque"] < 3){echo("disabled");}?>">
-        <a <?php if($nbDebloque[0]["nbDebloque"] < 3){echo("");}else{echo('href="../views/tajMahal.php"');}?>>
+        <a <?php if($nbDebloque[0]["nbDebloque"] < 3){echo("");}else{echo('href="../views/merveille.php?merveille=petra"');}?>>
             <img src="../images/home/icons/pin.png" alt="" class="pin">
             <div class="photo">
                 <img src="../images/home/icons/icon-petra.png" alt="" class="merveille-photo">
@@ -49,7 +49,7 @@
 
         
         <div class="merveille colisee <?php if($nbDebloque[0]["nbDebloque"] < 4){echo("disabled");}?>">
-        <a <?php if($nbDebloque[0]["nbDebloque"] < 4){echo("");}else{echo('href="../views/tajMahal.php"');}?> >
+        <a <?php if($nbDebloque[0]["nbDebloque"] < 4){echo("");}else{echo('href="../views/merveille.php?merveille=colisee"');}?> >
             <img src="../images/home/icons/pin.png" alt="" class="pin">
             <div class="photo">
                 <img src="../images/home/icons/icon-colisee.png" alt="" class="merveille-photo">
@@ -57,37 +57,37 @@
             </a>
         </div>
        
-
+        <div class="merveille chichen <?php if($nbDebloque[0]["nbDebloque"] < 5){echo("disabled");}?>">
+        <a <?php if($nbDebloque[0]["nbDebloque"] < 5){echo("");}else{echo('href="../views/merveille.php?merveille=chichenitza"');}?>>
+            <img src="../images/home/icons/pin.png" alt="" class="pin">
+            <div class="photo">
+            <img src="../images/home/icons/icon-chichenitza.png" alt="" class="merveille-photo">
+        </div>
+        </a>
+        </div>
        
-        <div class="merveille christ <?php if($nbDebloque[0]["nbDebloque"] < 5){echo("disabled");}?>">
-        <a <?php if($nbDebloque[0]["nbDebloque"] < 5){echo("");}else{echo('href="../views/tajMahal.php"');}?> >
+   
+       
+
+      
+        <div class="merveille machu <?php if($nbDebloque[0]["nbDebloque"] < 6){echo("disabled");}?>">
+        <a <?php if($nbDebloque[0]["nbDebloque"] < 6){echo("");}else{echo('href="../views/merveille.php?merveille=machupicchu"');}?> >
+            <img src="../images/home/icons/pin.png" alt="" class="pin">
+            <div class="photo">
+            <img src="../images/home/icons/icon-machupicchu.png" alt="" class="merveille-photo">
+        </div>
+        </a>
+        </div>
+        
+        <div class="merveille christ <?php if($nbDebloque[0]["nbDebloque"] < 7){echo("disabled");}?>">
+        <a <?php if($nbDebloque[0]["nbDebloque"] < 7){echo("");}else{echo('href="../views/merveille.php?merveille=christ"');}?> >
             <img src="../images/home/icons/pin.png" alt="" class="pin">
             <div class="photo">
             <img src="../images/home/icons/icon-christ.png" alt="" class="merveille-photo">
         </div>
         </a>
         </div>
-       
-
-      
-        <div class="merveille machu <?php if($nbDebloque[0]["nbDebloque"] < 6){echo("disabled");}?>">
-        <a <?php if($nbDebloque[0]["nbDebloque"] < 6){echo("");}else{echo('href="../views/tajMahal.php"');}?> >
-            <img src="../images/home/icons/pin.png" alt="" class="pin">
-            <div class="photo">
-            <img src="../images/home/icons/icon-machu.png" alt="" class="merveille-photo">
-        </div>
-        </a>
-        </div>
         
-        
-        <div class="merveille chichen <?php if($nbDebloque[0]["nbDebloque"] < 7){echo("disabled");}?>">
-        <a <?php if($nbDebloque[0]["nbDebloque"] < 6){echo("");}else{echo('href="../views/tajMahal.php"');}?>>
-            <img src="../images/home/icons/pin.png" alt="" class="pin">
-            <div class="photo">
-            <img src="../images/home/icons/icon-chichen.png" alt="" class="merveille-photo">
-        </div>
-        </a>
-        </div>
        
     </div>
     

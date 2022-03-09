@@ -1,0 +1,66 @@
+.calcul {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.calcul>h3 {
+    font-size: 3rem;
+    font-style: italic;
+}
+
+.centrecalcul p {
+    padding: 0;
+    margin: 0;
+}
+
+.desccalcul {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.centrecalcul {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    margin-top: 10%;
+    font-size: 10rem;
+    font-size: 600;
+}
+
+.centrecalcul p {
+    font-size: 10rem;
+}
+
+.corrector {
+    font-size: 1.5rem;
+    color: red;
+}
+
+.inputromain {
+    width:100px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.centrecalcul>input {
+    font-size: 16rem;
+    height:50%;
+    width: 579px;
+}

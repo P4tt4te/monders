@@ -17,11 +17,11 @@ function charger() {
     let fichier = document.querySelector('.marin').dataset.page;
     var config = {
         method: 'GET',
-        mode: 'same-origin',
-        credentials: 'same-origin',
+        mode: 'cors',
+        cache: 'default'
     };
     console.log(fichier);
-    fetch('../json/' + fichier + '.json', config)
+    fetch('../json/dialogue/' + fichier + '.json', config)
         .then(function (response) {
             return response.json();
         })
@@ -48,10 +48,10 @@ function chargerhelper() {
     var config = {
         method: 'GET',
         mode: 'cors',
-        credentials: 'same-origin',
+        cache: 'default'
     };
     console.log(fichier);
-    fetch('../json/' + fichier + '.json', config)
+    fetch('../json/dialogue/' + fichier + '.json', config)
         .then(function (response) {
             return response.json();
         })

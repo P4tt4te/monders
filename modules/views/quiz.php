@@ -15,7 +15,7 @@ if (!isset($_SESSION['user']) )
         <div class="intitule">
             <h1 class="title">QUIZ</h1>
             <div class="descriptif bold">
-                <h2 class="nommerveille light">Taj Mahal <?php echo("succes") ?></h2>
+                <h2 class="nommerveille light">Taj Mahal</h2>
                 <p>10 questions</p>
                 <p class="difficulte"> niveau difficile </p>
             </div>
