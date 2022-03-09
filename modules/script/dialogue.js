@@ -21,7 +21,7 @@ function charger() {
         cache: 'default'
     };
     console.log(fichier);
-    fetch('../json/' + fichier + '.json', config)
+    fetch('../json/dialogue/' + fichier + '.json', config)
         .then(function (response) {
             return response.json();
         })
@@ -51,7 +51,7 @@ function chargerhelper() {
         cache: 'default'
     };
     console.log(fichier);
-    fetch('../json/' + fichier + '.json', config)
+    fetch('../json/dialogue/' + fichier + '.json', config)
         .then(function (response) {
             return response.json();
         })

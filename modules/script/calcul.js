@@ -27,6 +27,8 @@ function check(evt) {
     if (index > 4) {
         zone.removeEventListener('change',check);
         console.log('Score : '+score);
+        let dec = document.querySelector('.controllermarin');
+        dec.click();
     } else {
         source.textContent = nbrromains[index];
         document.querySelector('.indexquestion').textContent = index + 1;

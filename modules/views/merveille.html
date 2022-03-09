@@ -8,10 +8,26 @@
     <title>Document</title>
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/merveille.css">
-    
+    <link rel="stylesheet" href="../styles/calcul.css">
+    <link rel="stylesheet" href="../styles/marin.css">
 </head>
 
 <body>
+    <div class="marin" data-page="">
+        <div class="perso">
+            <img src="../images/marin/bonjour.png" alt="">
+        </div>
+        
+        <div class="bulles">
+            <div class="bulle-parole">
+                <p class="texte-parole"></p>
+            </div>
+        </div>
+        <div class="suite">
+            <p>Cliquer pour continuer le dialogue.</p>
+        </div>
+        
+    </div>
     <div class="bar">
         <p id="percent">0%</p>
         <div id="_progress"></div>
@@ -68,9 +84,21 @@
 
         <section class="jeu">
             <div class="minijeux">
-                /////
+                <div class="calcul">
+                    <h3>Mini-jeu</h3>
+                    <h3>Question <span class="indexquestion">1</span> sur <span>5</span></h3>
+                    <div class="centrecalcul">
+                        <span class="romain title">VI</span>
+                        <p>=</p>
+                        <input class=" inputromain" type="number" max="9999" min="1" name="uti" id="">
+                    </div>
+                    <img class="desccalcul" src="../images/Merveilles/calcul/desc.svg" alt="" srcset="">
+                    <span class="help">Explique moi marin ?</span>
+                    <button class="controllermarin" name="controller">
+                    </button>
+                </div>
+                <script src="../script/calcul.js"></script>
             </div>
-
             <div class="quiz">
                 <button class="redirection">COMMENCER LE QUIZ</button>
             </div>
@@ -79,6 +107,7 @@
 
     <script src="../script/bar.js"></script>
     <script src="../script/merveille.js"></script>
+    <script src="../script/dialogue.js"></script>
 </body>
 
 </html>

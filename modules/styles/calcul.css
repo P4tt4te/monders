@@ -18,15 +18,23 @@
     margin: 0;
 }
 
-
+.desccalcul {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
 
 .centrecalcul {
     display:flex;
     justify-content: space-around;
     align-items: center;
     width:100%;
-    font-size: 4rem;
+    margin-top: 10%;
+    font-size: 10rem;
     font-size: 600;
+}
+
+.centrecalcul p {
+    font-size: 10rem;
 }
 
 .inputromain {

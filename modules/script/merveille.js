@@ -9,6 +9,8 @@ function init() {
     if (merveille != null) {
         chargermerveille();
     }
+    let marin = document.querySelector('.marin');
+    marin.dataset.page = merveille;
 }
 
 function chargermerveille() {
