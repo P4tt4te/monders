@@ -16,14 +16,22 @@ function init() {
 function check(evt) {
     console.log(evt.target.value);
     if (evt.target.value == nbr[index]) {
+        let corrector = document.querySelector('.corrector');
+        corrector.textContent = "";
         console.log('oui');
         score++;
+        index++;
         evt.target.value = null;
     } else {
         console.log('non');
+        let corrector = document.querySelector('.corrector');
+        if (evt.target.value < nbr[index]) {
+            corrector.textContent = "C'est plus.";
+        } else {
+            corrector.textContent = "C'est moins.";
+        }  
         evt.target.value = null;
     }
-    index++;
     if (index > 4) {
         zone.removeEventListener('change',check);
         console.log('Score : '+score);

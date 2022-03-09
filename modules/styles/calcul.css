@@ -37,6 +37,11 @@
     font-size: 10rem;
 }
 
+.corrector {
+    font-size: 1.5rem;
+    color: red;
+}
+
 .inputromain {
     width:100px;
     border-radius: 8px;
