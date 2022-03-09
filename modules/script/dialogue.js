@@ -21,11 +21,7 @@ function charger() {
         cache: 'default'
     };
     console.log(fichier);
-<<<<<<< HEAD
-    fetch('../../public/dialogue/' + fichier + '.json', config)
-=======
     fetch('../json/' + fichier + '.json', config)
->>>>>>> nathan
         .then(function (response) {
             return response.json();
         })
@@ -55,11 +51,7 @@ function chargerhelper() {
         cache: 'default'
     };
     console.log(fichier);
-<<<<<<< HEAD
-    fetch('../../public/dialogue/' + fichier + '.json', config)
-=======
     fetch('../json/' + fichier + '.json', config)
->>>>>>> nathan
         .then(function (response) {
             return response.json();
         })
@@ -117,11 +109,7 @@ function phrase(dialogue) {
 }
 
 function position(nom) {
-<<<<<<< HEAD
-    let zone = document.querySelector('.perso>img').src = "../../public/images/marin/" + nom + ".png";
-=======
     let zone = document.querySelector('.perso>img').src = "../images/marin/" + nom + ".png";
->>>>>>> nathan
 }
 
 function finphrase() {

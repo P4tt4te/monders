@@ -84,12 +84,7 @@ function openmodal(score) {
     fetch('../controllers/quiz.php', {
         method: 'POST',
         body: obj,
-<<<<<<< HEAD
     }).then(function(response) {   
-=======
-    }).then(function(response) {
-        // console.log(response);
->>>>>>> nathan
         return response.json();
     }).catch(function (error) {
         console.log('Il y a eu un problème avec l\'opération fetch: ' + error.message);

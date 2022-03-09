@@ -27,21 +27,6 @@ function graphic(tab) {
     for (i in zones) {
         switch (tab[i]) {
             case 1:
-<<<<<<< HEAD
-                zones[i].src = '/public/memory/cleb.svg';
-                zones[i].classList.add('cle');
-                break;
-            case 2:
-                zones[i].src = '/public/memory/cler.svg';
-                zones[i].classList.add('cle');
-                break;
-            case 3:
-                zones[i].src = '/public/memory/clej.svg';
-                zones[i].classList.add('cle');
-                break;
-            case 11:
-                zones[i].src = '/public/memory/serb.svg';
-=======
                 zones[i].src = '../images/memory/cleb.svg';
                 zones[i].classList.add('cle');
                 break;
@@ -55,25 +40,16 @@ function graphic(tab) {
                 break;
             case 11:
                 zones[i].src = '../images/memory/serb.svg';
->>>>>>> nathan
                 zones[i].classList.add('serrure');
                 tab[i] = 1;
                 break;
             case 22:
-<<<<<<< HEAD
-                zones[i].src = '/public/memory/serr.svg';
-=======
                 zones[i].src = '../images/memory/serr.svg';
->>>>>>> nathan
                 zones[i].classList.add('serrure');
                 tab[i] = 2;
                 break;
             case 33:
-<<<<<<< HEAD
-                zones[i].src = '/public/memory/serj.svg';
-=======
                 zones[i].src = '../images/memory/serj.svg';
->>>>>>> nathan
                 zones[i].classList.add('serrure');
                 tab[i] = 3;
                 break;
