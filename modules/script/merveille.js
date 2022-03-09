@@ -53,7 +53,7 @@ function imagemerveille() {
     let img1 = document.querySelector('.image-merveille');
     img1.src = '../images/Merveilles/'+merveille+'/'+merveille+'.webp';
     let img2 = document.querySelector('.numero-merveille img');
-    img2.src = '../images/Merveilles/'+merveille+'/icon-'+merveille+'.webp';
+    img2.src = '../images/home/icons/icon-'+merveille+'.png';
     let img3 = document.querySelector('.img3');
     img3.src = '../images/Merveilles/'+merveille+'/'+merveille+'-1.webp';
     let img4 = document.querySelector('.img4');
