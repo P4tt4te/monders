@@ -5,8 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("../images/calcul/parachemin.jpg");
-    background-size: cover;
+    color: white;
 }
 
 .calcul>h3 {
@@ -32,6 +31,19 @@
 
 .inputromain {
     width:100px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .centrecalcul>input {
