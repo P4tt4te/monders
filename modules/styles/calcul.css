@@ -5,10 +5,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url("../images/calcul/parachemin.jpg");
+    background-size: cover;
 }
 
 .calcul>h3 {
     font-size: 3rem;
+    font-style: italic;
 }
 
 .centrecalcul p {
