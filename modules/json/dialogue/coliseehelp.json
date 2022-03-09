@@ -1,20 +1,12 @@
 {
     "dialogue": [
         {
-            "phrase" : "COLISEEHELP : Bravo! Tu as une excellente mémoire. On va enfin pouvoir ouvrir la porte.",
+            "phrase" : "Dans cet énigme, tu dois traduire les chiffres romains en chiffre classique que tu connais déjà.",
             "position" : "content"
         },
         {
-            "phrase" : "*Ouvre la porte*",
-            "position" : "doigt"
-        },
-        {
-            "phrase" : "Oh un coffre, ouvrons-le...",
-            "position" : "souriant"
-        },
-        {
-            "phrase" : "Oui ! nous avons retrouvé la couronne de Tian Yingjie, le prince caché de l’empire de Chine. Bravo !",
-            "position" : "heureux"
+            "phrase" : "Les chiffres romains sont le nom donné au système de numération utilisé dans l'antiquité romaine, lu de gauche à droite il utilise 7 lettres dont les valeurs s'ajoutent ou se soustraient en fonction de leur position. Par exemple: IV = 4 mais VI = 6",
+            "position" : "cerveau"
         }
     ]
 }
