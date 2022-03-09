@@ -17,8 +17,8 @@ function charger() {
     let fichier = document.querySelector('.marin').dataset.page;
     var config = {
         method: 'GET',
-        mode: 'cors',
-        cache: 'default'
+        mode: 'same-origin',
+        credentials: 'same-origin',
     };
     console.log(fichier);
     fetch('../json/' + fichier + '.json', config)
@@ -48,7 +48,7 @@ function chargerhelper() {
     var config = {
         method: 'GET',
         mode: 'cors',
-        cache: 'default'
+        credentials: 'same-origin',
     };
     console.log(fichier);
     fetch('../json/' + fichier + '.json', config)

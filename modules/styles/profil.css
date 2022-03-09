@@ -92,7 +92,7 @@ h2 {
     position:absolute;
     display: flex;
     flex-direction:row ;
-    bottom: -200px;
+    bottom: -230px;
     width: 100%;
     height:100%;
     justify-content: space-around;

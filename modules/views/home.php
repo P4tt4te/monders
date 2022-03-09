@@ -3,6 +3,11 @@
     require_once('../views/common.php');
     require_once('../views/pageBegin.php');
     require_once('../views/header.php');
+
+    if (!isset($user)) {
+        $nbDebloque[0]["nbDebloque"] = 1;
+    }
+    
     ?>
 <body>
 
@@ -12,8 +17,8 @@
         <img src="../images/home/map/map.png" alt="" class="carte">
         <img src="../images/home/map/map-trait-<?=$nbDebloque[0]["nbDebloque"]?>.png" alt="" class="carte-trait"> 
         
-        <div class="merveille murailleChine <?php if($nbDebloque[0]["nbDebloque"] < 1){echo("disabled");}?>">
-        <a <?php if($nbDebloque[0]["nbDebloque"] < 1){echo("");}else{echo('href="../views/tajMahal.php"');}?>>
+        <div class="merveille murailleChine">
+        <a <?php if(isset($user)){echo('href="../views/murailledechine.html"');}else{echo('href="../views/inscription.php"');}?>>
             <img src="../images/home/icons/pin.png" alt="" class="pin">
             <div class="photo">
                 <img src="../images/home/icons/icon-muraile.png" alt="" class="merveille-photo">

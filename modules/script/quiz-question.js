@@ -10,8 +10,9 @@ function init() {
 function recupjson() {
     var config = {
         method: 'GET',
-        mode: 'cors',
-        cache: 'default'
+        cache: 'default',
+        mode: 'same-origin',
+        
     };
 
     var dataquiz = document.querySelector('.container').dataset.quiz;
@@ -29,7 +30,7 @@ function recupjson() {
             break;
     }
   
-    fetch('../public/assets/quiz/' + fichier + '.json', config)
+    fetch('../json/' + fichier + '.json', config)
         .then(function (response) {
             return response.json();
         })
@@ -84,9 +85,12 @@ function openmodal(score) {
     fetch('../controllers/quiz.php', {
         method: 'POST',
         body: obj,
+        mode: 'same-origin',
+        credentials: 'same-origin',
     }).then(function(response) {
         // console.log(response);
         return response.json();
+        
     }).catch(function (error) {
         console.log('Il y a eu un problème avec l\'opération fetch: ' + error.message);
     });

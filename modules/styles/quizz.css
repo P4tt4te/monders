@@ -1,12 +1,11 @@
 html {
-    background-color: var(--background);
     color: white;
-}
-main{
-    
+    overflow: hidden;
+    background-color: var(--background);
+    height:100vh;
 }
 .container {
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,7 +13,7 @@ main{
 
 .imagemerveille {
     max-width: 100vw;
-    max-height: 100vh;
+    max-height: 65vh;
     position: absolute;
     z-index: -1;
     bottom: 0;
@@ -75,7 +74,11 @@ h1::after{
     top: 10vh;
     z-index: 0;
 }
-
+.descriptif{
+    text-align: center;
+    color:var(--background);
+    margin-bottom:20px;
+}
 .descriptif p {
     margin: 0;
     font-size: 13px;

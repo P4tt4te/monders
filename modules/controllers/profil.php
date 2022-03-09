@@ -1,8 +1,8 @@
 <?php 
 require_once('common.php');
 
-// if (!isset($user)) 
-// 	error("Vous devez être connecté pour accéder à  votre compte", "home.php");
+if (!isset($user)) 
+	error("Vous devez être connecté pour accéder à  votre compte", "home.php");
 
 
 

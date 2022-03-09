@@ -39,9 +39,6 @@
                     <a href="../views/home.php" class="menu-item-link">HOME</a>
                 </div>
                 <div class="menu-item">
-                    <a href="merveilles.php" class="menu-item-link">MERVEILLES</a>
-                </div>
-                <div class="menu-item">
                 <?php if (is_object($user)) {
                     ?>
                         <a href="profil.php" class="menu-item-link">PROFIL</a>
@@ -53,16 +50,10 @@
         </div>
         <div class="grid-item three">
             <nav class="menu">
-                <div class="menu-item">
-                    <a href="concept.php" class="menu-item-link">CONCEPT</a>
-                </div>
-                <div class="menu-item">
-                    <a href="apropos.php" class="menu-item-link">A PROPOS</a>
-                </div>
                     <?php if (is_object($user)) {
                     ?>
                     <div class="menu-item">
-                        <a href="about.html" class="menu-item-link">MODIFICATION</a>
+                        <a href="a-propos.php" class="menu-item-link">A propos</a>
                     </div>
                     <div class="menu-item">
                         <a href="deconnexion.php" class="menu-item-link">DECONNEXION</a>

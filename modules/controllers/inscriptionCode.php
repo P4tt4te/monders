@@ -1,8 +1,8 @@
 <?php
 require_once('../views/common.php');
 
-// if (isset($_SESSION['user']) )
-// 	error("Veuillez vous déconnecter avant de vous réinscrire",  "../views/inscription.php");
+if (isset($_SESSION['user']) )
+	error("Veuillez vous déconnecter avant de vous réinscrire",  "../views/home.php");
 
 
 if (isset($_POST['formInscription'])) {
@@ -33,7 +33,7 @@ if (isset($_POST['formInscription'])) {
         $lignes = $cnx->query('select * from Utilisateurs where mail=?', array($mail));
     
         if (count($lignes)>0) {
-            error("Cette adresse mail est déjà utilisée.<br/><span style='font-size: 0.8em; font-style: italic'><a href='oubli.php'>Avez-vous oublié votre mot de passe ?</a></span>", "../views/inscription.php");
+            error("Cette adresse mail est déjà utilisée.<br/><span style='font-size: 0.8em; font-style: italic'></span>", "../views/inscription.php");
         } else {
             $cnx->insert(
                 "insert into Utilisateurs values (?,?,?,?) ",

@@ -16,13 +16,15 @@
 
 //__________ACTIVER SON__________
    $(document).on("click", ".son", function () {
-        $(".son img").attr("src","../public/assets/images/sonOff.svg");
+        $(".son img").attr("src","../images/header/images/sonOff.svg");
         $(this).addClass("close");
+        $('#player')[0].pause();
    });	
 
    $(document).on("click", ".son.close", function () {
-        $(".son img").attr("src","../public/assets/images/sonOn.svg");
+        $(".son img").attr("src","../images/header/images/sonOn.svg");
         $(this).removeClass("close");
+        $('#player')[0].play();
    });
 
 

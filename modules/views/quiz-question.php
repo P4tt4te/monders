@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -9,12 +9,14 @@
     <link rel="stylesheet" href="../styles/quiz-question.css">
     <title>Document</title>
 </head>
-
+<img src="../controllers/cookie.png" style="display:none;">
 <body>
 <?php 
 
 
-require_once('../views/quiz.php');
+require_once('../views/common.php');
+if (!isset($_SESSION['user']) )
+	error("Veuillez vous connecter pour accéder à la ressource",  "../views/inscription.php");
 
 
 ?>
@@ -34,7 +36,7 @@ require_once('../views/quiz.php');
                         </span>
                 </p>
                 <!-- Mettre une balise a -->
-                <button class="start" onclick="document.location='../views/homev2.php'">retourner au menu -></button>
+                <button class="start" onclick="document.location='../views/home.php'">retourner au menu -></button>
             </div>
 
         </div>
@@ -43,7 +45,7 @@ require_once('../views/quiz.php');
             <div class="intitule">
                 <p class="numeroquestion">Question <span class="num">1</span> sur 10 </p>
                 <p class="question">Comment s'appelle l'architecte du Taj-Mahal ?</p>
-                <img class="imagequestion vibrate-2" src="../public/assets/images/Ualimagedd.jpg" alt="">
+                <img class="imagequestion vibrate-2" src="../images/quiz/images/Ualimagedd.jpg" alt="">
             </div>
             <div class="timer">
                 <p>Temps restant <span class="ntime">8</span></p>

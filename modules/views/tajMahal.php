@@ -5,6 +5,8 @@ require_once('../views/common.php');
 require_once('../views/pageBegin.php');
 require_once('../views/header.php');
 
+if (!isset($_SESSION['user']) )
+	error("Veuillez vous connecter pour accéder à la ressource",  "../views/inscription.php");
 
 ?>
     <main class="background" data-scroll-container>

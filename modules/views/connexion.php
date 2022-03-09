@@ -11,7 +11,6 @@ require_once('../views/header.php');
 <main>
 
   <div class="container">
-    <img src="/modules../public/assets/images/assets/images/logo monders 1.png" alt="">
     <div class="choix">
 <div class="texte">
       <h1><a class="boutonchoixconn light" href="../views/inscription.php">Inscription</a></h1>
@@ -43,6 +42,5 @@ require_once('../views/header.php');
   </div>
   <?php
   require_once('../controllers/erreurCode.php');
-  require_once('../views/pageEnd.php');
 ?>
 </main>

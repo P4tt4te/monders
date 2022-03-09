@@ -4,6 +4,8 @@
 
 	require_once ("../views/common.php");
 
+    if (isset($_SESSION['user']) )
+	error("Vous êtes déjà connecté",  "../views/home.php");
 if (isset($_POST['formConnexion'])) {
     $mail = $_POST['mail'];
     $motdepasse = $_POST['motdepasse'];
@@ -15,6 +17,6 @@ if (isset($_POST['formConnexion'])) {
         );
     } else {
         $_SESSION['user'] = $user;
-        header("Location: ../views/home.php");
+        success("Vous êtes connecté","../views/home.php");
     }
 }

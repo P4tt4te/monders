@@ -4,7 +4,8 @@ require_once('../views/common.php');
 require_once('../views/pageBegin.php');
 require_once('../views/header.php');
 
-
+if (!isset($_SESSION['user']) )
+	error("Veuillez vous connecter pour accéder à la ressource",  "../views/inscription.php");
 ?>
 
 <link rel="stylesheet" href="../styles/quizz.css">
@@ -13,7 +14,7 @@ require_once('../views/header.php');
     <div class="container">
         <div class="intitule">
             <h1 class="title">QUIZ</h1>
-            <div class="descriptif">
+            <div class="descriptif bold">
                 <h2 class="nommerveille light">Taj Mahal <?php echo("succes") ?></h2>
                 <p>10 questions</p>
                 <p class="difficulte"> niveau difficile </p>
@@ -27,7 +28,7 @@ require_once('../views/header.php');
     <div class="divretour">
 
         <a href="page précédente">
-        <a href="../views/tajMahal.html">
+        <a href="../views/tajMahal.php">
             <button class="retour" type="button"></button>
         </a>
     </div>

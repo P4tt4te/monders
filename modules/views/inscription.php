@@ -44,11 +44,10 @@ require_once('../views/header.php');
         <input class="boutonsubmit" type="submit" value="S'inscrire" name="formInscription">
       </form>
     </div>
-    <p>Déja inscrit ? Connectez vous ici: <a href="https://www.w3schools.com/">Se connecter</a></p>
+    <p>Déja inscrit ? Connectez vous ici: <a href="../views/connexion.php">Se connecter</a></p>
   </div>
 
 <?php
   require_once('../controllers/erreurCode.php');
-  require_once('../views/pageEnd.php');
 ?>
 </main>
