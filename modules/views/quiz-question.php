@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -9,12 +9,15 @@
     <link rel="stylesheet" href="../styles/quiz-question.css">
     <title>Document</title>
 </head>
-
+<img src="../json/cookie.png" style="display:none;">
+<img src="../controllers/cookie.png" style="display:none;">
 <body>
 <?php 
 
 
-require_once('../views/quiz.php');
+require_once('../views/common.php');
+if (!isset($_SESSION['user']) )
+	error("Veuillez vous connecter pour accéder à la ressource",  "../views/inscription.php");
 
 
 ?>
@@ -24,17 +27,12 @@ require_once('../views/quiz.php');
 
             <!-- Modal content -->
             <div class="modal-content">
-                <p class="purple"><?php 
-                        if(isset($_POST['nomQuiz'])){
-                        echo($_POST['nomQuiz']);
-                    }else{
-                        var_dump($test);
-                        } ?>Quiz terminé avec un score de 
+                <p class="purple">Quiz terminé avec un score de 
                     <span class="affichagescore">0% 
                         </span>
                 </p>
                 <!-- Mettre une balise a -->
-                <button class="start" onclick="document.location='../views/homev2.php'">retourner au menu -></button>
+                <button class="start" onclick="document.location='../views/home.php'">retourner au menu -></button>
             </div>
 
         </div>
@@ -43,7 +41,7 @@ require_once('../views/quiz.php');
             <div class="intitule">
                 <p class="numeroquestion">Question <span class="num">1</span> sur 10 </p>
                 <p class="question">Comment s'appelle l'architecte du Taj-Mahal ?</p>
-                <img class="imagequestion vibrate-2" src="../public/assets/images/Ualimagedd.jpg" alt="">
+                <img class="imagequestion vibrate-2" src="../images/quiz/images/Ualimagedd.jpg" alt="">
             </div>
             <div class="timer">
                 <p>Temps restant <span class="ntime">8</span></p>

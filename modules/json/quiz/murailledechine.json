@@ -1,0 +1,96 @@
+{
+    "question" : [
+        {
+            "nom" : "Combien de temps a duré la construction de la grande muraille ?",
+            "A" : "111 ans",
+            "B" : "55 ans",
+            "C" : "Des centaines d'années",
+            "D" : "Des milliers d'années",
+            "reponse" : "C",
+            "img" : "MDC1.webp"
+        },
+        {
+            "nom" : "Auprès de quelle bordure historique de la Chine se trouve la muraille ?",
+            "A" : "Nord",
+            "B" : "Sud",
+            "C" : "Est",
+            "D" : "Ouest",
+            "reponse" : "A",
+            "img" : "MDC2.jpg"
+        },
+        {
+            "nom" : "De quoi la muraille est-elle faite ?",
+            "A" : "Pierre",
+            "B" : "Terre et bois",
+            "C" : "Brique",
+            "D" : "un mélange des 4",
+            "reponse" : "D",
+            "img" : "MDC3.jpg"
+        },
+        {
+            "nom" : "Quelle est la longueur de la muraille ?",
+            "A" : "756 km",
+            "B" : "6700 km",
+            "C" : "5 km",
+            "D" : "3400 km",
+            "reponse" : "B",
+            "img" : "MDC4.jpg"
+        },
+        {
+            "nom" : "En quelle année a débuté la construction du mur ?",
+            "A" : "3ème siècle",
+            "B" : "5ème siècle av-JCH",
+            "C" : "3ème siècle av-JCH",
+            "D" : "5ème siècle",
+            "reponse" : "C",
+            "img" : "MDC5.jpg"
+        },
+        {
+            "nom" : "Pour quelle raison a été construite la muraille ?",
+            "A" : "Pour montrer la puissance de la Chine",
+            "B" : "Pour protéger le peuple des Mongols",
+            "C" : "Pour décorer",
+            "D" : "Pour la vanne xD",
+            "reponse" : "B",
+            "img" : "MDC6.jpg"
+        },
+        {
+            "nom" : "Quelle était la hauteur moyenne du mur ?",
+            "A" : "7 mètres",
+            "B" : "21 mètres",
+            "C" : "4 mètres",
+            "D" : "15 mètres",
+            "reponse" : "A",
+            "img" : "MDC7.jpg"
+        },
+        {
+            "nom" : "Combien d’ouvriers sont morts en construisant la muraille ?",
+            "A" : "50 000",
+            "B" : "700",
+            "C" : "80",
+            "D" : "400 000",
+            "reponse" : "D",
+            "img" : "MDC8.jpg"
+        },
+        {
+            "nom" : "Quelle dynastie est réputée pour avoir commencé sa construction ?",
+            "A" : "Ming",
+            "B" : "Shang",
+            "C" : "Quin",
+            "D" : "Zhou",
+            "reponse" : "C",
+            "img" : "MDC9.jpg"
+        },
+        {
+            "nom" : "Quel type de personne ont réalisé les travaux ?",
+            "A" : "Des artisans doués",
+            "B" : "Des esclaves capturés",
+            "C" : "Des soldats et ingénieurs",
+            "D" : "Des paysans et prisonniers",
+            "reponse" : "D",
+            "img" : "MDC10.jpg"
+        }
+    ]
+        
+    
+}

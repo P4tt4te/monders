@@ -6,7 +6,8 @@
             "B" : "Rome",
             "C" : "Agra",
             "D" : "Poitiers",
-            "reponse" : "C"
+            "reponse" : "C",
+            "img" : "TAJMAHAL1.jpg"
         },
         {
             "nom" : "Quel est le nom de l’empereur qui a ordonné la construction du Taj Mahal ?",
@@ -14,7 +15,8 @@
             "B" : "Jules César",
             "C" : "Genghis Khan",
             "D" : "Rashīd al-Dīn",
-            "reponse" : "A"
+            "reponse" : "A",
+            "img" : "TAJMAHAL2.jpg"
         },
         {
             "nom" : "Pour quelle raison a été bâti cet édifice ?",
@@ -22,7 +24,8 @@
             "B" : "Affirmer la puissance de l’empire mongole",
             "C" : "Accueillir les sans-abris",
             "D" : "Rendre hommage à une épouse défunte",
-            "reponse" : "D"
+            "reponse" : "D",
+            "img" : "TAJMAHAL3.jpg"
         },
         {
             "nom" : "De quoi est décédée Mumtaz Mahal, l’épouse à qui le monument rend hommage ?",
@@ -30,7 +33,8 @@
             "B" : "Noyée lors d’une baignade",
             "C" : "Morte en couche lors de l'accouchement de leur 14e enfant",
             "D" : "Assassinée par l'empreur autrichien Leopold X",
-            "reponse" : "C"
+            "reponse" : "C",
+            "img" : "TAJMAHAL4.jpg"
         },
         {
             "nom" : "Combien de minarets entourent le bâtiment principal ?",
@@ -38,7 +42,8 @@
             "B" : "4",
             "C" : "6",
             "D" : "8",
-            "reponse" : "B"
+            "reponse" : "B",
+            "img" : "TAJMAHAL5.jpg"
         },
         {
             "nom" : "En quelle année a débuté sa construction ?",
@@ -46,7 +51,8 @@
             "B" : "1547",
             "C" : "1668",
             "D" : "1793",
-            "reponse" : "A"
+            "reponse" : "A",
+            "img" : "TAJMAHAL6.jpg"
         },
         {
             "nom" : "De quel matériau le construction est-elle revêtue ?",
@@ -54,7 +60,8 @@
             "B" : "En cristal de roche",
             "C" : "En pierre volcanique",
             "D" : "En marbre blanc",
-            "reponse" : "D"
+            "reponse" : "D",
+            "img" : "TAJMAHAL7.jpg"
         },
         {
             "nom" : "Que voit-on en premier en arrivant au Taj Mahal ?",
@@ -62,7 +69,8 @@
             "B" : "Le mausolée",
             "C" : "Le cour d'eau",
             "D" : "Les minarets",
-            "reponse" : "A"
+            "reponse" : "A",
+            "img" : "TAJMAHAL8.jpg"
         },
         {
             "nom" : "Qu’est ce que le jardin a de spécial ?",
@@ -70,7 +78,8 @@
             "B" : "Les corps des servants y sont ensevelis",
             "C" : "Il est au style persan",
             "D" : "Le gazon est synthétique",
-            "reponse" : "C"
+            "reponse" : "C",
+            "img" : "TAJMAHAL9.jpg"
         },
         {
             "nom" : "Qui était Shah Jahan ?",
@@ -78,7 +87,8 @@
             "B" : "Une reine Pakistanaise",
             "C" : "Empereur de l'empire Mughal",
             "D" : "Empereur Indien",
-            "reponse" : "C"
+            "reponse" : "C",
+            "img" : "TAJMAHAL10.jpg"
         }
     ]
         
