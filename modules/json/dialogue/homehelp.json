@@ -1,0 +1,12 @@
+{
+    "dialogue": [
+        {
+            "phrase" : "Voici la carte du monde.",
+            "position" : "doigt"
+        },
+        {
+            "phrase" : "Clic sur une localisation pour t’y rendre, c’est là que devraient être cachées les reliques. Tu débloquera les autres localisations au fur et à mesure de l’aventure.",
+            "position" : "souriant"
+        }
+    ]
+}

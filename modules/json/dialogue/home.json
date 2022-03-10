@@ -1,0 +1,32 @@
+{
+    "dialogue": [
+        {
+            "phrase" : "Salut jeune aventurier ! Bienvenue sur Monders !",
+            "position" : "bonjour"
+        },
+        {
+            "phrase" : "Je m'appelle Marin, et je voudrais devenir aventurier, comme mon père!",
+            "position" : "souriant"
+        },
+        {
+            "phrase" : "Lors de sa dernière expédition en Egypte, il a trouvé ce mystérieux parchemin décrépit à propos de reliques antiques qui seraient présentes auprès des 7 merveilles du monde.",
+            "position" : "pascontent"
+        },
+        {
+            "phrase" : "Maintenant c'est à moi de continuer le boulot et de découvrir les secrets et mystères du monde !!",
+            "position" : "doigt"
+        },
+        {
+            "phrase" : "... ... ...",
+            "position" : "stress"
+        },
+        {
+            "phrase" : "Heu par où je commence? Je suis un peu perdu là…",
+            "position" : "stress"
+        },
+        {
+            "phrase" : "Oh j’ai une idée ! Ça te dirait de m’accompagner? On pourrait s’entraider et avancer plus facilement. Prends tes affaires, on prend le bateau dès ce soir!",
+            "position" : "content"
+        }
+    ]
+}

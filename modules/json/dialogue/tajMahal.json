@@ -1,0 +1,12 @@
+{
+    "dialogue": [
+        {
+            "phrase" : "Incroyable! On a réussi à mettre la main sur la Calice d’ivoir de Mumtaz Mahal.",
+            "position" : "heureux"
+        },
+        {
+            "phrase" : "Ça fait des années que les aventuriers la cherchent partout.",
+            "position" : "cerveau"
+        }
+    ]
+}

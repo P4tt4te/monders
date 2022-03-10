@@ -1,0 +1,16 @@
+{
+    "dialogue": [
+        {
+            "phrase" : "FAIRE LES DIALOGUES PETRAHELP : Tu as trouvé le marteau et le burin de Ramiza Jabbar. Si on en croit ce livre, ce serait elle qui aurait commencé la construction de cet édifice. Ce marteau a dû en voir de toutes les couleurs…",
+            "position" : "content"
+        },
+        {
+            "phrase" : "Bon alors laisse moi regarder ou est ce qu’on va ensuite…",
+            "position" : "stress"
+        },
+        {
+            "phrase" : "Italie! Colisée nous voilà.",
+            "position" : "doigt"
+        }
+    ]
+}

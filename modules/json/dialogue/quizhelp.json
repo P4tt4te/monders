@@ -1,0 +1,16 @@
+{
+    "dialogue": [
+        {
+            "phrase" : "Ah ! je vois que tu es arrivé au quiz! Tu as 10 questions avec 4 possibilités de réponses à chaque fois.",
+            "position" : "content"
+        },
+        {
+            "phrase" : "Réponds correctement à chaque question et tu pourras voyager jusqu’au pays suivant.",
+            "position" : "heureux"
+        },
+        {
+            "phrase" : "N’oublie pas: tu as 10 secondes pour répondre à la question.",
+            "position" : "cerveau"
+        }
+    ]
+}
