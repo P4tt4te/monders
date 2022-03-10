@@ -1,0 +1,12 @@
+{
+    "dialogue": [
+        {
+            "phrase" : "CHICHENITZAHELP : Ça, c'est ton profil.",
+            "position" : "doigt"
+        },
+        {
+            "phrase" : "Tu peux consulter ta progression dans l’aventure et rejouer les quiz que tu as déjà terminés.",
+            "position" : "heureux"
+        }
+    ]
+}
