@@ -1,0 +1,96 @@
+{
+    "question" : [
+        {
+            "nom" : "En quelle année a commencé la construction du colisée ?",
+            "A" : "15 avt JC",
+            "B" : "72 apr JC",
+            "C" : "156 apr JC",
+            "D" : "445 avt JC",
+            "reponse" : "B",
+            "img" : "COLIS1.jpg"
+        },
+        {
+            "nom" : "Quel était l’utilisation de cet édifice ?",
+            "A" : "Marché alimentaire",
+            "B" : "Combats et jeux variés",
+            "C" : "Réunions politiques",
+            "D" : "Concerts",
+            "reponse" : "B",
+            "img" : "COLIS2.jpg"
+        },
+        {
+            "nom" : "Quelle est la circonférence du colisée (circonférence)",
+            "A" : "527 mètres",
+            "B" : "206 mètres",
+            "C" : "788 mètres",
+            "D" : "223 mètres",
+            "reponse" : "A",
+            "img" : "COLIS3.jpg"
+        },
+        {
+            "nom" : "Quel était la capacité du colisée?",
+            "A" : "15 000 personnes",
+            "B" : "2500 personnes",
+            "C" : "5000 personnes",
+            "D" : "50 000 personnes",
+            "reponse" : "D",
+            "img" : "COLIS4.jpg"
+        },
+        {
+            "nom" : "Où était situé le siège de l’empereur ?",
+            "A" : "Au sommet",
+            "B" : "Précisément au centre",
+            "C" : "Dans les coins",
+            "D" : "Aux bords de l’arène",
+            "reponse" : "B",
+            "img" : "COLIS5.jpg"
+        },
+        {
+            "nom" : "Sous quel empereur a débuté la construction du colisée ?",
+            "A" : "Titus",
+            "B" : "Justus",
+            "C" : "Vespasien",
+            "D" : "Roblox",
+            "reponse" : "C",
+            "img" : "COLIS6.jpg"
+        },
+        {
+            "nom" : "Pourquoi 'L'amphithéâtre' a-t-il changé de nom pour le Colisée ?",
+            "A" : "En référence à la gigantesque statue de Néron de 35 mètres (appelée colosse) située à côté de l'amphithéâtre",
+            "B" : "Ca rappelle les études aux habitants",
+            "C" : "A cause d’une révolution",
+            "D" : "En référence au célèbre restaurant appelé Pasta situé à côté de l'amphithéâtre",
+            "reponse" : "A",
+            "img" : "COLIS7.jpg"
+        },
+        {
+            "nom" : "A l'intérieur, les gradins étaient organisés de façon à distinguer les :",
+            "A" : "Être couverts en cas de tempête",
+            "B" : "Spectacles",
+            "C" : "Classes sociales",
+            "D" : "Ce que les plus riches surplombent",
+            "reponse" : "C",
+            "img" : "COLIS8.jpg"
+        },
+        {
+            "nom" : "Qui organisait les événements du colisée ?",
+            "A" : "les scribes",
+            "B" : "L'empereur",
+            "C" : "Le chargé de communication",
+            "D" : "Titouan",
+            "reponse" : "D",
+            "img" : "COLIS9.jpg"
+        },
+        {
+            "nom" : "Quel est l'événement le plus spectaculaire ayant eu lieu dans le colisée ?",
+            "A" : "Un concert y a rassemblé plus de 2 fois sa capacité max",
+            "B" : "L’arène a été rempli d’eau",
+            "C" : "Romulus et Remus y ont donné un discours",
+            "D" : "Une mélée générale de 100 gladiateurs.",
+            "reponse" : "C",
+            "img" : "COLIS10.jpg"
+        }
+    ]
+        
+    
+}
