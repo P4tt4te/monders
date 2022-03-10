@@ -1,0 +1,31 @@
+.simon {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 300px;
+    width: 300px;
+}
+
+.simonred {
+    background-color: red;
+    opacity: 0.3;
+}
+
+.simongreen {
+    background-color: green;
+    opacity: 0.3;
+}
+
+.simonyellow {
+    background-color: yellow;
+    opacity: 0.3;
+}
+
+.simonblue {
+    background-color: blue;
+    opacity: 0.3;
+}
+
+.simon .on {
+    opacity: 1;
+}
