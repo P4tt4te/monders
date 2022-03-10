@@ -4,19 +4,24 @@
 
 	require_once ("../views/common.php");
 
-    if (isset($_SESSION['user']) )
+if (isset($_SESSION['user']) )
 	error("Vous êtes déjà connecté",  "../views/home.php");
+
 if (isset($_POST['formConnexion'])) {
     $mail = $_POST['mail'];
     $motdepasse = $_POST['motdepasse'];
     $user = UserModel::auth($mail, $motdepasse);
+
     if ($user==null) {
         error(
             "Ce couple identifiant/mot de passe n'existe pas",
             "../views/connexion.php"
         );
-    } else {
+    } 
+    else {
+
         $_SESSION['user'] = $user;
+        // header("Location :../views/home.php ");
         success("Vous êtes connecté","../views/home.php");
     }
 }

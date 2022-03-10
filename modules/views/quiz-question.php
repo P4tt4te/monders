@@ -10,11 +10,12 @@
     <title>Document</title>
 </head>
 <img src="../json/cookie.png" style="display:none;">
+<img src="../controllers/cookie.png" style="display:none;">
 <body>
 <?php 
 
 
-require_once('../controllers/quiz.php');
+require_once('../views/common.php');
 if (!isset($_SESSION['user']) )
 	error("Veuillez vous connecter pour accéder à la ressource",  "../views/inscription.php");
 
@@ -26,12 +27,7 @@ if (!isset($_SESSION['user']) )
 
             <!-- Modal content -->
             <div class="modal-content">
-                <p class="purple"><?php 
-                        if(isset($_POST['nomQuiz'])){
-                        echo($_POST['nomQuiz']);
-                    }else{
-                        var_dump($test);
-                        } ?>Quiz terminé avec un score de 
+                <p class="purple">Quiz terminé avec un score de 
                     <span class="affichagescore">0% 
                         </span>
                 </p>

@@ -1,5 +1,4 @@
 <link rel="stylesheet" href="../styles/calcul.css">
-<link rel="stylesheet" href="../styles/style.css">
 
 <div class="calcul">
     <h3>Mini-jeu</h3>
@@ -15,4 +14,4 @@
     </button>
 </div>
 <script src="../script/calcul.js"></script>
-    <script src="../script/calcul.js"></script>
+<script src="../script/calcul.js"></script>

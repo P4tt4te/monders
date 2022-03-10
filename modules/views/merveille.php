@@ -16,8 +16,8 @@ if (!isset($_SESSION['user']) )
 
 
 <body>
-    <img src="../json/dialogue/cookie.png">
-    <img src="../json/merveille/cookie.png">
+    <img style="display: none;" src="../json/dialogue/cookie.png">
+    <img style="display: none;" src="../json/merveille/cookie.png">
     <div class="marin" data-page="">
         <div class="perso">
             <img src="../images/marin/bonjour.png" alt="">
@@ -89,59 +89,59 @@ if (!isset($_SESSION['user']) )
 
         <section class="jeu">
             <div class="minijeux">
-                <div class="calcul">
-                    <h3>Mini-jeu</h3>
-                    <h3>Question <span class="indexquestion">1</span> sur <span>5</span></h3>
-                    <p class="corrector"></p>
-                    <div class="centrecalcul">
-                        <span class="romain title">VI</span>
-                        <p>=</p>
-                        <input class=" inputromain" type="number" max="9999" min="1" name="uti" id="">
-                    </div>
-                    <img class="desccalcul" src="../images/Merveilles/calcul/desc.svg" alt="" srcset="">
-                    <span class="help">Explique moi marin ?</span>
-                    <button class="controllermarin" name="controller">
-                    </button>
-                </div>
+                <?php 
+                switch ($_GET['merveille']) {
+                    case "petra":
+                        require_once('../views/simon.php');
+                        break;
+                    case "colisee":
+                        require_once('../views/calcul.php');
+                        break;
+                    case "chichenitza":
+                        require_once('../views/calcul.php');
+                        break;
+                    case "machupicchu":
+                        require_once('../views/calcul.php');
+                        break;
+                    case "christ":
+                        require_once('../views/calcul.php');
+                        break;
+                
+                    }
+                ?>
                 <script src="../script/calcul.js"></script>
             </div>
             <div class="quiz">
-                <form action="../controllers/merveille.php" method="POST">
-                <input class="redirection" type="submit" value="COMMENCER LE QUIZ" name="formQuiz">
-                <input type="hidden" name="idMerveille" value="
-                <?php
+            <?php
                 switch ($_GET['merveille']) {
                     case "murailledechine":
                         $idMerveille =  1;
-                        echo($idMerveille);
                         break;
                     case "tajMahal":
                         $idMerveille = 2;
-                        echo($idMerveille);
                         break;
                     case "petra":
                         $idMerveille = 3 ;
-                        echo($idMerveille);
                         break;
                     case "colisee":
                         $idMerveille = 4;
-                        echo($idMerveille);
                         break;
                     case "chichenitza":
                         $idMerveille = 5;
-                        echo($idMerveille);
                         break;
                     case "machupicchu":
                         $idMerveille = 6 ;
-                        echo($idMerveille);
                         break;
                     case "christ":
                         $idMerveille = 7;
-                        echo($idMerveille);
                         break;
                 
                 }
-                ?>">
+                ?>
+                <form action="../controllers/merveille.php" method="POST">
+                    <input class="redirection" type="submit" value="COMMENCER LE QUIZ" name="formQuiz">
+                    <input type="hidden" name="idMerveille" value="<?php echo $idMerveille; ?>">
+                    <input type="hidden" name="nomMerveille" value="<?php echo $_GET['merveille']; ?>">
                 </form>
                 
             </div>

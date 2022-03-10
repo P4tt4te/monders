@@ -1,81 +1,93 @@
 <?php
+
 require_once('../views/common.php');
-$test = "ne fait rien"; 
-// if (isset($_POST['nomQuiz'])) {
-    $test = "dans le if";
-    try {
-        $user = $_SESSION['user'];
-        $idQuiz = 7;
-        $progression = 100;
-        $idUti = $user->getId();
+// echo("TEST");
+try {
+   
+    // Check auth and retrieve user
 
-        $cnx = new Base(BASE, USERNAME, PASSWORD);
+    if (!isset($_SESSION['user'])) {
+        http_response_code(401); //unauthorized
 
-        $lignes = $cnx->query('select * from participe where idUtilisateur=? AND idQuiz = ?', array($idUti,$idQuiz));
-    
-        // $debloqueMerveille = $cnx->query(
-        //     "SELECT progression debloqueMerveille FROM participe WHERE idUtilisateur=? AND idQuiz = ?",
-        //     array($idUti,$idQuiz)
-        // );
-
-
-        if (count($lignes) == 1) {
-           
-            // $cnx->update('update participe set progression=? WHERE idUtilisateur = ? AND idQuiz = ?', array($progression,$idUti,$idQuiz));
-            if($progression== 100  && $idQuiz<7)
-            {
-                $test = "debloque prochaine merveille + update";
-                $cnx->query(
-                    "insert into debloque values (?,?,0,?);
-                    update participe set progression=? WHERE idUtilisateur = ? AND idQuiz = ? ",
-                    array($idQuiz + 1, $idUti,null, $progression, $idUti, $idQuiz)
-                );
-            }
-            elseif($progression!= 100 && $idQuiz == 7)
-            {
-                $test = "insert quiz 7";
-                $cnx->update(
-                "update participe set progression=? WHERE idUtilisateur = ? AND idQuiz = ? ",
-                array($idQuiz + 1, $idUti,null, $progression, $idUti, $idQuiz));
-            }
-            else
-            {
-                $test = "insert quiz update";
-                $cnx->update(
-                "update participe set progression=? WHERE idUtilisateur = ? AND idQuiz = ? ",
-                array($idQuiz + 1, $idUti,null, $progression, $idUti, $idQuiz));
-            }
-        }
-        else{
-            if($progression== 100 && $idQuiz<7)
-            {
-                $test = "debloque prochaine merveille + insert";
-                $cnx->query(
-                    "insert into debloque values (?,?,0,?);
-                    insert into participe values (?,?,?) ",
-                    array($idQuiz + 1, $idUti,null,$idQuiz,$idUti, $progression));
-            }
-            elseif($progression== 100 && $idQuiz == 7)
-            {
-                $test = "insert quiz 7";
-                $cnx->insert(
-                "insert into participe values (?,?,?) ",
-                array($idQuiz,$idUti,$progression));
-            }
-            else
-            {
-                $test = "insert quiz insert";
-                $cnx->insert(
-                "insert into participe values (?,?,?) ",
-                array($idQuiz,$idUti,$progression));
-            }
-            
-            // success("", "../views/quiz.php");
-    }    
-    } catch (\Throwable $th) {
-        // error("Problème lors de l'insertion du quiz", "../views/quiz.php");
+        return;
     }
-// }else{
-//     $test = "dans le else";
-// }
+
+    $user = $_SESSION['user'];
+
+    // Retrieve and parse JSON data
+
+    $data = json_decode(file_get_contents('php://input'), true);
+
+    if ($data == null) { // Retourner 400 client (Bad request)
+
+        http_response_code(400);
+
+        return;
+    }
+
+    
+    
+    
+    $idQuiz = $data['nomQuiz'];
+
+
+    $progression = $data['score'];
+
+
+    $idUti = $user->getId();
+
+    $cnx = new Base(BASE, USERNAME, PASSWORD);
+
+
+
+    // Mise à jour / création de la réponse au quiz
+
+    $lignes = $cnx->query(
+        'select * from participe where idUtilisateur=? AND idQuiz = ?',
+        array($idUti,$idQuiz)
+    );
+
+    $lignesMerveille = $cnx->query(
+        'select * from debloque where idUtilisateur=? AND idMerveille = ?',
+        array($idUti,$idQuiz + 1)
+    );
+
+    
+
+    if (count($lignes) == 1) { // Previous scores
+        $cnx->update(
+            "update participe set progression=? WHERE idUtilisateur = ? AND idQuiz = ?",
+            array($progression, $idUti, $idQuiz)
+        );
+    } else {
+        $cnx->insert(
+            "insert into participe (idQuiz, idUtilisateur, progression) values (?,?,?) ",
+            array($idQuiz, $idUti, $progression)
+        );
+    }
+
+    
+
+    // Mise à jour de la progression si le score est 50
+
+    if ($progression >= 50 && $idQuiz < 7) {
+        echo($idQuiz);
+        $cnx->query(
+            "insert into debloque (idMerveille, idUtilisateur, progression, recommandation) values (?,?,0,?);",
+            array($idQuiz + 1, $idUti, null)
+        );
+    }
+
+
+} catch (\Throwable $th) {
+    header('Content-Type: application/json; charset=utf-8');
+    echo($idQuiz);
+    echo (json_encode(array('idQuiz'=>$idQuiz,'message' => $th->getMessage(), 'trace' => $th->getTraceAsString())));
+    // var_dump($data);
+    http_response_code(500);
+    
+
+}
+
 ?>
+

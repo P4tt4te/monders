@@ -4,6 +4,7 @@
 require_once('../views/common.php');
 require_once('../views/pageBegin.php');
 require_once('../views/header.php');
+require_once('../controllers/merveille.php');
 
 if (!isset($_SESSION['user']) )
 	error("Veuillez vous connecter pour accéder à la ressource",  "../views/inscription.php");
@@ -170,7 +171,7 @@ if (!isset($_SESSION['user']) )
         </div>
         <div class="bloc9 bloc purple" data-scroll-section>
             <span>Vous pouvez maintenant accéder au quiz :</span>
-            <form action="../views/quiz.php" method="post">
+            <form action="../views/quiz.php?merveille=tajMahal" method="post">
                 <input class="purple" type="submit" value="QUIZ ->">
             </form>
         

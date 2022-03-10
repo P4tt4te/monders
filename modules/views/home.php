@@ -18,7 +18,7 @@
         <img src="../images/home/map/map-trait-<?=$nbDebloque[0]["nbDebloque"]?>.png" alt="" class="carte-trait"> 
         
         <div class="merveille murailleChine">
-        <a <?php if(isset($user)){echo('href="../views/murailledechine.html"');}else{echo('href="../views/inscription.php"');}?>>
+        <a <?php if(isset($user)){echo('href="../views/murailledechine.php?merveille=murailledechine"');}else{echo('href="../views/inscription.php"');}?>>
             <img src="../images/home/icons/pin.png" alt="" class="pin">
             <div class="photo">
                 <img src="../images/home/icons/icon-muraile.png" alt="" class="merveille-photo">
@@ -28,7 +28,7 @@
         
         
         <div class="merveille tajMahal <?php if($nbDebloque[0]["nbDebloque"] < 2){echo("disabled");}?>">
-        <a <?php if($nbDebloque[0]["nbDebloque"] < 2){echo("");}else{echo('href="../views/tajMahal.php"');}?>>
+        <a <?php if($nbDebloque[0]["nbDebloque"] < 2){echo("");}else{echo('href="../views/tajMahal.php?merveille=tajMahal"');}?>>
             <img src="../images/home/icons/pin.png" alt="" class="pin">
             <div class="photo">
                     <img src="../images/home/icons/icon-tajMahal.png" alt="" class="merveille-photo">
