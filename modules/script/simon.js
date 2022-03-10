@@ -133,10 +133,19 @@ function verif() {
                 if (manche > 3) {
                     findujeu();
                 } else {
-                    game();
+                    let corrector = document.querySelector('.corrector');
+                    corrector.textContent = "";
+                    let num = document.querySelector('.indexquestion');
+                    num.textContent = manche;
+                    let timernewgame = window.setTimeout(newgame, 1500);
+                    function newgame() {
+                        clearTimeout(timernewgame);
+                        game();
+                    }
                 }
             } else {
-                console.log('il faut refaire...');
+                let corrector = document.querySelector('.corrector');
+                corrector.textContent = "Ce n'est pas la bonne réponse";
                 game();
             }
         }

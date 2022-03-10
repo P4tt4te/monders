@@ -1,4 +1,4 @@
-.simon {
+.simoncentre {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -26,6 +26,15 @@
     opacity: 0.3;
 }
 
-.simon .on {
+.simoncentre .on {
     opacity: 1;
+}
+
+.simoncentre p {
+    font-size: 10rem;
+}
+
+.corrector {
+    font-size: 1.5rem;
+    color: red;
 }
