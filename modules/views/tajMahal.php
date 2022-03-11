@@ -1,14 +1,30 @@
 
 <body>
 <?php 
-require_once('../views/common.php');
+require_once('../controllers/merveille.php');
 require_once('../views/pageBegin.php');
 require_once('../views/header.php');
 
 
+
 ?>
+<link rel="stylesheet" href="../styles/marin.css">
+<div class="marin" data-page="tajMahal">
+        <div class="perso">
+            <img src="../images/marin/bonjour.png" alt="">
+        </div>
+        
+        <div class="bulles">
+            <div class="bulle-parole">
+                <p class="texte-parole"></p>
+            </div>
+        </div>
+        <div class="suite">
+            <p>Cliquer pour continuer le dialogue.</p>
+        </div>
+    </div>
+    
     <main class="background" data-scroll-container>
-    <link rel="stylesheet" href="../styles/style.css" type="text/css" media="screen">
     <link rel="stylesheet" href="../styles/tajMahal.css" type="text/css" media="screen">
     <link rel="stylesheet" href="../styles/locomotive-scroll.css" type="text/css" media="screen">
         <div class="bloc1 bloc" data-scroll-section>
@@ -20,7 +36,7 @@ require_once('../views/header.php');
 
             </div>
             <div class="progress" data-scroll data-scroll-speed="2">
-                <img src="../public/assets/tajMahal/Line_1.svg" alt="">
+                <img src="../images/Merveilles/tajMahal/Line_1.svg" alt="">
                 <span>89%</span>
             </div>
         </div>
@@ -32,9 +48,9 @@ require_once('../views/header.php');
                     </h2>
                 </div>
                 <div class="imgbloc2">
-                    <img class="img211" src="../public/assets/tajMahal/archive5.png" alt="">
+                    <img class="img211" src="../images/Merveilles/tajMahal/archive5.png" alt="">
                     <div class="img212bloc">
-                        <img id="target" class="img212" src="../public/assets/tajMahal/construction6.png" alt="">
+                        <img id="target" class="img212" src="../images/Merveilles/tajMahal/construction6.png" alt="">
                     </div>
 
                 </div>
@@ -57,7 +73,7 @@ require_once('../views/header.php');
             <div class="bloc31">
                 <div class="bloc311">
                     <h3 class="yellow h3" data-scroll data-scroll-speed="2">La construction du Taj Mahal,<br> représentation symbolique de l'amour.</h3>
-                    <img class="trait" src="../public/assets/tajMahal/Line_2.svg" alt="">
+                    <img class="trait" src="../images/Merveilles/tajMahal/Line_2.svg" alt="">
                     <p class="txt311">Considéré comme le plus gros joyau architectural de l'art indo-islamiquue, l'histoire du Taj
                         Mahal est le résultat d'un amour inconditionnel d'un homme evers sa femme. En effet, le mausolée
                         a été édifié sous les ordres de l'empereur moghol Shah Jahan en mémoire de sa troisième épose
@@ -66,7 +82,7 @@ require_once('../views/header.php');
                         de fidélité, et qu'il ne se remarie pas une nouvelle fois. La seconde est de lui bâtir un petit
                         mausolée en son honneur.</p>
                 </div>
-                <img class="amour1" src="../public/assets/tajMahal/amour1.jpg" alt="">
+                <img class="amour1" src="../images/Merveilles/tajMahal/amour1.jpg" alt="">
             </div>
             <p class="txt3">Promesses respectées. Shah Jahan, fou amoureux de sa femme et déboussolé par son décès, mis en oeuvre ces
                 promesses. C'est de là que vient la construction de ce monument immense, afin que le monde entier sache
@@ -82,9 +98,9 @@ require_once('../views/header.php');
                     <p>Le chantier débuta en 1631, et se termina en 1648. Certaines parties du site ne furent ajoutées qu'après la construction initiale, c'est notamment le cas de la mosquée.</p>
                 </div>
                 <div class="bloc412">
-                    <img class="img4121" src="../public/assets/tajMahal/construction5.png" alt="">
+                    <img class="img4121" src="../images/Merveilles/tajMahal/construction5.png" alt="">
                     <div class="bloc4122">
-                        <img class="img412" src="../public/assets/tajMahal/archive6.png" alt="">
+                        <img class="img412" src="../images/Merveilles/tajMahal/archive6.png" alt="">
                     </div>
                 </div>
             </div>
@@ -92,30 +108,33 @@ require_once('../views/header.php');
         <div class="bloc10 bloc" data-scroll-section>
             <div class="bloc101">
                 <div class="draggable" data-name="1">
-                    <img src="../public/assets/tajMahal/panneau/goa.svg" alt="">
+                    <img src="../images/Merveilles/tajMahal/panneau/goa.svg" alt="">
                 </div>
                 <div class="draggable" data-name="2">
-                    <img src="../public/assets/tajMahal/panneau/bombay.svg" alt="">
+                    <img src="../images/Merveilles/tajMahal/panneau/bombay.svg" alt="">
                 </div>
                 <div class="draggable" data-name="3">
-                    <img src="../public/assets/tajMahal/panneau/agra.svg" alt="">
+                    <img src="../images/Merveilles/tajMahal/panneau/agra.svg" alt="">
                 </div>
                 <div class="draggable" data-name="4">
-                    <img src="../public/assets/tajMahal/panneau/hyderbad.svg" alt="">
+                    <img src="../images/Merveilles/tajMahal/panneau/hyderbad.svg" alt="">
                 </div>
                 
             </div>
             <div class="bloc102">
                 <p class="bloc102txt">Placer le bon panneau du Taj-mahal.</p>
-                <img src="../public/assets/tajMahal/map.svg" alt="">
+                <span class="help">Explique moi marin ?</span>
+                <img src="../images/Merveilles/tajMahal/map.svg" alt="">
                 <div class="droppable">
                     Mettez le bon panneau.
                 </div>
+                <button class="controllermarin" name="controller">
             </div>
+        
         </div>
         <div class="bloc5 bloc" data-scroll-section>
             <div class="blocbloc5img">
-                <img class="bloc5img" src="../public/assets/tajMahal/ustad1.jpg" alt="">
+                <img class="bloc5img" src="../images/Merveilles/tajMahal/ustad1.jpg" alt="">
             </div>
             <div class="title purple bloc5name" data-scroll data-scroll-speed="2">
                 <h2 class="bloc5name1">Ustad</h2>
@@ -123,9 +142,9 @@ require_once('../views/header.php');
                 <h2>Lahauri</h2>
             </div>
             <div class="bloc5line" >
-                <img src="../public/assets/tajMahal/Line_3.svg" alt="">
+                <img src="../images/Merveilles/tajMahal/Line_3.svg" alt="">
                 <span class="purple">ARCHITECTE</span>
-                <img src="../public/assets/tajMahal/Line_3.svg" alt="">
+                <img src="../images/Merveilles/tajMahal/Line_3.svg" alt="">
             </div>
             
         </div>
@@ -144,13 +163,13 @@ require_once('../views/header.php');
                 </p>
             </div>
             <div class="bloc7img">
-                <img src="../public/assets/tajMahal/ustad3.webp" alt="">
+                <img src="../images/Merveilles/tajMahal/ustad3.webp" alt="">
             </div>
         </div>
         <div class="bloc8 bloc" data-scroll-section>
             <h2 class="title gros purple" >Histoire</h2>
             <div class="bloc81">
-                <img src="../public/assets/tajMahal/facade1.jpg" alt="" data-scroll data-scroll-speed="2" >
+                <img src="../images/Merveilles/tajMahal/facade1.jpg" alt="" data-scroll data-scroll-speed="2" >
                 <div class="bloc811">
                     <p>Le Taj Mahal tel que nous le connaissons aujourd'hui est physiquement le même qu'il était
                         lorsqu'il a été fondé. En effet, la bâtisse n'a subi aucun dégât majeur au fil de son hisoire,
@@ -169,8 +188,10 @@ require_once('../views/header.php');
         </div>
         <div class="bloc9 bloc purple" data-scroll-section>
             <span>Vous pouvez maintenant accéder au quiz :</span>
-            <form action="../views/quiz.php" method="post">
-                <input class="purple" type="submit" value="QUIZ ->">
+            <form action="../controllers/merveille.php" method="post">
+                <input class="purple" type="submit" value="QUIZ ->" name="formQuiz">
+                <input type="hidden" name="nomMerveille" value="<?php echo $_GET['merveille']; ?>">
+                <input type="hidden" name="idMerveille" value="2">
             </form>
         
             
@@ -178,10 +199,11 @@ require_once('../views/header.php');
         <footer class="purple" data-scroll-section>© Copyright monders 2021</footer>
     </main>
     <script src="../libs/locomotive-scroll.min.js"></script>
-    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="../libs/jquery.js"></script>
+    <script src="../libs/jqueryui.js"></script>
     <script src="../script/tajMahal.js"></script>
     <script src="../script/succes.js"></script>
+    <script src="../script/dialogue.js"></script>
 </body>
 
 </html>

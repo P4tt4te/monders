@@ -1,0 +1,20 @@
+{
+    "dialogue": [
+        {
+            "phrase" : "haha trop bien tu as réussi le quiz !",
+            "position" : "bonjour"
+        },
+        {
+            "phrase" : "Bon si on pouvait se dépêcher de partir ca serait plutot bien, j’ai le vertige ici!",
+            "position" : "stress"
+        },
+        {
+            "phrase" : "La hauteur me rend malade, je serai plus à l'aise au pied de cette montagne autour d’une bonne table et d’un bon Ceviche. C’est la spécialité culinaire péruvienne!",
+            "position" : "stress"
+        },
+        {
+            "phrase" : "Bon, je suppose qu’on a pas le temps pour ça, le Brésil et le Christ Rédempteur nous attendent.",
+            "position" : "pascontent"
+        }
+    ]
+}

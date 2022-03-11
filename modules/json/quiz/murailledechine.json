@@ -16,7 +16,7 @@
             "C" : "Est",
             "D" : "Ouest",
             "reponse" : "A",
-            "img" : "MDC2.jpg"
+            "img" : "MDC2.webp"
         },
         {
             "nom" : "De quoi la muraille est-elle faite ?",
@@ -34,7 +34,7 @@
             "C" : "5 km",
             "D" : "3400 km",
             "reponse" : "B",
-            "img" : "MDC4.jpg"
+            "img" : "MDC4.webp"
         },
         {
             "nom" : "En quelle année a débuté la construction du mur ?",
@@ -43,7 +43,7 @@
             "C" : "3ème siècle av-JCH",
             "D" : "5ème siècle",
             "reponse" : "C",
-            "img" : "MDC5.jpg"
+            "img" : "MDC5.png"
         },
         {
             "nom" : "Pour quelle raison a été construite la muraille ?",
@@ -90,7 +90,6 @@
             "reponse" : "D",
             "img" : "MDC10.jpg"
         }
-    ]
-        
-    
+    ],
+    "title" : "Muraille de Chine"
 }

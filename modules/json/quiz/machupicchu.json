@@ -1,0 +1,96 @@
+{
+    "question" : [
+        {
+            "nom" : "Quelle est l'altitude du Machu Picchu ?",
+            "A" : "21710m",
+            "B" : "5730m",
+            "C" : "1000m",
+            "D" : "2430m",
+            "reponse" : "D",
+            "img" : "MACHU1.jpg"
+        },
+        { 
+            "nom" : "De quel civilisation le Machu Picchu est-elle l'oeuvre ?",
+            "A" : "Maya",
+            "B" : "Inca",
+            "C" : "Viking",
+            "D" : "Amerindienne",
+            "reponse" : "B",
+            "img" : "MACHU2.jpg"
+        },
+        {
+            "nom" : "Quel est son siècle de création",
+            "A" : "18e",
+            "B" : "15e",
+            "C" : "3e",
+            "D" : "8e",
+            "reponse" : "B",
+            "img" : "MACHU3.webp"
+        },
+        {
+            "nom" : "Combien de temps la ville a t-elle été préservée",
+            "A" : "200",
+            "B" : "-500",
+            "C" : "2000",
+            "D" : "500",
+            "reponse" : "D",
+            "img" : "MACHU4.jpg"
+        },
+        {
+            "nom" : "A quelles fins était déstinée la ville ?",
+            "A" : "On ne sait pas vraiment",
+            "B" : "Se proteger des envahisseurs",
+            "C" : "Pour se rapprocher des étoiles",
+            "D" : "Position militaire stratégique",
+            "reponse" : "A",
+            "img" : "MACHU5.jpg"
+        },
+        {
+            "nom" : "Comment la ville résistait elle aux tremblements de terre ?",
+            "A" : "Les tremblements de terre n'étaient pas assez forts",
+            "B" : "La ville était creusée directement dans la montagne",
+            "C" : "Ils utilisaient du mortier",
+            "D" : "Les pierres étaient parfaitement taillées",
+            "reponse" : "D",
+            "img" : "MACHU6.jpg"
+        },
+        {
+            "nom" : "Combien de temps après sa construction la ville a été abandonnée ?",
+            "A" : "200 ans",
+            "B" : "100 ans",
+            "C" : "500 ans",
+            "D" : "50 ans",
+            "reponse" : "B",
+            "img" : "MACHU7.jpg"
+        },
+        {
+            "nom" : "Qui a envahi la population Inca au 16e siecle",
+            "A" : "Les conquistadors espagnols",
+            "B" : "Critophe Colomb",
+            "C" : "David Guetta",
+            "D" : "Michel Desjoyaux",
+            "reponse" : "A",
+            "img" : "MACHU8.jpg"
+        },
+        {
+            "nom" : "Quel est le nom de la montage sur laquelle est érigée la ville ?",
+            "A" : "Andes",
+            "B" : "Inca",
+            "C" : "Everest",
+            "D" : "Mont Blanc",
+            "reponse" : "A",
+            "img" : "MACHU9.jpg"
+        },
+        {
+            "nom" : "Pourquoi est-ce difficile pour les scientifiques de s'instruire sur le peuple Inca?",
+            "A" : "Ils n'étaient pas très fort en architecture",
+            "B" : "ils avaient peur de l'eau",
+            "C" : "Ils ne sont pas très interessants",
+            "D" : "Ils ont détruit toute trace de leur existance",
+            "reponse" : "C",
+            "img" : "MACHU10.jpg"
+        }
+    ]
+        
+    
+}

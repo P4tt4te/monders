@@ -89,7 +89,28 @@ if (!isset($_SESSION['user']) )
 
         <section class="jeu">
             <div class="minijeux">
-            </div>  
+                <?php 
+                switch ($_GET['merveille']) {
+                    case "petra":
+                        require_once('../views/simon.php');
+                        break;
+                    case "colisee":
+                        require_once('../views/calcul.php');
+                        break;
+                    case "chichenitza":
+                        require_once('../views/calcul.php');
+                        break;
+                    case "machupicchu":
+                        require_once('../views/calcul.php');
+                        break;
+                    case "christ":
+                        require_once('../views/calcul.php');
+                        break;
+                
+                    }
+                ?>
+                <script src="../script/calcul.js"></script>
+            </div>
             <div class="quiz">
             <?php
                 switch ($_GET['merveille']) {

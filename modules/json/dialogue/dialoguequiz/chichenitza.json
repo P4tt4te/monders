@@ -1,0 +1,20 @@
+{
+    "dialogue": [
+        {
+            "phrase" : "Tu es sûr que tes ancêtres n’étaient pas Maya ?",
+            "position" : "bonjour"
+        },
+        {
+            "phrase" : "On dirait que tu connais cette ville comme ta poche! Un vrai petit empereur.",
+            "position" : "heureux"
+        },
+        {
+            "phrase" : "Tu imagines un peu vivre ici au milieu de cette civilisation? Ma plus grande peur serait de tomber dans un Cenote….",
+            "position" : "stress"
+        },
+        {
+            "phrase" : "Allez il est temps d’y aller, j'espère que tu as pris tes chaussures de randonnée parce qu’on a une montagne à grimper.",
+            "position" : "content"
+        }
+    ]
+}

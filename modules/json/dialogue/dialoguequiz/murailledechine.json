@@ -1,0 +1,16 @@
+{
+    "dialogue": [
+        {
+            "phrase" : "Super ! Tu as réussi à passer le Quiz, maintenant direction l’Inde.",
+            "position" : "heureux"
+        },
+        {
+            "phrase" : "On à rendez-vous à Agra, dans le nord, pour explorer le Taj Mahal à la recherche du Calice d’ivoir de Mumtaz Mahal.",
+            "position" : "doigt"
+        },
+        {
+            "phrase" : "Le train nous attend.",
+            "position" : "stress"
+        }
+    ]
+}

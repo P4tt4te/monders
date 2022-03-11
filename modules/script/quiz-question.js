@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded",init);
 const adresse = window.location.search;
 var merveille = null;
-
+var idquiz = 1;
 var quiz;
 
 
@@ -16,10 +16,41 @@ function init() {
     console.log(merveille);
     if (merveille != null) {
         recupjson();
+        createid();
     }
 
 }
 
+function createid() {
+    switch(merveille) {
+        case 'murailledechine' :
+            idquiz = 1;
+            break;
+        case 'tajMahal' :
+            idquiz = 2;
+            break;
+        case 'petra' :
+            idquiz = 3;
+            break;
+        case 'colisee' :
+            idquiz = 4;
+            break;    
+        case 'chichenitza' :
+            idquiz = 5;
+            break;    
+        case 'machupicchu' :
+            idquiz = 6;
+            break;    
+        case 'christ' :
+            idquiz = 7;
+            break;    
+    }
+}
+
+function changernom(name) {
+    let zone = document.querySelector('.descriptif>h2');
+    zone.textContent = name;
+}
 
 
 function recupjson() {
@@ -49,6 +80,7 @@ function recupjson() {
         .then(function (tab) {
 
             creerquiz(tab.question);
+            changernom(tab.title);
 
 
 
@@ -99,9 +131,12 @@ function prochaine() {
     if (quiz.getnum() == 9) {
 
         console.log('finquiz score final : ' + quiz.getscore());
-
         openmodal(quiz.getscore());
-
+        if (quiz.getscore() > 0) {
+            let dec = document.querySelector('.controllermarin');
+            dec.click();
+        }
+        
     } else {
 
         console.log('prochaine q');
@@ -132,7 +167,7 @@ function openmodal(score) {
 
     let obj = {
 
-        nomQuiz: Number(document.querySelector('.container').dataset.quiz),
+        nomQuiz: idquiz,
 
         score: score * 10 
 

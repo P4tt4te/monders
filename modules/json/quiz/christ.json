@@ -1,0 +1,95 @@
+{
+    "question" : [
+        {
+            "nom" : "Quel est son nom officiel ?",
+            "A" : "Cristo Rendentor",
+            "B" : "Chista Rendentor",
+            "C" : "Chirstophe Harnay",
+            "D" : "Chirsto do Rio",
+            "reponse" : "A",
+            "img" : "CHRIST.jpg"
+        },
+        {
+            "nom" : "De quel nationalité était le sculpteur Paul Landowski, le créateur du christ rédempteur ?",
+            "A" : "Pologne",
+            "B" : "Zambie",
+            "C" : "Brésil",
+            "D" : "France",
+            "reponse" : "D",
+            "img" : "CHRIST.jpg"
+        },
+        {
+            "nom" : "Quelle est l'altitude de la statue ?",
+            "A" : "527 mètres",
+            "B" : "206 mètres",
+            "C" : "710 mètres",
+            "D" : "223 mètres",
+            "reponse" : "C",
+            "img" : "CHRIST.jpg"
+        },
+        {
+            "nom" : "Combien de marches contient l'escalier pour monter au pied de la statue ?",
+            "A" : "220",
+            "B" : "550",
+            "C" : "5000",
+            "D" : "300",
+            "reponse" : "A",
+            "img" : "CHRIST.jpg"
+        },
+        {
+            "nom" : "Comment s'appelle la montagne ou est situé le Christ redempteur ?",
+            "A" : "Rezé dans le 44",
+            "B" : "mont Corcovado",
+            "C" : "La montagne achoa",
+            "D" : "Aux bords de l’arène de rome",
+            "reponse" : "B",
+            "img" : "CHRIST.jpg"
+        },
+        {
+            "nom" : "La statue fait partie de quel stylé artistique ?",
+            "A" : "Brutalisme",
+            "B" : "Art déco",
+            "C" : "Art Moderne",
+            "D" : "Roblox",
+            "reponse" : "B",
+            "img" : "CHRIST.jpg"
+        },
+        {
+            "nom" : "En quelle année le projet de construction à t'il été approuvé ?",
+            "A" : "1921",
+            "B" : "echo 1921",
+            "C" : "2023",
+            "D" : "En référence au célèbre restaurant appelé NPasta situé à côté de l'amphithéâtre",
+            "reponse" : "A",
+            "img" : "CHRIST.jpg"
+        },
+        {
+            "nom" : "La statue représente qui ?",
+            "A" : "Un ancien président brésilien.",
+            "B" : "Jesus-Christ",
+            "C" : "AHH INSERT",
+            "D" : "Wao lol",
+            "reponse" : "B",
+            "img" : "CHRIST.jpg"
+        },
+        {
+            "nom" : "Dans quel pays ?",
+            "A" : "Brésil",
+            "B" : "Trinité et tobago",
+            "C" : "Argentine",
+            "D" : "Bolivie",
+            "reponse" : "A",
+            "img" : "CHRIST.jpg"
+        },
+        {
+            "nom" : "En quelle année la construction du Christ Rédempteur à t'elle été achevée ?",
+            "A" : "1931",
+            "B" : "1931",
+            "C" : "1931",
+            "D" : "La réponse C",
+            "reponse" : "C",
+            "img" : "CHRIST.jpg"
+        }
+    ],
+    "title" : "Christ redempteur"
+}

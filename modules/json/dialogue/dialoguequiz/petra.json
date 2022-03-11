@@ -1,0 +1,20 @@
+{
+    "dialogue": [
+        {
+            "phrase" : "Ce petit séjour en Asie était exceptionnel, mais j’avoue que la chaleur qu’il fait ici commence sérieusement à me faire fondre… J’aurai dû apporter mon ventilateur personnel.",
+            "position" : "stress"
+        },
+        {
+            "phrase" : "Les enfants, n’oubliez pas de vous hydrater surtout, c’est très important.",
+            "position" : "cerveau"
+        },
+        {
+            "phrase" : "Bon alors laisse moi regarder ou est ce qu’on va ensuite…",
+            "position" : "souriant"
+        },
+        {
+            "phrase" : "Oh l’Italie… Colisée nous voilà !",
+            "position" : "heureux"
+        }
+    ]
+}

@@ -20,6 +20,8 @@ $(function () {
           console.log("bonne réponse, bloquage du module drag and drop")
         $(".droppable").droppable("disable");
         $(".draggable").draggable("disable");
+        $('.controllermarin').click();
+
       }else{
         $(this)
         .html("Ce n'est pas la bonne ville.");

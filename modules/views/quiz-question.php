@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/quiz-question.css">
+    <link rel="stylesheet" href="../styles/marin.css" rel="stylesheet" type="text/css">
     <title>Document</title>
 </head>
 <img src="../json/cookie.png" style="display:none;">
@@ -22,6 +23,23 @@ if (!isset($_SESSION['user']) )
 
 ?>
     <main>
+        <button class="controllermarin" name="controller">
+        </button>
+        <div class="marin" data-page="petra">
+            <div class="perso">
+                <img src="../images/marin/bonjour.png" alt="">
+            </div>
+            
+            <div class="bulles">
+                <div class="bulle-parole">
+                    <p class="texte-parole"></p>
+                </div>
+            </div>
+            <div class="suite">
+                <p>Cliquer pour continuer le dialogue.</p>
+            </div>
+            
+        </div>
         <!-- The Modal -->
         <div id="myModal" class="modal">
 
@@ -78,6 +96,7 @@ if (!isset($_SESSION['user']) )
         </div>
         <div class="barTimer barani"></div>
         <script src="../script/quiz-question.js"></script>
+        <script src="../script/dialogue.js"></script>
     </main>
 </body>
 

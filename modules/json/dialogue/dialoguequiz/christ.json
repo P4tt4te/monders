@@ -1,0 +1,24 @@
+{
+    "dialogue": [
+        {
+            "phrase" : "Et bien ça y est, l’aventure est terminée.",
+            "position" : "cerveau"
+        },
+        {
+            "phrase" : "Ce fut une véritable réussite, et ça n’aurait pas été possible sans toi.",
+            "position" : "content"
+        },
+        {
+            "phrase" : "Tu mérites largement le titre d’aventurier expert! Ne m’oublies pas quand tu deviendras célèbre.",
+            "position" : "doigt"
+        },
+        {
+            "phrase" : "Maintenant je dois ramener tous ces objets au musée. Le monde entier doit pouvoir voir ces reliques et agrandir leur connaissances sur les sept merveilles du monde.",
+            "position" : "souriant"
+        },
+        {
+            "phrase" : "A bientôt pour de nouvelles aventure.",
+            "position" : "bonjour"
+        }
+    ]
+}

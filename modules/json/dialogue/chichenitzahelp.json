@@ -1,12 +1,12 @@
 {
     "dialogue": [
         {
-            "phrase" : "CHICHENITZAHELP : Ça, c'est ton profil.",
-            "position" : "doigt"
+            "phrase" : "Dans cet énigme, tu dois traduire les chiffres romains en chiffre classique que tu connais déjà.",
+            "position" : "content"
         },
         {
-            "phrase" : "Tu peux consulter ta progression dans l’aventure et rejouer les quiz que tu as déjà terminés.",
-            "position" : "heureux"
+            "phrase" : "Les chiffres romains sont le nom donné au système de numération utilisé dans l'antiquité romaine, lu de gauche à droite il utilise 7 lettres dont les valeurs s'ajoutent ou se soustraient en fonction de leur position. Par exemple: IV = 4 mais VI = 6",
+            "position" : "cerveau"
         }
     ]
 }

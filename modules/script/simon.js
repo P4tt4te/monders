@@ -156,6 +156,8 @@ function verif() {
 
 function findujeu() {
     console.log('FIN DU JEU');
+    let dec = document.querySelector('.controllermarin');
+    dec.click();
 }
 
 function eclairer(couleur, delai) {

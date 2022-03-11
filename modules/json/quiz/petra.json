@@ -1,0 +1,95 @@
+{
+    "question" : [
+        {
+            "nom" : "De quel empire Petra a-t-elle été la capitale ?",
+            "A" : "Nabatéen",
+            "B" : "Romai",
+            "C" : "Grec",
+            "D" : "Judéen",
+            "reponse" : "A",
+            "img" : "PETRA1.jpg"
+        },
+        {
+            "nom" : "Quel nom a été donné à l'accès principal de Petra ?",
+            "A" : "Marché alimentaire",
+            "B" : "X Æ A-Xii",
+            "C" : "Edward",
+            "D" : "Siq",
+            "reponse" : "D",
+            "img" : "PETRA2.jpg"
+        },
+        {
+            "nom" : "Comment cet édifice a t-il résisté aux dégradations",
+            "A" : "Des soldats y étaient postés 24/7",
+            "B" : "Il y avait un bouclier cosmique autour du site",
+            "C" : "Personne ne voulait s'attaquer à Petra",
+            "D" : "Il a été creusé directement dans le grès",
+            "reponse" : "D",
+            "img" : "PETRA3.webp"
+        },
+        {
+            "nom" : "Quel est la taille du Hall des trésors",
+            "A" : "39 mètres",
+            "B" : "56 mètres",
+            "C" : "17mètres",
+            "D" : "22 mètres",
+            "reponse" : "A",
+            "img" : "PETRA4.jpg"
+        },
+        {
+            "nom" : "Pétra est entourrée de",
+            "A" : "Nature et animaux dangereux",
+            "B" : "Montagnes",
+            "C" : "Nuages",
+            "D" : "Eau",
+            "reponse" : "B",
+            "img" : "PETRA5.jpg"
+        },
+        {
+            "nom" : "Pourquoi Petra a t-elle cessé de prospèrer ?",
+            "A" : "Une pluie diluvienne a detruit la ville",
+            "B" : "Elle a mal vieilli",
+            "C" : "Les routes ont changées",
+            "D" : "A cause de Ramsès 2",
+            "reponse" : "C",
+            "img" : "PETRA6.jpg"
+        },
+        {
+            "nom" : "Combien de temps Petra a t-elle prosperé",
+            "A" : "1000 ans",
+            "B" : "100 ans",
+            "C" : "300 ans",
+            "D" : "400 ans",
+            "reponse" : "D",
+            "img" : "PETRA7.webp"
+        },
+        {
+            "nom" : "Petra a été creusée dans ",
+            "A" : "Un canyon",
+            "B" : "Une montagne",
+            "C" : "Le fond de la mer noire",
+            "D" : "L'iut de Laval",
+            "reponse" : "A",
+            "img" : "PETRA8.jpg"
+        },
+        {
+            "nom" : "Petra était",
+            "A" : "Un batiment",
+            "B" : "Un géant de l'industrie agro-alimentaire",
+            "C" : "Une princesse",
+            "D" : "Une ville",
+            "reponse" : "D",
+            "img" : "PETRA9.jpg"
+        },
+        {
+            "nom" : "Dans quel pays se situe Petra",
+            "A" : "Liban",
+            "B" : "Egypte",
+            "C" : "Jordanie",
+            "D" : "Israel",
+            "reponse" : "C",
+            "img" : "PETRA10.jpg"
+        }
+    ],
+    "title" : "Petra"
+}

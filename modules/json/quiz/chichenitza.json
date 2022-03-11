@@ -1,0 +1,97 @@
+{
+    "question" : [
+        {
+            "nom" : "Dans quelle péninsule est située Chichen-Itza ?",
+            "A" : "Nicoya",
+            "B" : "Ibérique",
+            "C" : "Yucatan",
+            "D" : "Dingle",
+            "reponse" : "C",
+            "img" : "CHICHEN1.jpeg"
+        },
+        {
+            "nom" : "De quel civilisation Chichen Itza est-elle l'oeuvre ?",
+            "A" : "Maya",
+            "B" : "Inca",
+            "C" : "Viking",
+            "D" : "Amerindienne",
+            "reponse" : "A",
+            "img" : "CHICHEN2.jpeg"
+        },
+        {
+            "nom" : "Combien de personnes pouvait abriter Chichen Itza ?",
+            "A" : "35 000",
+            "B" : "500",
+            "C" : "10 000",
+            "D" : "200 000",
+            "reponse" : "A",
+            "img" : "CHICHEN3.jpeg"
+        },
+        {
+            "nom" : "En quelle année se sont instalés les premiers colons ?",
+            "A" : "200",
+            "B" : "-500",
+            "C" : "2000",
+            "D" : "550",
+            "reponse" : "D",
+            "img" : "CHICHEN4.webp"
+        },
+        {
+            "nom" : "Comment la ville s'approvisionnait-elle en eau ?",
+            "A" : "Grâce aux Cenotes",
+            "B" : "Ils récoltaient l'eau de pluie",
+            "C" : "Des offrandes divines",
+            "D" : "Elle était proche de la mer",
+            "reponse" : "A",
+            "img" : "CHICHEN5.jpeg"
+        },
+        {
+            "nom" : "Dans quel pays se situe Chichen Itza ?",
+            "A" : "Cuba",
+            "B" : "Bresil",
+            "C" : "Mexique",
+            "D" : "Argentine",
+            "reponse" : "C",
+            "img" : "CHICHEN6.png"
+        },
+        {
+            "nom" : "Quel est le nom du style architerctural de la ville ?",
+            "A" : "Minimaliste",
+            "B" : "Haussmanien",
+            "C" : "Puuc",
+            "D" : "Brutaliste",
+            "reponse" : "A",
+            "img" : "CHICHEN7.webp"
+        },
+        {
+            "nom" : "Comment était surnomé l'observatoir de la ville",
+            "A" : "L'escargot",
+            "B" : "L'astrodome",
+            "C" : "La chambre",
+            "D" : "Le perce-ciel",
+            "reponse" : "A",
+            "img" : "CHICHEN8.jpeg"
+        },
+        {
+            "nom" : "Combien de marches (au total) ornent la pyramide de Kukulkan ?",
+            "A" : "53",
+            "B" : "700",
+            "C" : "91",
+            "D" : "365",
+            "reponse" : "D",
+            "img" : "CHICHEN9.jpeg"
+        },
+        {
+            "nom" : "Pourquoi les habitant faisaient des offrandes au Cenote ?",
+            "A" : "Ils pensaient que leur dieu vivait au fond",
+            "B" : "ils avaient peur de l'eau",
+            "C" : "Ils vénèraient l'eau",
+            "D" : "Ils ne faisaient pas d'offrandes",
+            "reponse" : "A",
+            "img" : "CHICHEN10.png"
+        }
+    ],
+    "title" : "Chichen Itza"
+        
+    
+}

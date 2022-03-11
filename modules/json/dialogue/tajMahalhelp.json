@@ -1,0 +1,12 @@
+{
+    "dialogue": [
+        {
+            "phrase" : "Dans ce jeu tu dois placer le panneau qui correspond à la ville du Taj-mahal.",
+            "position" : "heureux"
+        },
+        {
+            "phrase" : "A mon avis, on peut trouver l'information dans la page...",
+            "position" : "cerveau"
+        }
+    ]
+}

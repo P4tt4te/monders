@@ -1,0 +1,16 @@
+{
+    "dialogue": [
+        {
+            "phrase" : "Tes connaissances sont aussi pointues que l’épée d’un gladiateur ! Essaie de ne blesser personne avec ce savoir hahaha",
+            "position" : "bonjour"
+        },
+        {
+            "phrase" : "*stress* ...",
+            "position" : "stress"
+        },
+        {
+            "phrase" : "Enfin bref… Maintenant on a un long trajet devant nous, on change de continent, direction le mexique en Amérique centrale !!",
+            "position" : "doigt"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "dialogue": [
+        {
+            "phrase" : "Génial! Maintenant on reste dans le même continent, on doit aller en Jordanie pour découvrir Petra.",
+            "position" : "content"
+        },
+        {
+            "phrase" : "Je me demande bien ce qu’on trouvera là- bas…",
+            "position" : "stress"
+        },
+        {
+            "phrase" : "Allez dépêchons nous, on a un avion à prendre !",
+            "position" : "pascontent"
+        }
+    ]
+}

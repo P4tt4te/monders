@@ -9,8 +9,25 @@ var tabstock;
 var tabstockhelper;
 var taillehelper;
 
+var firsttimehome = false;
+
 function init() {
+    let adresse = window.location.search;
+    let params = new URLSearchParams(adresse);
+    let first = params.get('first');
+    let nommerveille = params.get('merveille');
+    let nom = window.location.pathname.split('/');
+    nom.reverse();
+    console.log('fichier : '+ nom[0]);
+    if (nom[0] == "quiz-question.php" && nommerveille != null) {
+        document.querySelector('.marin').dataset.page = "dialoguequiz/"+ nommerveille;
+    }
     charger();
+    
+    console.log("first = "+first);
+    if (first == "on") {
+        firsttimehome = true;
+    }
 }
 
 function charger() {
@@ -27,11 +44,13 @@ function charger() {
         })
         .then(function (tab) {
             console.log(tab.dialogue);
-            inithelper();
             stock(tab.dialogue);
         })
         .catch(function (error) {
             console.log('Il y a eu un problème avec l\'opération fetch: ' + error.message);
+        })
+        .finally(function () {
+            inithelper();
         });
     
 }
@@ -70,11 +89,16 @@ function stock(tab) {
     tabstock = tab;
     taille = tab.length;
     if (tabstock != null) {
-        let zonestock = document.querySelector('.controllermarin');
-        console.log('zonestock:'+zonestock);
-        zonestock.addEventListener('click', function() {
+        if (firsttimehome == false) {
+            let zonestock = document.querySelector('.controllermarin');
+            console.log('zonestock:'+zonestock);
+            zonestock.addEventListener('click', function() {
+                parler(tabstock,taille);
+            })
+        } else {
             parler(tabstock,taille);
-        })
+        }
+        
     }
 }
 
@@ -91,13 +115,14 @@ function stockhelp(tab) {
     }
 }
 
-function parler(tab,taille) {
+function parler(tabparler,tailleparler) {
     console.log('parler');
     index = 0;
-    tabcurrent = tab;
-    taillecurrent = taille;
+    tabcurrent = tabparler;
+    taillecurrent = tailleparler;
     console.log(tabcurrent[index].phrase);
     phrase(tabcurrent[index].phrase);
+    position(tabcurrent[index].position);
     let zone = document.querySelector('.marin');
     zone.style.display = 'flex';
     zone.addEventListener('click',finphrase);
@@ -109,6 +134,7 @@ function phrase(dialogue) {
 }
 
 function position(nom) {
+    console.log("Position : "+nom);
     let zone = document.querySelector('.perso>img').src = "../images/marin/" + nom + ".png";
 }
 

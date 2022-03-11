@@ -7,6 +7,10 @@
         {
             "phrase" : "Clic sur une localisation pour t’y rendre, c’est là que devraient être cachées les reliques. Tu débloquera les autres localisations au fur et à mesure de l’aventure.",
             "position" : "souriant"
+        },
+        {
+            "phrase" : "Chaque page de merveille dispose de son propre mini-jeu, c’est en les réussissant que tu débloque les reliques !",
+            "position" : "content"
         }
     ]
 }

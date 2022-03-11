@@ -1,0 +1,16 @@
+{
+    "dialogue": [
+        {
+            "phrase" : "Fiouf on l’a fait… On a enfin trouvé le dernier objet de l’aventure !",
+            "position" : "stress"
+        },
+        {
+            "phrase" : "La bougie éternelle du Christ Rédempteur. Elle brûle en lui depuis qu’il a été mit sur pied.",
+            "position" : "cerveau"
+        },
+        {
+            "phrase" : "Plus qu'à finir le quiz! l’aventure touche à sa fin.",
+            "position" : "heureux"
+        }
+    ]
+}

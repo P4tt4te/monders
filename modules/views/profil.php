@@ -6,9 +6,25 @@ require_once('../views/header.php');
 ?>
 
 <link rel="stylesheet" href="../styles/profil.css">
+<link rel="stylesheet" href="../styles/marin.css" rel="stylesheet" type="text/css">
 <html class="background">
 
 <main>
+    <div class="marin" data-page="profil">
+        <div class="perso">
+            <img src="../images/marin/bonjour.png" alt="">
+        </div>
+        
+        <div class="bulles">
+            <div class="bulle-parole">
+                <p class="texte-parole"></p>
+            </div>
+        </div>
+        <div class="suite">
+            <p>Cliquer pour continuer le dialogue.</p>
+        </div>
+        
+    </div>
     <div class="profil">
         <div class="titre">
             <h2 class="light">Salut <span class="title"><?php echo ($user->getFullName()); ?></span>, vous avez débloqué
@@ -38,50 +54,82 @@ require_once('../views/header.php');
 
                 switch ($i) {
                     case 1:
-                        $nomMerveille =  "tajMahal.php";
+                        $nomMerveille =  "murailledechine";
                         break;
                     case 2:
-                        $nomMerveille = "murailleChine.php";
+                        $nomMerveille = "tajMahal";
                         break;
                     case 3:
-                        $nomMerveille = "petra.php";
+                        $nomMerveille = "petra";
                         break;
                     case 4:
-                        $nomMerveille = "machuPicchu.php";
+                        $nomMerveille = "colisee";
                         break;
                     case 5:
-                        $nomMerveille = "chichenItza.php";
+                        $nomMerveille = "chichenitza";
                         break;
                     case 6:
-                        $nomMerveille = "coliseeRome.php";
+                        $nomMerveille = "machupicchu";
                         break;
                     case 7:
-                        $nomMerveille = "christRedempteur.php";
+                        $nomMerveille = "christ";
                         break;
                 }
+                switch ($i) {
+                    case 1:
+                        $urlMerveille =  "murailledechine.php?merveille=murailledechine";
+                        break;
+                    case 2:
+                        $urlMerveille = "tajMahal.php?merveille=tajMahal";
+                        break;
+                    case 3:
+                        $urlMerveille = "merveille.php?merveille=petra";
+                        break;
+                    case 4:
+                        $urlMerveille = "merveille.php?merveille=colisee";
+                        break;
+                    case 5:
+                        $urlMerveille = "merveille.php?merveille=chichenitza";
+                        break;
+                    case 6:
+                        $urlMerveille = "merveille.php?merveille=machupicchu";
+                        break;
+                    case 7:
+                        $urlMerveille = "merveille.php?merveille=christ";
+                        break;
+                }
+
 
                 $progression = $cnx->query("SELECT progression FROM debloque WHERE idMerveille = ? AND idUtilisateur = ?", array($i, $id));
 
             ?>
-                <a href="../views/<?php echo ($nomMerveille) ?>">
+                <?php if ($nbDebloque[0]["nbDebloque"] >= $i) {
+                    ?>
+                   <a href="../views/<?php echo ($urlMerveille) ?>">
+                   <?php
+                }
+                ?>
+                
                 <div class="merveille
                 <?php if ($nbDebloque[0]["nbDebloque"] >= $i) {
                     echo ("unlocked");
                 }
                 ?>
                 ">
-                        <div class="img-merveille unlocked">
+                        
                             <?php if ($nbDebloque[0]["nbDebloque"] >= $i) { ?>
 
-
-                                <img src="../images/Merveilles/MerveillesUnlocked/<?php echo $i; ?>.png" class="image-hover-unlocked" alt="">
-
+                                <div class="img-merveille unlocked">
+                                <img src="../images/home/icons/icon-<?php echo $nomMerveille; ?>.png" class="image-hover-unlocked" alt="">
+                                </div>
                             <?php
                             } else {
                             ?>
-                                <img src="../images/Merveilles/MerveillesLocked/<?php echo $i; ?>.png" alt="">
+                             <div class="img-merveille locked">
+                                <img src="../images/home/icons/icon-<?php echo $nomMerveille; ?>.png"  alt="">
+                                </div>
                             <?php } ?>
-                        </div>
+                      
                         <div class="info-merveille">
                             <div class="pourcentage">
 
@@ -106,15 +154,9 @@ require_once('../views/header.php');
                                 <span>QUIZ</span>
                                 <span><?php $progressionQuiz = MerveilleModel::progressionQuiz($id, $i);
                                         if (isset($progressionQuiz[0]['p'])) {
-                                            if ($progressionQuiz[0]['p'] >= 0 && $progressionQuiz[0]['p'] <= 99) {
-                                                echo ("En cours");
-                                            } elseif ($progressionQuiz[0]['p'] = 100) {
-                                                echo ("Fini");
-                                            } else {
-                                                echo ("Pas commencé");
-                                            }
+                                            echo $progressionQuiz[0]['p']." %";
                                         } else {
-                                            echo ("Pas commencé");
+                                            echo ("0 %");
                                         }  ?></span>
 
 
@@ -122,16 +164,23 @@ require_once('../views/header.php');
                             </div>
                         </div>
                     </div>
-                    </a>
+                    <?php if ($nbDebloque[0]["nbDebloque"] >= $i) {
+                    ?>
+                   </a>
+                   <?php
+                    }
+                    ?>
+                    
                 <?php
 
             }
                 ?>
         </div>
     </div>
-    <?php
-    require_once('pageEnd.php');
-    ?>
+    <div class="zoneaide">
+        <button class="help">?</button>
+    </div>
+    <script src="../script/dialogue.js"></script>
     </body>
 </main>
 

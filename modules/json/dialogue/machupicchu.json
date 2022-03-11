@@ -1,12 +1,12 @@
 {
     "dialogue": [
         {
-            "phrase" : "MACHUPICCHU : Ça, c'est ton profil.",
-            "position" : "doigt"
+            "phrase" : "Trop fort! tu as retrouvé une statuette dorée Inca.",
+            "position" : "bonjour"
         },
         {
-            "phrase" : "Tu peux consulter ta progression dans l’aventure et rejouer les quiz que tu as déjà terminés.",
-            "position" : "heureux"
+            "phrase" : "Ces petites effigies étaient sculptées par les habitants et servaient d’offrandes à leur dieux. Il n’en reste plus aucune car les conquistadors espagnols ont tout saisi lors de leur invasion.",
+            "position" : "cerveau"
         }
     ]
 }

@@ -56,12 +56,12 @@
         },
         {
             "nom" : "Pourquoi 'L'amphithéâtre' a-t-il changé de nom pour le Colisée ?",
-            "A" : "En référence à la gigantesque statue de Néron de 35 mètres (appelée colosse) située à côté de l'amphithéâtre",
+            "A" : "En référence à la statue de Néron",
             "B" : "Ca rappelle les études aux habitants",
             "C" : "A cause d’une révolution",
-            "D" : "En référence au célèbre restaurant appelé Pasta situé à côté de l'amphithéâtre",
+            "D" : "En référence au restaurant Pasta",
             "reponse" : "A",
-            "img" : "COLIS7.jpg"
+            "img" : "COLIS7.webp"
         },
         {
             "nom" : "A l'intérieur, les gradins étaient organisés de façon à distinguer les :",
@@ -90,7 +90,6 @@
             "reponse" : "C",
             "img" : "COLIS10.jpg"
         }
-    ]
-        
-    
+    ],
+    "title" : "Colisée de Rome"
 }

@@ -45,6 +45,7 @@ body {
 
 .bloc21 {
     width:40%;
+    text-align: justify;
 }
 
 .bloc21>h2 {
@@ -64,7 +65,8 @@ body {
 }
 
 .bloc3 {
-    position:relative
+    position:relative;
+    text-align: justify;
 }
 
 .bloc3 p {
@@ -121,4 +123,28 @@ body {
     user-select: none;
     border-radius: 4px;
 }
+.quiz {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 8vw;
+    margin-bottom: 8vw;
+}
+.redirection {
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    background: #f48e6b;
+    cursor: pointer;
+    color: #202124;
+    border: 1px #f48e6b solid;
 
+}
+.redirection:hover {
+    border: none;
+    background: #202124;
+    cursor: pointer;
+    color: #f48e6b;
+    transition: background-color 1s;
+    border: 1px #f48e6b solid;
+}

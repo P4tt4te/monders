@@ -1,16 +1,16 @@
 {
     "dialogue": [
         {
-            "phrase" : "FAIRE LES DIALOGUES PETRAHELP : Tu as trouvé le marteau et le burin de Ramiza Jabbar. Si on en croit ce livre, ce serait elle qui aurait commencé la construction de cet édifice. Ce marteau a dû en voir de toutes les couleurs…",
-            "position" : "content"
+            "phrase" : "Dans ce jeu, tu dois mémoriser la série de couleurs qui va apparaître à l’écran.",
+            "position" : "cerveau"
         },
         {
-            "phrase" : "Bon alors laisse moi regarder ou est ce qu’on va ensuite…",
-            "position" : "stress"
-        },
-        {
-            "phrase" : "Italie! Colisée nous voilà.",
+            "phrase" : "Quand elle sera terminée, ce sera à ton tour de la reproduire en cliquant sur les carrés.",
             "position" : "doigt"
+        },
+        {
+            "phrase" : "Si tu réussis, la manche suivante se déclenche et la série devient plus longue.",
+            "position" : "content"
         }
     ]
 }

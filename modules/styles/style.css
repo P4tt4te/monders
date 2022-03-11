@@ -105,7 +105,6 @@ html {
 }
 
 body {
-    background: rgb(30, 30, 30);
     /* height: 200vh; */
     font-family : "NeueMontreal", arial;
 }
@@ -196,7 +195,7 @@ header .grid-item button img {
     left: -100%;
     width: 100%;
     height: 100vh;
-    background: rgb(30, 30, 30);
+    background: var(--background);
     z-index: 3;
     font-family: 'Helvetica';
     visibility: visible;
@@ -252,7 +251,7 @@ header .grid-item button img {
 
 .grid-item.one::before {
     content: "";
-    background: url(../images/header/images/brush7.png);
+    background: url(../images/header/images/brush7.webp);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 900px;
@@ -263,13 +262,85 @@ header .grid-item button img {
     object-fit: contain;
 }
 
+.zoneaide {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+
+.zoneaide button {
+    border: none;
+    text-decoration: none;
+}
+
+/* TODO _________LOADER_________ */
+
+.loader{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(30, 32, 33);
+  }
+  
+  .loader img {
+    animation: load 0.8s infinite ;
+    width: 50px;
+    height: 50px;
+  }
+  @keyframes load {
+    0% { transform: rotate(0); }
+    100%   { transform: rotate(360deg); }
+  }
 
 
-@media (min-width: 576px) { 
-    
- }
+/* TODO _________RESPONSIVE_________ */
 
-@media (min-width: 768px) {  }
-
-
-@media (min-width: 993px) {  }
+.responsive {
+    display: none;
+  }
+  
+  
+  @media screen and (max-width: 1000px) {
+    body {
+      overflow: hidden;
+    }
+    .responsive{
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: 999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgb(30, 32, 33);
+      flex-direction: column;
+      text-align: center;
+      color: white;
+      }
+      
+      .responsive .ecran {
+        animation: load 0.8s infinite ;
+        width: 100px;
+        height: 100px;
+      }
+      .responsive-texte {
+        width: 400px;
+      }
+      .responsive-texte * {
+        margin: 25px;
+      }
+      @keyframes load {
+        0% { transform: rotate(0); }
+        15% { transform: rotate(-10deg); }
+        30% { transform: rotate(0); }
+        45%   { transform: rotate(10deg); }
+        60%   { transform: rotate(0); }
+        100%   { transform: rotate(0); }
+      }
+  }
+  
+  

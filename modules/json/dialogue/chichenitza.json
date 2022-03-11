@@ -1,11 +1,19 @@
 {
     "dialogue": [
         {
-            "phrase" : "CHICHENITZA : Ça, c'est ton profil.",
+            "phrase" : "Ne me dis pas que...",
+            "position" : "pascontent"
+        },
+        {
+            "phrase" : "On a retrouvé le cadran solaire de la cité !",
+            "position" : "content"
+        },
+        {
+            "phrase" : "C’est grâce à ça que les maya ont établi l’un des premiers calendriers comme nous les connaissons actuellement en étudiant la rotation de la terre autour du soleil.",
             "position" : "doigt"
         },
         {
-            "phrase" : "Tu peux consulter ta progression dans l’aventure et rejouer les quiz que tu as déjà terminés.",
+            "phrase" : "Garde le précieusement, ce petit bijou est extrêmement rare.",
             "position" : "heureux"
         }
     ]
